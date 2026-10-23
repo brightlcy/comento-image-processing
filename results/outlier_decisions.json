@@ -1,0 +1,113 @@
+{
+  "photographs": [
+    {
+      "sample": "sample_01",
+      "kind": "Food101 photograph",
+      "mean_brightness": 98.23814900716145,
+      "largest_red_ratio": 0.000213623046875,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": true,
+      "rejected": true,
+      "reasons": [
+        "small_red_region"
+      ]
+    },
+    {
+      "sample": "sample_02",
+      "kind": "Food101 photograph",
+      "mean_brightness": 129.25200271606445,
+      "largest_red_ratio": 0.180999755859375,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": false,
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "sample": "sample_03",
+      "kind": "Food101 photograph",
+      "mean_brightness": 133.68162022682768,
+      "largest_red_ratio": 0.0014278720626631854,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": true,
+      "rejected": true,
+      "reasons": [
+        "small_red_region"
+      ]
+    },
+    {
+      "sample": "sample_04",
+      "kind": "Food101 photograph",
+      "mean_brightness": 154.70935479525863,
+      "largest_red_ratio": 0.06479548311781609,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": false,
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "sample": "sample_05",
+      "kind": "Food101 photograph",
+      "mean_brightness": 152.29163360595703,
+      "largest_red_ratio": 0.000133514404296875,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": true,
+      "rejected": true,
+      "reasons": [
+        "small_red_region"
+      ]
+    }
+  ],
+  "synthetic": [
+    {
+      "sample": "normal",
+      "kind": "synthetic known-answer fixture",
+      "mean_brightness": 154.0,
+      "largest_red_ratio": 0.25,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": false,
+      "rejected": false,
+      "reasons": []
+    },
+    {
+      "sample": "dark",
+      "kind": "synthetic known-answer fixture",
+      "mean_brightness": 15.5,
+      "largest_red_ratio": 0.0,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": true,
+      "too_small_red_region": true,
+      "rejected": true,
+      "reasons": [
+        "too_dark",
+        "small_red_region"
+      ]
+    },
+    {
+      "sample": "small",
+      "kind": "synthetic known-answer fixture",
+      "mean_brightness": 178.96,
+      "largest_red_ratio": 0.01,
+      "dark_threshold": 50.0,
+      "min_red_ratio": 0.05,
+      "too_dark": false,
+      "too_small_red_region": true,
+      "rejected": true,
+      "reasons": [
+        "small_red_region"
+      ]
+    }
+  ]
+}
