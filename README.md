@@ -1,75 +1,44 @@
-# Git을 활용한 픽셀 단위 이미지 처리 실습
+# Git 기반 픽셀 이미지 처리 실습 | 코멘토 1주차
 
-코멘토 1차 업무 과제. Python과 OpenCV로 이미지의 픽셀값을 분석하고, 빨간색 영역 검출·전처리·이상치 필터링을 구현했다.
+OpenCV로 음식 이미지의 픽셀을 분석하고 빨간색 영역을 검출했다. Hugging Face Food101 사진 5장에 전처리와 간단한 이상치 판정을 적용했다.
 
-## 1. 작업 내용
+## 구성
 
-| 요구사항 | 구현 내용 |
+| 파일 | 설명 |
 |---|---|
-| 픽셀 분석 | 이미지 크기, BGR 채널 평균, 중심 픽셀값 확인 |
-| 색상 검출 | BGR→HSV 변환 후 빨간색 범위(H 0–10, 170–179) 마스크 생성 |
-| 이진화 | `cv2.threshold()`로 밝기 127 초과 픽셀 구분 |
-| 데이터 확보 | Hugging Face Food101 `train` 데이터의 원본 이미지 5장 |
-| 전처리 | 224×224 → Gaussian Blur → 좌우 반전 → 15° 회전 → 채도·명도 조정 → Grayscale → Normalize |
-| 이상치 필터 | 평균 밝기 50 미만 또는 최대 빨간 연결 영역 비율 5% 미만인 이미지 제외 |
-| 버전 관리 | `main`, `feature/image-processing` 브랜치와 작업별 Git 커밋 |
+| `image_preprocessing.py` | 픽셀 분석, 빨간색 검출, 전처리, 이상치 판정 |
+| `data/originals/` | 원본 JPEG 5장 |
+| `data/source_manifest.json` | 원본 출처·해시값(SHA256); 실행 시 이미지 검증에 사용 |
+| `preprocessed_samples/` | 224×224 흑백 결과 PNG 5장 (공식 제출 항목) |
+| `test_image_preprocessing.py` | 핵심 함수와 실행 결과를 검증하는 자동 테스트 29개 |
+| `week1_report.pptx` | 구현 과정과 실행 결과 요약 (3장) |
+| `requirements.txt` | 의존 라이브러리 |
 
-## 2. 프로젝트 파일
+`results/`는 실행 시 자동 생성되며 Git에 포함하지 않는다. 마스크·필터 이미지, 정규화 배열(NPY), 이상치 판정(JSON)을 확인할 수 있다. `preprocessed_samples/`는 공식 제출물로 저장소에 포함한다.
 
-```text
-image_preprocessing.py     이미지 분석·검출·전처리·이상치 판정
-requirements.txt           Python 의존성
-README.md                  실행 및 결과 설명
-data/originals/            입력 이미지 5장
-data/source_manifest.json  Food101 출처 및 원본 SHA256
-preprocessed_samples/      제출용 전처리 PNG 5장
-results/                   색상 검출 사례, 수치 배열, 필터링 결과
-scripts/                   데이터 다운로드·출력 재현 검사
-tests/                     단위 테스트
-submission/                결과 요약 PPT 3장
-```
+## 실행
 
-`data/originals/`는 입력이며 `preprocessed_samples/`는 전처리 결과다. `results/normalized/`에는 실제 `[0,1]` 범위의 `float32` 배열(`.npy`)이 저장된다. PNG 5장은 사람이 확인할 수 있도록 저장한 8비트 흑백 이미지다.
-
-## 3. 설치 및 실행
-
-Python 3.12 기준, 프로젝트 루트에서 실행한다. 실험에 사용한 원본 사진 5장이 포함되어 있어 인터넷 연결 없이 처리할 수 있다.
+Python 3.12 이상을 권장한다. 이미 입력 사진 5장이 포함되어 있으므로 실행 중 인터넷 연결은 필요 없다.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python image_preprocessing.py
+python -m unittest discover -v
 ```
 
-결과를 별도 폴더에 생성하려면:
+원본을 보존하며 별도 출력 폴더에서 시험하려면 `python image_preprocessing.py --output-dir artifacts/reproduced`를 실행한다.
 
-```bash
-python image_preprocessing.py --output-dir artifacts/reproduced
-```
+## 구현 판단 및 결과
 
-## 4. 검증
+- **색상 검출:** OpenCV BGR→HSV 변환. 빨강의 Hue가 색상환의 시작과 끝에 걸쳐 있어 0~10과 170~179 범위를 합쳐 마스크 생성. `cv2.threshold()`로 별도의 밝기 이진화도 수행.
+- **전처리:** Resize(224×224) → Gaussian Blur → 좌우 반전 → 15° 회전 → 채도·밝기 변화 → Grayscale → `float32 / 255`. PNG는 확인용이고 실제 정규화 값은 실행 시 생성되는 NPY에 저장.
+- **이상치 판정:** 원본 이미지 기준 평균 밝기 50 미만 또는 가장 큰 **빨간 연결 영역** 비율 5% 미만이면 제외. 실제 결과는 5장 중 2장 통과, 3장 제외.
+- **한계:** 빨간색 영역 크기는 일반적인 음식 객체 크기가 아니다. 모든 입력은 Food101의 같은 음식 종류(`beignets`)다. AI 모델 학습이나 음식 인식 정확도 평가는 수행하지 않았다.
 
-```bash
-python -m unittest discover -s tests -v
-python scripts/verify_results.py
-```
+데이터셋: [Food101](https://huggingface.co/datasets/ethz/food101). 원본 데이터 버전과 파일별 SHA256은 `data/source_manifest.json`에 기록했다.
 
-단위 테스트 29개가 통과했다. 테스트 범위는 입력 오류 처리, HSV 범위, 밝기 임계값, 전처리 결과의 크기·값 범위, 원본 해시, 이상치 경계조건 등이다. `verify_results.py`는 새로운 임시 위치에서 다시 실행하여 저장된 대표 결과와 SHA256을 비교한다. 이때 생성되는 로그는 Git에 올리지 않는 `artifacts/verification/`에 보관된다.
+## Git 제출
 
-## 5. 결과 및 한계
-
-- 원본 5장 각각에 전처리를 적용하여 224×224 흑백 PNG 5장 생성.
-- 이상치 판정 결과: `sample_02`, `sample_04` 통과; 나머지 3장 제외. 통과한 실수 배열은 `results/accepted/`에 저장.
-- 작은 객체 판정은 **일반적인 음식 객체 검출이 아니라 빨간색 연결 영역 크기에 대한 간이 기준**이다. 빨간색이 적은 큰 음식도 제외될 수 있다.
-- 이미지 5장은 모두 Food101의 동일 음식 클래스(`beignets`)에서 가져왔으며, 모델 학습이나 인식 정확도 측정은 수행하지 않았다.
-
-데이터 출처: [Hugging Face Food101](https://huggingface.co/datasets/ethz/food101). 원본 파일 해시와 데이터셋 revision은 `data/source_manifest.json`에 기록했다. 데이터셋 카드의 라이선스 표기가 불명확하므로 이미지의 별도 상업적 이용 권한을 주장하지 않는다.
-
-## 6. 제출 자료와 Git 협업
-
-- 발표 자료: [`submission/week1_report.pptx`](submission/week1_report.pptx) (3장)
-- GitHub 저장소: `https://github.com/brightlcy/comento-week1-image-processing` (원격 업로드 및 접근 권한은 제출자가 확인)
-- 기능 브랜치: `feature/image-processing` → 대상 브랜치: `main`
-
-**코드 리뷰와 병합은 GitHub에서 실제 PR을 생성한 뒤 진행한다.** 이 저장소의 로컬 커밋만으로 Push·외부 리뷰·Merge를 완료했다고 간주하지 않는다.
+`feature/image-processing` 브랜치의 커밋을 GitHub에 Push하고 `main` 대상으로 Pull Request를 생성하여 멘토에게 리뷰 요청한다. **로컬 Git 이력은 준비되었지만 Push·PR·리뷰·Merge 성공 여부는 별도 확인이 필요하다.**

@@ -224,7 +224,8 @@ class ArtifactTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256((ROOT / entry["file"]).read_bytes()).hexdigest(), entry["sha256"])
             image = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
             self.assertEqual(image.shape, (224, 224))
-            normalized = np.load(ROOT / "results/normalized" / f"{path.stem}.npy", allow_pickle=False)
+            source = load_image(ROOT / entry["file"])
+            normalized = preprocess_image(source)["normalized"]
             self.assertEqual(normalized.dtype, np.float32)
             np.testing.assert_array_equal(image, np.rint(normalized * 255).astype(np.uint8))
 
@@ -238,10 +239,16 @@ class ArtifactTests(unittest.TestCase):
             self.assertEqual((samples / "unrelated.png").read_bytes(), b"keep me")
 
     def test_admission_files_match_filter_decisions(self):
-        decisions = json.loads((ROOT / "results/outlier_decisions.json").read_text())["photographs"]
-        for decision in decisions:
-            exists = (ROOT / "results/accepted" / f"{decision['sample']}.npy").exists()
-            self.assertEqual(exists, not decision["rejected"])
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            run(ROOT / "data/originals", output, ROOT / "data/source_manifest.json")
+            decisions = json.loads((output / "results/outlier_decisions.json").read_text())["photographs"]
+            self.assertEqual(len(decisions), 5)
+            for decision in decisions:
+                sample = decision["sample"]
+                self.assertTrue((output / "results/normalized" / f"{sample}.npy").exists())
+                exists = (output / "results/accepted" / f"{sample}.npy").exists()
+                self.assertEqual(exists, not decision["rejected"])
 
 
 if __name__ == "__main__":

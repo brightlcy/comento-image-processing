@@ -1,13 +1,7 @@
+# Local development and generated outputs
 .venv/
 __pycache__/
 *.py[cod]
 .DS_Store
-build/
-artifacts/reproduced/
-
-# Re-generated / environment-dependent artifacts
+results/
 artifacts/
-results/run_summary.json
-# Track only a representative color-detection example, regenerate others on demand.
-results/color_detection/sample_*.png
-!results/color_detection/sample_02_*.png
