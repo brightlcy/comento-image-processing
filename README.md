@@ -49,4 +49,4 @@ python -m unittest discover -v
 
 저장소: [brightlcy/comento-week1-image-processing](https://github.com/brightlcy/comento-week1-image-processing)
 
-`feature/image-processing`에서 `main`을 대상으로 Pull Request를 제출한다. 멘토의 코드 리뷰와 승인 전에는 병합하지 않는다. 비공개 저장소이므로 멘토가 열람할 수 있는지 확인해야 한다.
+`feature/image-processing`에서 `main`을 대상으로 Pull Request를 제출한다. 멘토의 코드 리뷰와 승인 전에는 병합하지 않는다. 저장소와 PR은 공개되어 있어 링크로 열람할 수 있다.
