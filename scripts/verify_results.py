@@ -18,7 +18,7 @@ def sha256(path: Path) -> str:
 
 
 def main() -> int:
-    evidence = ROOT / "docs/evidence"
+    evidence = ROOT / "artifacts/verification"
     evidence.mkdir(parents=True, exist_ok=True)
     commands = [
         [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"],
