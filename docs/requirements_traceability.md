@@ -26,8 +26,8 @@
 | R18 | 기본 추가 p11 | 회전 | preprocess_image | 위치 대응 / results/demo/rotated.png | 완료 |
 | R19 | 기본 추가 p11 | 색상 변화 | change_color, preprocess_image | HSV·컬러 배열 변화 / results/demo/color_changed.png | 완료 |
 | R20 | 심화 p11 | 평균 밝기 기반 어두운 이미지 제외 | evaluate_outlier, run | 정상·어두움·경계 / results/outlier_decisions.json | 완료 |
-| R21 | 심화 p11 | 작은 객체 이미지 제외 | largest_red_ratio, evaluate_outlier, run | 알려진 색상 영역·경계 / results/outlier_decisions.json | 완료 |
-| R22 | 제출 p11 | image_preprocessing.py | image_preprocessing.py | CLI 정상 실행 / results/run_summary.json | 완료 |
+| R21 | 심화 p11 | 작은 객체 이미지 제외 | largest_red_ratio, evaluate_outlier, run | 빨간색 영역에 한정된 근사, 일반 객체 크기 불가 / results/outlier_decisions.json | 부분완료 |
+| R22 | 제출 p11 | image_preprocessing.py | image_preprocessing.py | CLI 정상 실행 / 실행 시 생성되는 results/run_summary.json | 완료 |
 | R23 | 제출 p11 | preprocessed_samples/ 이미지 5장 | run | 5장 디코드·224 크기 / preprocessed_samples/ | 완료 |
 | R24 | 제출 p11 | README 전처리 설명 | README.md | README 명령 재실행 / docs/verification.md | 완료 |
 | R25 | 제출 p12 | Git 저장소 링크·PR·4페이지 이하 PPT | README·GitHub·submission/week1_report.pptx | URL·PPTX 구조 검사·렌더 확인 | 부분완료: 저장소·PPT, PR 대기 |
@@ -40,9 +40,9 @@
 | Q02 | 빨강 Hue 양끝·S/V 경계, BGR 구분 | detect_red / tests | 완료 |
 | Q03 | 정규화 실수 배열과 PNG 시각화 구분 | results/normalized/*.npy / README | 완료 |
 | Q04 | 정상·오류·경계 최소 자동검증 | tests/test_image_preprocessing.py / docs/verification.md | 완료 |
-| Q05 | 실행·이미지·문서·Git 상태 일치 | docs/red_team_review.md | 완료 |
+| Q05 | 실행·이미지·문서·Git 상태 일치 | docs/verification.md | 완료 |
 | Q06 | 원본·결과 저장 및 5장 무결성 | data/originals/·results/·preprocessed_samples/ | 완료 |
 | Q07 | PR 목적·변경·실행·결과·확인사항 | docs/pr_description.md / 실제 PR | 완료 |
-| Q08 | 최대 4장 PPT 시각 검수 | submission/week1_report.pptx | 완료 |
+| Q08 | 최대 4장 PPT 형식 확인 (현재 3장) | submission/week1_report.pptx | 완료 |
 
-판정: 공식 25항목 중 20개 완료, 4개 미완료(R08–R11), 1개 부분완료(R25). 전체 최종 승인 조건은 아직 충족되지 않았다. Git 외부 절차는 docs/git_status.md 참조.
+판정: 공식 25항목 중 19개 완료, 4개 미완료(R08–R11), 2개 부분완료(R21, R25). 전체 최종 승인 조건은 아직 충족되지 않았다. Git 외부 절차는 docs/git_status.md 참조.

@@ -8,7 +8,7 @@
 - Food101 train 행 0–4 원본 5장과 revision·SHA256 기록.
 - 224×224 → Blur → 좌우 반전 → +15° 회전 → 색상 변화 → Grayscale → float32 Normalize.
 - 평균 밝기와 빨간 연결 영역 비율로 이상치 판정. 통과 배열만 results/accepted/에 저장.
-- 5장 PNG 시각화, NPY 정규화 배열, 실행 지표, README, 요구사항 추적표, 4페이지 PPT.
+- 5장 PNG 시각화, NPY 정규화 배열, 실행 지표, README, 요구사항 추적표, 3페이지 PPT.
 
 ## 실행 방법
 
@@ -24,7 +24,7 @@ python scripts/verify_results.py
 ## 실제 결과
 
 - Linux x86_64 / Python 3.12.14 / OpenCV 4.11.0 / NumPy 2.2.6에서 실행.
-- 자동검증 29개 통과. 재실행 출력 44개가 제출 출력과 SHA256 일치.
+- 자동검증 29개 통과. 보관한 대표 결과물은 `scripts/verify_results.py`로 별도 실행 결과와 해시 비교 가능. (최초 전체 44개 결과 검증 기록은 이전 작업 당시 결과임.)
 - 224×224 단일 채널 PNG 5장. 정규화 실수 데이터는 별도 float32 NPY로 보존.
 - 빨간 영역 기준으로 원본 5장 중 2장 통과·3장 제외. 일반 음식 객체 크기 판정 정확도를 의미하지 않는다.
 

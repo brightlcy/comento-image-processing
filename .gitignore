@@ -4,3 +4,11 @@ __pycache__/
 .DS_Store
 build/
 artifacts/reproduced/
+
+# Re-generated / environment-dependent artifacts
+artifacts/
+docs/evidence/
+results/run_summary.json
+# Track only a representative color-detection example, regenerate others on demand.
+results/color_detection/sample_*.png
+!results/color_detection/sample_02_*.png

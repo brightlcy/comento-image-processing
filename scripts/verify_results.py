@@ -1,4 +1,4 @@
-"""Run the existing tests and compare a fresh run with every submitted processing output."""
+"""Test and compare retained representative results with a fresh full run."""
 
 import hashlib
 import json
@@ -34,15 +34,24 @@ def main() -> int:
         (evidence / "reproduction.log").write_text(rerun.stdout + rerun.stderr)
         if rerun.returncode == 0:
             generated = Path(directory)
-            for parent in ["preprocessed_samples", "results"]:
-                baseline = {p.relative_to(ROOT) for p in (ROOT / parent).rglob("*") if p.is_file()}
-                repeated = {p.relative_to(generated) for p in (generated / parent).rglob("*") if p.is_file()}
-                if baseline != repeated:
-                    raise RuntimeError(f"Output file lists differ in {parent}")
-                for relative in sorted(baseline):
-                    first, second = sha256(ROOT / relative), sha256(generated / relative)
-                    comparisons.append(dict(file=str(relative), sha256=first, repeated_sha256=second,
-                                            identical=first == second))
+            # This repository intentionally stores only representative color-detection outputs.
+            # Ignore additional generated images and environment-specific run_summary.json.
+            required = {*(Path("preprocessed_samples") / f"sample_{i:02}.png" for i in range(1, 6)),
+                        *(Path("results/normalized") / f"sample_{i:02}.npy" for i in range(1, 6)),
+                        Path("results/metrics.json"), Path("results/outlier_decisions.json")}
+            retained = set(required)
+            for subdirectory in ["accepted", "demo", "outlier_examples", "color_detection"]:
+                retained.update(p.relative_to(ROOT) for p in (ROOT / "results" / subdirectory).glob("*") if p.is_file() and (
+                    subdirectory != "color_detection" or p.name.startswith("sample_02_")
+                ))
+            if any(not (ROOT / relative).is_file() for relative in required):
+                raise RuntimeError("Required checked-in outputs are missing")
+            for relative in sorted(retained):
+                if not (generated / relative).is_file():
+                    raise RuntimeError(f"Reproduced output missing: {relative}")
+                first, second = sha256(ROOT / relative), sha256(generated / relative)
+                comparisons.append(dict(file=str(relative), sha256=first, repeated_sha256=second,
+                                        identical=first == second))
     report = dict(
         python=platform.python_version(), platform=platform.system(), machine=platform.machine(),
         test_command="python -m unittest discover -s tests -v",

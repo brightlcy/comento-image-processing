@@ -4,7 +4,7 @@
 
 | 단계 | 실제 결과 | 근거 |
 |---|---|---|
-| 새 개인 저장소 | 완료, 비공개 | https://github.com/brightlcy/comento-week1-image-processing 브라우저에서 Private·빈 저장소 생성 확인 |
+| 새 개인 저장소 | 설정 기록 있음, 현재 원격 조회 미확인 | https://github.com/brightlcy/comento-week1-image-processing — 과거 브라우저 생성 기록은 있으나 연결 API 404; 본인 계정 확인 필요 |
 | 로컬 저장소 | 완료 | git init -b main, .git 존재, 원격 origin URL 설정 |
 | 기능 브랜치 | 로컬 완료 | feature/image-processing, main은 요구사항 정의 커밋 |
 | 커밋 | 완료 | 요구사항 정의 → 기능 → 검증·실행 이미지 → 문서·발표 자료 순으로 분리, git log로 확인 |
@@ -12,7 +12,7 @@
 | 연결 도구 업로드 | **미완료** | 새 비공개 저장소 조회가 GitHub API 404 Not Found 반환. 브라우저 업로드 경로도 시간 초과하여 코드 업로드로 판정하지 않음 |
 | PR | **미완료** | 원격 브랜치 업로드가 선행되어야 함. docs/pr_description.md에 실제 변경 기준 본문 준비 |
 | 외부 리뷰 요청·리뷰 | **미완료** | 멘토·동료 GitHub ID 미제공, 리뷰 요청·승인 없음 |
-| 자체 검토 | 완료 | docs/red_team_review.md. 외부 리뷰나 별도 사람의 승인으로 표시하지 않음 |
+| 자체 검토 | 완료 | docs/verification.md. 외부 리뷰나 별도 사람의 승인으로 표시하지 않음 |
 | Merge | **미완료** | 원문 p10의 리뷰·병합 허가를 아직 받지 않음 |
 
 **원격 저장소는 생성되었지만 제출 코드가 올라간 저장소는 아니다.** 이 구분은 README·PPT·최종 보고에도 유지한다. 기존 receipt2recipe·FTL 저장소에는 접근·변경하지 않았다.

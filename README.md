@@ -2,7 +2,35 @@
 
 업무요청서 6–12페이지의 1차 업무를 구현했다. Python·OpenCV·NumPy로 빨간색 검출, 이미지 전처리, 제한된 이상치 필터링을 수행한다. 모델 학습·OCR·서버·UI는 이번 범위에 포함하지 않는다.
 
-**현재 상태:** 이미지 처리 실행과 29개 자동검증 완료. 비공개 GitHub 저장소 생성과 로컬 커밋 완료. 원격 Push·PR·외부 리뷰·Merge는 미완료이며 [Git 상태와 후속 명령](docs/git_status.md)에 구별해 기록했다.
+**현재 상태:** 이미지 처리 실행과 29개 자동검증 완료. 로컬 Git 저장소와 커밋 완료. 원격 저장소 생성 여부는 본인 GitHub에서 확인해야 한다. 원격 Push·PR·외부 리뷰·Merge는 미완료이며 [Git 상태와 후속 명령](docs/git_status.md)에 구별해 기록했다.
+
+## 프로젝트 구조와 유지 이유
+
+```text
+image_preprocessing.py    # 핵심 구현: 색상 검출·전처리·이상치 판정
+requirements.txt          # 설치 의존성
+README.md                 # 실행·설계 설명
+.gitignore                # 임시 파일 제외
+.git/                     # Git 브랜치·커밋 이력 (ZIP에서 유지, GitHub PR에는 자동 비노출)
+data/
+  originals/              # Food101 원본 5장: 재현 가능한 입력
+  source_manifest.json    # 출처·SHA256 정보
+preprocessed_samples/     # PDF에 명시된 제출용 이미지 5장
+results/
+  color_detection/        # sample_02의 대표 색상 검출 사례 4장
+  demo/                   # 전처리 순서별 대표 이미지 6장
+  normalized/             # 5장 float32 학습 입력 배열 (.npy)
+  accepted/               # 이상치 필터 통과 2장 (.npy)
+  outlier_examples/       # 이상치 조건 확인용 합성 이미지 3장
+  metrics.json            # 원본 분석값·정규화 출력 요약
+  outlier_decisions.json  # 원본 5장과 합성 입력의 통과/제외 판정
+scripts/                  # Food101 다운로드·검증 재현 도구
+tests/                    # 단위 테스트 29개
+submission/               # 제출용 3장 PPT
+docs/                     # 요구사항 추적·Git·PR·검증 설명
+```
+
+중복 이미지(`color_detection`의 다른 4개 샘플)는 제출본에서 제외했다. 다만 실행하면 모든 샘플의 검출 이미지가 자동 생성된다. `docs/evidence/`의 로그와 `results/run_summary.json`도 실행할 때 새로 생성되며 Git에서 추적하지 않는다. **이미지 처리 로직 자체는 변경하지 않았다.**
 
 ## 1. 요구사항과 구현
 
@@ -13,7 +41,7 @@
 | 필수 픽셀 처리 | 이미지 로드, 중심 픽셀·채널별 평균, BGR→HSV, 빨간색 검출·필터링, 밝기 이진화 |
 | 기본 추가 | Hugging Face 이미지 5장, 224×224, Blur, 좌우 반전, 회전, 색상 변화, Grayscale, Normalize |
 | 심화 | 평균 밝기와 가장 큰 빨간 연결 영역의 비율을 계산하고 조건 미달 샘플 제외 |
-| 제출 | image_preprocessing.py, preprocessed_samples/ 5장, README, 4페이지 PPT |
+| 제출 | image_preprocessing.py, preprocessed_samples/ 5장, README, 3페이지 PPT |
 
 ## 2. 실행 환경
 
@@ -114,14 +142,14 @@ OpenCV의 uint8 HSV Hue는 **0–179**다. 빨간색은 H=0–10 또는 170–17
 
 ## 8. 검증과 재현
 
-`python -m unittest discover -s tests -v`의 실제 결과: **29 tests, OK**. 원본 SHA256, 최종 5장 디코드, 224×224 단일 채널, float32 범위, PNG↔NPY 수치 대응, Blur 확산, 반전 방향, 회전 위치, HSV 변화, 오류 입력, 색상·밝기·영역 임계값을 확인한다. 상세 실행 기록과 별도 경로 재현 비교는 [검증 기록](docs/verification.md)에 있다.
+`python -m unittest discover -s tests -v`의 실제 결과: **29 tests, OK**. 원본 SHA256, 최종 5장 디코드, 224×224 단일 채널, float32 범위, PNG↔NPY 수치 대응, Blur 확산, 반전 방향, 회전 위치, HSV 변화, 오류 입력, 색상·밝기·영역 임계값을 확인한다. 상세 실행 기록과 별도 경로 재현 비교는 [검증 방법](docs/verification.md)에 있다.
 
 재현 명령의 기본 실행은 결과 디렉터리의 알려진 생성 파일을 갱신한다. 최종 이미지 폴더에 무관한 파일이 있으면 덮어쓰지 않고 오류로 중단한다. 원본 파일 손상·변경도 SHA256으로 감지한다. 모델 정확도나 일반 객체 탐지 성능은 측정하지 않았다.
 
 ## 9. 제출 및 제한
 
-- [4페이지 발표 자료](submission/week1_report.pptx)
-- [최종 검수](docs/red_team_review.md), [요구사항 추적표](docs/requirements_traceability.md)
+- [3페이지 발표 자료](submission/week1_report.pptx)
+- [실행·검증 방법](docs/verification.md), [요구사항 추적표](docs/requirements_traceability.md)
 - [저장소](https://github.com/brightlcy/comento-week1-image-processing) — 비공개이므로 멘토에게 열람 권한이 필요하다.
 - [Git 미완료 단계와 후속 명령](docs/git_status.md), [PR 본문](docs/pr_description.md)
 
