@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "slides": 4,
+  "embedded_images": 7,
+  "image_bytes_preserved": true,
+  "all_slide_pngs_visually_inspected": true,
+  "font_declarations": "Noto Sans CJK KR Latin and East Asian explicitly declared",
+  "package_and_layout_findings": 0,
+  "native_PowerPoint_run": "NOT RUN",
+  "final_sha256": "90a83382f1f8b578bfcb787d33e7f4b2c504cc8ebb21a12baecb5311ff175aca"
+}
