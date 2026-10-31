@@ -31,7 +31,7 @@
 | 변이 검증 | 의도적 결함 6건 검출, 원본 전체 회귀 통과 | 통과 |
 | ASan·UBSan | 별도 빌드 CTest 32/32 통과 | 통과 |
 | LeakSanitizer | 로컬은 프로세스 접근 제한으로 NOT RUN이며, CI에서는 detect_leaks=1로 32/32 통과했습니다. | CI 통과 |
-| GitHub Actions 두 Job | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)에서 두 Job success를 확인했습니다. | 통과 |
+| GitHub Actions 두 Job | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)에서 두 Job success를 확인했습니다. | 통과 |
 | 기존 macOS PNG 픽셀 차이 | Linux 통과와 구분해 추적했습니다. | 미해결 |
 
 ## 최종 PPT 교체

@@ -1,6 +1,6 @@
 # 코멘토 2주차 — GoogleTest/gMock 최종 실행 검증
 
-검증일은 2026-10-31(KST)입니다. 폴더 정리 전 판정은 **LOCAL EXECUTION PASS / CI PASS**입니다. 새 구조에서는 로컬 회귀가 통과했으며 CI 재실행을 확인하고 있습니다. 구현과 실행 검증을 완료했으며, 멘토 리뷰·병합·클래스룸 최종 제출은 별도 절차입니다.
+검증일은 2026-10-31(KST)입니다. 폴더 정리 전과 후 모두 **LOCAL EXECUTION PASS / CI PASS**입니다. 새 구조의 두 CI Job도 실제로 통과했습니다. 구현과 실행 검증을 완료했으며, 멘토 리뷰·병합·클래스룸 최종 제출은 별도 절차입니다.
 
 ## 실제 실행 근거
 
@@ -12,7 +12,7 @@
 | CTest | 32/32 PASS, Exit 0 | `logs/G2_ctest_final.log`, `ctest_final.xml` |
 | 독립 smoke | 1개 실행 안의 16조건 PASS; GoogleTest가 아닙니다. | `logs/G2_ctest_baseline.log`, smoke 원본 출력 |
 | ASan + UBSan | 별도 Debug 빌드 CTest 32/32 PASS, Exit 0 | `logs/G3_ctest_sanitized.log`, `ctest_sanitized.xml` |
-| LeakSanitizer | 로컬 NOT RUN, CI에서는 `detect_leaks=1`로 CTest 32/32 PASS | `ci/run-41206106529/cpp-google-test.log` |
+| LeakSanitizer | 로컬 NOT RUN, CI에서는 `detect_leaks=1`로 CTest 32/32 PASS | `ci/run-41209580635/cpp-google-test.log` |
 | Python 회귀 | 67/67 PASS, Exit 0 (1주차 29 + 2주차 38) | `logs/G4_unittest_final.log` |
 | Python 커버리지 | 38 테스트·39 subtest PASS, 라인 141/142=99.30%, 표시 99% | `logs/G4_coverage.log`, `coverage.json` |
 | 언어 간 XYZ 비교 | 120조건·7,660개 점, float32 완전 일치 | `logs/G4_differential.log`, `differential.json` |
@@ -23,7 +23,7 @@
 | C++ 깊이 PNG | Python 깊이 PNG와 크기·픽셀 완전 일치, 512×512×3 | `cpp_python_depth_visualization.json` |
 | Git 무결성 | `git fsck --full --no-reflogs --strict`, Exit 0 | `logs/git_fsck.log` |
 | PPT | 최종 첨부본 `comento_week2.ppt` 4장, 원본과 제출본 SHA256 일치, 전 페이지 렌더링 검수 | `presentation_qa.json`, `slides/` |
-| GitHub Actions | `cpp-google-test`: **PASS**, `python-regression`: **PASS** | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529), `ci/run-41206106529/` |
+| GitHub Actions | `cpp-google-test`: **PASS**, `python-regression`: **PASS** | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635), `ci/run-41209580635/` |
 
 gMock 4개는 GoogleTest 31개에 포함됩니다. CTest 32개는 GoogleTest 31개와 독립 smoke 1개입니다. 이 항목들을 합쳐 테스트 수를 부풀리지 않았습니다. 최초 원본 21개 GoogleTest도 실제 실행하여 21/21 PASS를 확인한 뒤 10개를 추가하였습니다(`gtest_baseline.xml`).
 
@@ -100,19 +100,19 @@ python -m week2.python.image_to_3d --input data/originals/sample_02.jpg --output
 
 비교 도구는 고정 시드 20261031, 극단적 가로·세로 비율, 서로 다른 Z 배율(1e-30 포함), 점 예산, 실제 무손실 PNG 입력을 사용하였습니다. 좌표를 출력하는 실제 C++ 실행 파일과 보존한 Python 구현을 비교하였습니다. 임의 허용 오차로 맞춘 결과가 아닌 float32 완전 일치입니다.
 
-기존 결과 PNG 10장 중 9장은 새 실행과 파일 바이트까지 일치하였습니다. 산점도 PNG는 기존 689×672×4에서 현재 682×701×4로 렌더 크기가 달라졌으며, 원본을 덮어쓰지 않았습니다. 이를 수학적 좌표 불일치로 오인하거나 기존 이미지와 완전히 재현되었다고 주장하지 않았습니다. 원본 데이터·생산 코드·기존 결과 파일의 SHA256은 28개 모두 유지되었습니다.
+기존 결과 PNG 10장 중 9장은 새 실행과 파일 바이트까지 일치하였습니다. 산점도 PNG는 기존 689×672×4에서 현재 682×701×4로 렌더 크기가 달라졌으며, 원본을 덮어쓰지 않았습니다. 이를 수학적 좌표 불일치로 오인하거나 기존 이미지와 완전히 재현되었다고 주장하지 않았습니다. 정리 전에는 원본 28개의 SHA256이 모두 일치했습니다. 폴더 정리 후에는 27개가 바이트 단위로 같으며, Python 테스트 1개는 import와 mock 대상 경로만 수정했습니다.
 
 과거 Debian 실행의 150조건 언어 간 비교 및 이전 변이 검증은 `previous_20261031_debian_evidence.zip`에 보존하였습니다. 이번 실행 수치와 합산하지 않았습니다.
 
 ## G5 GitHub Actions 및 승인
 
-사용자 승인 후 `feature/week2-final-execution-20261031` 브랜치를 생성하고 검토한 자료를 원격에 반영했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)은 push 이벤트로 실제 실행되었으며 두 Job 모두 success입니다. 검증한 커밋은 `77ea2cf2ed5e312434049be9cd6f8e2fe22d53b5`입니다. 이후 제출 문서·결과 이미지·로그 반영에는 같은 테스트 코드를 사용했습니다. 최종 PR의 Checks에서도 최신 커밋 상태를 확인합니다.
+사용자 승인 후 `feature/week2-final-execution-20261031` 브랜치를 생성하고 검토한 자료를 원격에 반영했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)은 push 이벤트로 실제 실행되었으며 두 Job 모두 success입니다. 검증한 커밋은 `d805351f9b540b394bd8b5174f3d0cd6946c31b4`입니다. 이후 제출 문서·결과 이미지·로그 반영에는 같은 테스트 코드를 사용했습니다. 최종 PR의 Checks에서도 최신 커밋 상태를 확인합니다.
 
 CI 환경은 Ubuntu 24.04.5, GCC 13.3.0, CMake 3.31.6, C++ OpenCV 4.6.0, GoogleTest/gMock 1.14.0입니다. `sudo apt-get` 시스템 설치, 컴파일, GoogleTest 31개, gMock 4개, CTest 32개, Python unittest 67개, pytest 38개·39 subtest, 언어 간 비교 120조건·7,660개 점을 실제 로그로 확인했습니다. CI는 `ASAN_OPTIONS=detect_leaks=1:halt_on_error=1`로 별도 CTest 32개도 통과했습니다. 로컬의 LeakSanitizer 제한과 구분했습니다.
 
-원문 Job 로그와 기계 판독 요약은 `ci/run-41206106529/`에 보존했습니다. Actions 아티팩트 `week2-cpp-evidence`와 `week2-python-evidence`에는 XML·JUnit·버전·좌표 비교·이미지가 있습니다. 이전 `remote_snapshot.json`과 로컬 실패 로그는 실행 전의 기록으로 보존했습니다.
+원문 Job 로그와 기계 판독 요약은 `ci/run-41209580635/`에 보존했습니다. Actions 아티팩트 `week2-cpp-evidence`와 `week2-python-evidence`에는 XML·JUnit·버전·좌표 비교·이미지가 있습니다. 이전 `remote_snapshot.json`과 로컬 실패 로그는 실행 전의 기록으로 보존했습니다.
 
-터미널 Push는 인증 정보가 없어 Exit 128로 실패했고, GitHub 연결의 쓰기 요청도 403으로 차단됐습니다. 사용자가 승인한 브라우저 경로로 파일을 반영했습니다. 원격의 기존 1주차 이력을 부모로 유지했고, 최초 ZIP의 로컬 커밋 이력도 제출 ZIP에 보존했습니다. 업로드된 코드 13개와 최종 PPT의 해시가 검토본과 일치하는지 확인했습니다. 이번 2주차 작업에서는 main에 직접 Push하거나 PR을 병합하지 않았습니다. 작업 중 1주차 PR #1이 병합된 상태를 확인하여 새 PR의 base는 main으로 정했습니다. 상세한 기록은 [PUSH_PLAN.md](PUSH_PLAN.md)에 있습니다.
+터미널 Push는 인증 정보가 없어 Exit 128로 실패했고, GitHub 연결의 쓰기 요청도 403으로 차단됐습니다. 사용자가 승인한 브라우저 경로로 파일을 반영했습니다. 원격의 기존 1주차 이력을 부모로 유지했고, 최초 ZIP의 로컬 커밋 이력도 제출 ZIP에 보존했습니다. 새 구조의 코드·설정 17개와 최종 PPT가 로컬 검증본과 일치하는지 확인했습니다. 이번 2주차 작업에서는 main에 직접 Push하거나 PR을 병합하지 않았습니다. 작업 중 1주차 PR #1이 병합된 상태를 확인하여 새 PR의 base는 main으로 정했습니다. 상세한 기록은 [PUSH_PLAN.md](PUSH_PLAN.md)에 있습니다.
 
 GitHub 스킬별 실제 적용은 [SKILL_USAGE.md](SKILL_USAGE.md), 별도 AI 코드 리뷰는 [CODE_REVIEW.md](CODE_REVIEW.md)에 기록하였습니다. 멘토·동료의 외부 리뷰는 아직 수행하지 않았습니다.
 
@@ -140,3 +140,5 @@ GitHub 스킬별 실제 적용은 [SKILL_USAGE.md](SKILL_USAGE.md), 별도 AI �
 파일 이동 직후 기존 import 경로가 남아 테스트 모듈을 불러오지 못하는 오류를 실제로 재현했습니다. `week2.python.image_to_3d`로 import와 mock 경로를 수정했습니다. Python 구현 파일과 PPT는 이동 전후 바이트가 같습니다. 테스트 기대값과 생산 알고리즘은 바꾸지 않았습니다.
 
 폴더 정리 후 로컬 재검증에서 Python unittest 67/67, pytest 38개·39 subtest, CTest 32/32, 언어 간 비교 120조건·7,660개 점이 통과했습니다. 새 모듈 경로로 실제 샘플의 깊이 맵과 점 시각화도 생성했습니다. 차등 비교 도구의 첫 실행에서 잘못 지정한 `--output` 옵션 오류(Exit 2)를 별도 보존하고, 올바른 `--json` 옵션으로 재실행해 Exit 0을 확인했습니다.
+
+정리 후 CI [실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)에서도 GoogleTest 31/31, gMock 4/4, CTest 32/32, Python unittest 67/67, pytest 38개·39 subtest가 통과했습니다. ASan·UBSan은 detect_leaks=1로 32/32, 좌표 비교는 120조건·7,660개 점에서 통과했습니다. 새 원문 로그는 `../verification/ci/run-41209580635/`에 있습니다.

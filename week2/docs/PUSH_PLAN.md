@@ -10,7 +10,7 @@
 | 보존한 원격 1주차 커밋 | `ea19e846bad43211246eb854349bbcbc80292b95` |
 | 원격 main | `553f736cf83b94216bcb902bd44287617ef0ab24` — 1주차 PR 병합 후 확인한 기준입니다. |
 | 현재 1주차 PR | https://github.com/brightlcy/comento-image-processing/pull/1 — 원격에서 병합 완료를 확인했습니다. 이번 2주차 작업에서는 병합하지 않았습니다. |
-| CI | 두 Job PASS, [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529) |
+| CI | 두 Job PASS, [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635) |
 
 사용자가 PR 설명과 수정 PPT를 검토한 뒤 원격 반영과 새 PR 생성을 승인했습니다. 새 브랜치를 생성하고 두 CI Job의 실제 성공을 확인했습니다. 이번 작업에서는 main에 직접 Push하거나 1주차 브랜치를 덮어쓰지 않았습니다.
 

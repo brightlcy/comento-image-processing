@@ -2,6 +2,20 @@
 
 이미지의 픽셀 밝기를 가상 높이로 바꾸고, 변환 결과를 단위 테스트로 확인했습니다. 1주차 코드와 결과 이미지는 유지하고 2주차 작업을 `week2/`에 정리했습니다.
 
+## 폴더 구성
+
+| 폴더 | 내용 |
+|---|---|
+| `week2/python/` | Python 구현과 `tests/` 단위 테스트 |
+| `week2/cpp/` | C++ `include/`, `src/`, `tests/` |
+| `week2/docs/` | PR 설명, 요구사항 확인표, 실행·리뷰 보고서 |
+| `week2/presentation/` | 사용자가 수정한 최종 4장 PPT |
+| `week2/results/` | 깊이 맵·포인트 클라우드와 비교 이미지 |
+| `week2/verification/` | 실행 로그·XML·CI·폴더 이동 검증 기록 |
+| `week2/tools/` | 언어 간 좌표 비교와 변이 검증 도구 |
+
+Python 계산 코드와 최종 PPT는 이동 전후 내용이 같습니다. 테스트 기대값을 유지하면서 import·mock 대상·실행 명령·CI 경로를 새 구조에 맞췄습니다.
+
 ## 구현 내용
 
 512×512 BGR 이미지를 그레이스케일로 변환한 뒤 0~1로 정규화했습니다. 각 픽셀에 `(x=열, y=행, z=40×밝기)` 좌표를 부여해 총 262,144개의 점을 만들었습니다. 깊이 맵과 3차원 산점도를 저장했고, 산점도에는 가독성을 위해 일부 점을 표시했습니다. Z는 밝기를 표시한 가상 높이이므로 실제 거리 단위는 없습니다.
@@ -53,7 +67,7 @@ python week2/tools/compare_cpp_python.py --binary build/cpp/cpp_xyz_probe
 
 ## CI 확인과 남은 한계
 
-GitHub Actions의 `cpp-google-test`와 `python-regression`이 모두 통과했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)에서 컴파일 로그와 테스트 출력을 확인할 수 있습니다. CI에서도 GoogleTest 31개, gMock 호출 검증 4개, CTest 32개, Python 회귀 67개가 통과했습니다. C++와 Python의 XYZ 좌표도 120조건·7,660개 점에서 일치했습니다.
+GitHub Actions의 `cpp-google-test`와 `python-regression`이 모두 통과했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)에서 컴파일 로그와 테스트 출력을 확인할 수 있습니다. CI에서도 GoogleTest 31개, gMock 호출 검증 4개, CTest 32개, Python 회귀 67개가 통과했습니다. C++와 Python의 XYZ 좌표도 120조건·7,660개 점에서 일치했습니다.
 
 로컬에서는 프로세스 접근 제한 때문에 LeakSanitizer를 껐습니다. GitHub Actions에서는 `detect_leaks=1`로 ASan·UBSan CTest 32개를 실행해 모두 통과했습니다. 1주차 PR #1에 기록한 macOS의 PNG 픽셀 일치 실패는 여전히 미해결이며, 이번 Linux 결과와 구분했습니다.
 
