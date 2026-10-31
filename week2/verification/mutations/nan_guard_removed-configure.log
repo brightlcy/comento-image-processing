@@ -1,0 +1,12 @@
+$ cmake -S /tmp/comento-mutants-sny86k77/nan_guard_removed/cpp -B /tmp/comento-mutants-sny86k77/nan_guard_removed/build -DCOMENTO_ENABLE_GOOGLETEST=ON -DCOMENTO_REQUIRE_OPENCV_FOR_GTEST=ON
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/comento-mutants-sny86k77/nan_guard_removed/build
+
+EXIT_CODE=0

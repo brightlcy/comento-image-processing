@@ -1,0 +1,15 @@
+$ /tmp/comento-mutants-sny86k77/nan_guard_removed/build/cpp_gtests --gtest_filter=Projection.RejectsMissingAndMalformedDepth
+Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RejectsMissingAndMalformedDepth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RejectsMissingAndMalformedDepth
+[       OK ] Projection.RejectsMissingAndMalformedDepth (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+EXIT_CODE=0
