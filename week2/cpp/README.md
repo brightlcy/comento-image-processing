@@ -48,7 +48,7 @@ ctest --test-dir build/cpp-offline --output-on-failure
 - ASan/UBSan: 별도 빌드의 CTest **32/32 PASS**입니다. Work의 프로세스 접근 제한 때문에 `ASAN_OPTIONS=detect_leaks=0:halt_on_error=1`을 사용하였고 LeakSanitizer는 **NOT RUN**입니다.
 - Python 회귀: **67/67 PASS**입니다. XYZ 비교 도구는 **120조건·7,660개 좌표를 float32 완전 일치**로 확인했습니다. 서로 다른 테스트 종류를 합산하지 않았습니다.
 - 임시 복사본에서 C++ 결함 **6/6을 실제 assertion 실패로 검출**하였으며, 원본 CTest를 다시 통과시켰습니다. 생산 코드의 알고리즘은 변경하지 않았습니다.
-- GitHub Actions의 두 Job은 모두 **PASS**입니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)에 실제 로그가 있습니다. CI의 sanitizer CTest 32/32도 `detect_leaks=1`에서 통과했습니다.
+- GitHub Actions의 두 Job은 모두 **PASS**입니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)에 실제 로그가 있습니다. CI의 sanitizer CTest 32/32도 `detect_leaks=1`에서 통과했습니다.
 
 원문 로그·XML·실패 원인·정확한 실행 조건은 [`../docs/EXECUTION_STATUS.md`](../docs/EXECUTION_STATUS.md)에 있습니다. C++ 실행 검증과 두 CI Job의 성공을 확인했습니다. 멘토 리뷰와 클래스룸 제출은 별도 절차입니다. macOS의 과거 픽셀 일치 실패 역시 미해결 상태입니다.
 
