@@ -1,0 +1,70 @@
+{
+  "dataset": "ethz/food101",
+  "revision": "83488de741c1bd1ce27aa6a2b33e19c7bdf92ca9",
+  "split": "train",
+  "config": "default",
+  "rows_url": "https://datasets-server.huggingface.co/rows?dataset=ethz%2Ffood101&config=default&split=train&offset=0&length=5",
+  "source": "HF Dataset Viewer cached image bytes; no JPEG re-encoding",
+  "samples": [
+    {
+      "file": "data/originals/sample_01.jpg",
+      "row_index": 0,
+      "label_id": 6,
+      "label": "beignets",
+      "sha256": "381b7f49cbda1865a51004443700cddfb9882aed6d1e16e849f061ad70b9f360",
+      "shape": [
+        512,
+        384,
+        3
+      ]
+    },
+    {
+      "file": "data/originals/sample_02.jpg",
+      "row_index": 1,
+      "label_id": 6,
+      "label": "beignets",
+      "sha256": "83cbb3fa7a2e37513dc11e08428e450251018d4b4e46afc262249c0df8d58d75",
+      "shape": [
+        512,
+        512,
+        3
+      ]
+    },
+    {
+      "file": "data/originals/sample_03.jpg",
+      "row_index": 2,
+      "label_id": 6,
+      "label": "beignets",
+      "sha256": "4452e2861bbc3ad862d4ddeb31d809b1e70b94551e00cdbd04ce56004ae48b01",
+      "shape": [
+        383,
+        512,
+        3
+      ]
+    },
+    {
+      "file": "data/originals/sample_04.jpg",
+      "row_index": 3,
+      "label_id": 6,
+      "label": "beignets",
+      "sha256": "29ab99ffba41d24802ae1be239be1c8eb53c943449b964c340366b0527a6db07",
+      "shape": [
+        348,
+        512,
+        3
+      ]
+    },
+    {
+      "file": "data/originals/sample_05.jpg",
+      "row_index": 4,
+      "label_id": 6,
+      "label": "beignets",
+      "sha256": "6677bfd78798681a1ac5f71f915a2636409cb2a07a6166549885a574e9a417fd",
+      "shape": [
+        512,
+        512,
+        3
+      ]
+    }
+  ]
+}

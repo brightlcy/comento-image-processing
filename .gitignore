@@ -1,6 +1,7 @@
+# Local development and generated outputs
 .venv/
 __pycache__/
 *.py[cod]
 .DS_Store
-build/
-artifacts/reproduced/
+results/
+artifacts/
