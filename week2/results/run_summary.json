@@ -1,0 +1,35 @@
+{
+  "input": "data/originals/sample_02.jpg",
+  "image_shape": [
+    512,
+    512,
+    3
+  ],
+  "depth_type": "normalized grayscale intensity; not physical depth",
+  "point_count": 262144,
+  "visualizations": {
+    "original": "original.png",
+    "depth_map": "depth_map.png",
+    "point_cloud": "point_cloud.png"
+  },
+  "mentor_comparisons": {
+    "rotation": {
+      "baseline_border": "BORDER_REFLECT_101",
+      "candidate_border": "BORDER_REPLICATE",
+      "mean_absolute_pixel_delta": 2.1943982442220054,
+      "constant_zero_corner_count": 26040
+    },
+    "otsu": {
+      "bright_largest_region_ratio": 0.2910575866699219,
+      "dark_largest_region_ratio": 0.4684715270996094,
+      "selected_foreground_polarity": "UNDETERMINED (no ground truth)"
+    },
+    "preprocess_order": {
+      "old_median_ms": 1.8352640000216525,
+      "candidate_median_ms": 1.7639280000025792,
+      "mean_absolute_normalized_delta": 0.009536392986774445,
+      "candidate_adopted": false,
+      "reason": "Keep Week1 pipeline unchanged; timing and output both differ; pilot only"
+    }
+  }
+}
