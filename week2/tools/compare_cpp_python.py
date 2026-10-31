@@ -15,7 +15,7 @@ import cv2
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from week2.image_to_3d import make_depth, make_points, _sampling_step
+from week2.python.image_to_3d import make_depth, make_points, _sampling_step
 
 
 def read_points(command, payload=None):
