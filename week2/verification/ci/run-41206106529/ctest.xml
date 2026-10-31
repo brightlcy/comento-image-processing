@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="32"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="1"
+	timestamp="2026-10-31T13:34:21"
+	>
+	<testcase name="Projection.BlackWhitePixelsHaveExpectedDepth" classname="Projection.BlackWhitePixelsHaveExpectedDepth" time="0.040446" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.BlackWhitePixelsHaveExpectedDepth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.BlackWhitePixelsHaveExpectedDepth
+[       OK ] Projection.BlackWhitePixelsHaveExpectedDepth (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.RowMajorCoordinatesAreNotTransposed" classname="Projection.RowMajorCoordinatesAreNotTransposed" time="0.0406523" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RowMajorCoordinatesAreNotTransposed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RowMajorCoordinatesAreNotTransposed
+[       OK ] Projection.RowMajorCoordinatesAreNotTransposed (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.OnePixelWorks" classname="Projection.OnePixelWorks" time="0.0401108" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.OnePixelWorks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.OnePixelWorks
+[       OK ] Projection.OnePixelWorks (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.InputNotMutated" classname="Projection.InputNotMutated" time="0.0401308" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.InputNotMutated
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.InputNotMutated
+[       OK ] Projection.InputNotMutated (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.RejectsMissingAndMalformedDepth" classname="Projection.RejectsMissingAndMalformedDepth" time="0.0399691" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RejectsMissingAndMalformedDepth
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RejectsMissingAndMalformedDepth
+[       OK ] Projection.RejectsMissingAndMalformedDepth (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.RejectsInvalidScale" classname="Projection.RejectsInvalidScale" time="0.0405255" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RejectsInvalidScale
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RejectsInvalidScale
+[       OK ] Projection.RejectsInvalidScale (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.RejectsPointBudget" classname="Projection.RejectsPointBudget" time="0.0400901" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RejectsPointBudget
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RejectsPointBudget
+[       OK ] Projection.RejectsPointBudget (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.RejectsDimensionMultiplicationOverflow" classname="Projection.RejectsDimensionMultiplicationOverflow" time="0.0398054" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.RejectsDimensionMultiplicationOverflow
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.RejectsDimensionMultiplicationOverflow
+[       OK ] Projection.RejectsDimensionMultiplicationOverflow (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Projection.SmallestAndLargestFiniteFloatScales" classname="Projection.SmallestAndLargestFiniteFloatScales" time="0.0404653" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Projection.SmallestAndLargestFiniteFloatScales
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Projection
+[ RUN      ] Projection.SmallestAndLargestFiniteFloatScales
+[       OK ] Projection.SmallestAndLargestFiniteFloatScales (0 ms)
+[----------] 1 test from Projection (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.SkinnyImagesNeverExceedBudget" classname="Sampling.SkinnyImagesNeverExceedBudget" time="0.0396897" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.SkinnyImagesNeverExceedBudget
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.SkinnyImagesNeverExceedBudget
+[       OK ] Sampling.SkinnyImagesNeverExceedBudget (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.RejectsBadBudgetAndSizes" classname="Sampling.RejectsBadBudgetAndSizes" time="0.0398606" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.RejectsBadBudgetAndSizes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.RejectsBadBudgetAndSizes
+[       OK ] Sampling.RejectsBadBudgetAndSizes (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.PreservesXAndYAndBudget" classname="Sampling.PreservesXAndYAndBudget" time="0.0399999" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.PreservesXAndYAndBudget
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.PreservesXAndYAndBudget
+[       OK ] Sampling.PreservesXAndYAndBudget (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.ExactSampleCoordinatesAndHeights" classname="Sampling.ExactSampleCoordinatesAndHeights" time="0.0404703" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.ExactSampleCoordinatesAndHeights
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.ExactSampleCoordinatesAndHeights
+[       OK ] Sampling.ExactSampleCoordinatesAndHeights (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.RealLongRowAndColumnStayWithinBudget" classname="Sampling.RealLongRowAndColumnStayWithinBudget" time="0.0428279" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.RealLongRowAndColumnStayWithinBudget
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.RealLongRowAndColumnStayWithinBudget
+[       OK ] Sampling.RealLongRowAndColumnStayWithinBudget (3 ms)
+[----------] 1 test from Sampling (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch" classname="Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch" time="0.0395884" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch
+[       OK ] Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="Sampling.RejectsMalformedDepthAndNonfiniteValues" classname="Sampling.RejectsMalformedDepthAndNonfiniteValues" time="0.0406874" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = Sampling.RejectsMalformedDepthAndNonfiniteValues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Sampling
+[ RUN      ] Sampling.RejectsMalformedDepthAndNonfiniteValues
+[       OK ] Sampling.RejectsMalformedDepthAndNonfiniteValues (0 ms)
+[----------] 1 test from Sampling (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="MockSource.LoadsExactlyOnceAndConverts" classname="MockSource.LoadsExactlyOnceAndConverts" time="0.0398057" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.LoadsExactlyOnceAndConverts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MockSource
+[ RUN      ] MockSource.LoadsExactlyOnceAndConverts
+[       OK ] MockSource.LoadsExactlyOnceAndConverts (0 ms)
+[----------] 1 test from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="MockSource.PropagatesLoadFailure" classname="MockSource.PropagatesLoadFailure" time="0.0398745" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.PropagatesLoadFailure
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MockSource
+[ RUN      ] MockSource.PropagatesLoadFailure
+[       OK ] MockSource.PropagatesLoadFailure (0 ms)
+[----------] 1 test from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="MockSource.RejectsCorruptLoadedDimensions" classname="MockSource.RejectsCorruptLoadedDimensions" time="0.0401424" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.RejectsCorruptLoadedDimensions
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MockSource
+[ RUN      ] MockSource.RejectsCorruptLoadedDimensions
+[       OK ] MockSource.RejectsCorruptLoadedDimensions (0 ms)
+[----------] 1 test from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad" classname="MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad" time="0.0465211" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MockSource
+[ RUN      ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad
+[       OK ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad (0 ms)
+[----------] 1 test from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule" classname="OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule" time="0.039988" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule
+[       OK ] OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed" classname="OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed" time="0.0398005" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+[       OK ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.DepthCoordinatesMatchInputLayout" classname="OpenCvAdapter.DepthCoordinatesMatchInputLayout" time="0.039684" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.DepthCoordinatesMatchInputLayout
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.DepthCoordinatesMatchInputLayout
+[       OK ] OpenCvAdapter.DepthCoordinatesMatchInputLayout (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat" classname="OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat" time="0.0397545" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat
+[       OK ] OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.MissingImageThrows" classname="OpenCvAdapter.MissingImageThrows" time="0.0416884" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.MissingImageThrows
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.MissingImageThrows
+[ WARN:0@0.002] global ./modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/tmp/comento-gtest-204482316541-0/missing.png'): can't open/read file: check file path/integrity
+[       OK ] OpenCvAdapter.MissingImageThrows (1 ms)
+[----------] 1 test from OpenCvAdapter (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput" classname="OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput" time="0.0393558" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput
+[       OK ] OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes" classname="OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes" time="0.0393688" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes
+[       OK ] OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates" classname="OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates" time="0.0418251" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+[       OK ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates (1 ms)
+[----------] 1 test from OpenCvAdapter (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvAdapter.EmptyAndCorruptFilesReject" classname="OpenCvAdapter.EmptyAndCorruptFilesReject" time="0.0416155" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.EmptyAndCorruptFilesReject
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.EmptyAndCorruptFilesReject
+[       OK ] OpenCvAdapter.EmptyAndCorruptFilesReject (1 ms)
+[----------] 1 test from OpenCvAdapter (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvPixels.RedPixelDetectedByHueStartRange" classname="OpenCvPixels.RedPixelDetectedByHueStartRange" time="0.0400781" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvPixels.RedPixelDetectedByHueStartRange
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvPixels
+[ RUN      ] OpenCvPixels.RedPixelDetectedByHueStartRange
+[       OK ] OpenCvPixels.RedPixelDetectedByHueStartRange (0 ms)
+[----------] 1 test from OpenCvPixels (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle" classname="OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle" time="0.0407744" status="run">
+		<properties/>
+		<system-out>Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvPixels
+[ RUN      ] OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle
+[       OK ] OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle (0 ms)
+[----------] 1 test from OpenCvPixels (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+</system-out>
+	</testcase>
+	<testcase name="cpp_core_smoke" classname="cpp_core_smoke" time="0.00192444" status="run">
+		<properties/>
+		<system-out>Portable C++ smoke: 16/16 PASS (NOT GoogleTest/gMock)
+</system-out>
+	</testcase>
+</testsuite>
