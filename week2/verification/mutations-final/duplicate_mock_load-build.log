@@ -1,0 +1,13 @@
+$ cmake --build /tmp/comento-mutants-_ctnz_n0/duplicate_mock_load/build --target cpp_gtests --parallel 2
+[ 14%] Building CXX object CMakeFiles/depth_projection.dir/src/depth_projection.cpp.o
+[ 28%] Linking CXX static library libdepth_projection.a
+[ 28%] Built target depth_projection
+[ 42%] Building CXX object CMakeFiles/opencv_depth_source.dir/src/opencv_depth_source.cpp.o
+[ 57%] Linking CXX static library libopencv_depth_source.a
+[ 57%] Built target opencv_depth_source
+[ 71%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o
+[ 85%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o
+[100%] Linking CXX executable cpp_gtests
+[100%] Built target cpp_gtests
+
+EXIT_CODE=0
