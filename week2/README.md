@@ -72,7 +72,7 @@ python -m pytest week2/python/tests/test_image_to_3d.py -q --cov=week2.python.im
 | C++↔Python XYZ | 합성 및 PNG 120조건, 좌표 7,660개 float32 완전 일치 | `verification/differential.json` |
 | C++ 변이 검증 | 임시 복사본의 의도적 결함 6/6 검출, 이후 원본 CTest PASS | `verification/mutations-final/summary.json` |
 | 원본 보존 | 폴더 정리 전 28개 SHA256 일치; 정리 후 27개 바이트 동일·Python 테스트 1개는 import 경로만 수정 | `verification/preserved_after.json` |
-| GitHub Actions | `cpp-google-test`, `python-regression` 모두 **PASS** | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529) |
+| GitHub Actions | `cpp-google-test`, `python-regression` 모두 **PASS** | [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635) |
 
 gMock 4개는 GoogleTest 31개에 포함됩니다. CTest 32개는 GoogleTest 31개와 독립 smoke 실행 1개입니다. smoke 내부의 16개 조건은 GoogleTest로 집계하지 않았습니다.
 
