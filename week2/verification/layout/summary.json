@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_PASS_CI_PENDING",
+  "status": "LOCAL_AND_CI_PASS",
   "unittest": {
     "passed": 67,
     "week1": 29,
@@ -1334,5 +1334,7 @@
   "broken_markdown_links": [],
   "integrity": "preserved_files.json",
   "path_error_reproduction": "python_before_import_update.log",
-  "command_option_error": "differential_option_error.log"
+  "command_option_error": "differential_option_error.log",
+  "ci_run_url": "https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635",
+  "ci_head_sha": "d805351f9b540b394bd8b5174f3d0cd6946c31b4"
 }
