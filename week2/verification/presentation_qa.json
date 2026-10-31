@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "final_file": "week2/comento_week2.ppt",
+  "format": "PowerPoint 97-2003 OLE binary",
+  "source_sha256": "80a0fbb73475a57e380266b301b8c2db6569d257a1f39ab4aff9ae78975924d5",
+  "final_sha256": "80a0fbb73475a57e380266b301b8c2db6569d257a1f39ab4aff9ae78975924d5",
+  "source_bytes_unchanged": true,
+  "slides": 4,
+  "all_slides_visually_reviewed": true,
+  "displayed_images_seen": 7,
+  "method": "read-only LibreOffice PDF conversion and Poppler PNG rendering",
+  "contents_rewritten": false,
+  "test_count_matches_execution_evidence": true,
+  "native_Microsoft_PowerPoint_open": "NOT RUN",
+  "previous_pptx_validation_location": "previous_presentation/"
+}

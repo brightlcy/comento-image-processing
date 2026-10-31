@@ -1,0 +1,67 @@
+{
+  "overall": "LOCAL_AND_CI_EXECUTION_PASS_REVIEW_PENDING",
+  "date_kst": "2026-10-31",
+  "google_test": {
+    "found": 31,
+    "run": 31,
+    "passed": 31,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "gmock": {
+    "passed": 4,
+    "subset_of_google_test": true,
+    "exact_argument_matches": 4
+  },
+  "ctest": {
+    "passed": 32,
+    "total": 32,
+    "exit_code": 0,
+    "smoke_executables": 1
+  },
+  "sanitizers": {
+    "asan_ubsan_ctest_passed": 32,
+    "total": 32,
+    "detect_leaks": false,
+    "leak_sanitizer": "NOT RUN"
+  },
+  "python": {
+    "passed": 67,
+    "total": 67,
+    "week1": 29,
+    "week2": 38,
+    "covered_lines": 141,
+    "statements": 142
+  },
+  "differential": {
+    "cases": 120,
+    "point_rows": 7660,
+    "comparison": "exact float32"
+  },
+  "mutations": {
+    "detected": 6,
+    "total": 6,
+    "initial_equivalent_mutant_attempt_preserved": true
+  },
+  "preserved_files": 28,
+  "ci": {
+    "cpp-google-test": "PASS",
+    "python-regression": "PASS",
+    "run_id": 41206106529,
+    "run_url": "https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529",
+    "head_sha": "77ea2cf2ed5e312434049be9cd6f8e2fe22d53b5",
+    "asan_ubsan_ctest_passed": 32,
+    "detect_leaks": true,
+    "receipt": "ci/run-41206106529/receipt.json"
+  },
+  "macos_pixel_difference": "UNRESOLVED",
+  "native_powerpoint": "NOT RUN",
+  "submission": {
+    "remote_branch": "feature/week2-final-execution-20261031",
+    "base": "feature/image-processing",
+    "mentor_review": "PENDING",
+    "merge": "NOT PERFORMED",
+    "classroom_submission": "PENDING"
+  }
+}
