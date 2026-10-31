@@ -1,0 +1,16 @@
+{
+  "command": [
+    "env",
+    "ASAN_OPTIONS=detect_leaks=0:halt_on_error=1",
+    "UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1",
+    "cmake",
+    "--build",
+    "build/cpp-sanitized",
+    "--parallel",
+    "2"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:17:38.919437+00:00",
+  "duration_seconds": 1.32,
+  "exit_code": 0
+}

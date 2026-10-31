@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    ".",
+    "-p",
+    "test*.py",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T06:01:03.886557+00:00",
+  "duration_seconds": 2.012,
+  "exit_code": 0
+}

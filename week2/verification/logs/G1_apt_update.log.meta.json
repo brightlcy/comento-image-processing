@@ -1,0 +1,16 @@
+{
+  "command": [
+    "apt-get",
+    "-o",
+    "Acquire::Retries=0",
+    "-o",
+    "Acquire::http::Timeout=15",
+    "-o",
+    "Acquire::https::Timeout=15",
+    "update"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea",
+  "started_utc": "2026-10-31T05:08:46.384807+00:00",
+  "duration_seconds": 0.084,
+  "exit_code": 100
+}

@@ -1,0 +1,78 @@
+$ cmake --build build/cpp-sanitized --parallel 2
+[  7%] Building CXX object CMakeFiles/depth_projection.dir/src/depth_projection.cpp.o
+[ 15%] Linking CXX static library libdepth_projection.a
+[ 15%] Built target depth_projection
+[ 23%] Building CXX object CMakeFiles/cpp_core_smoke.dir/tests/core_smoke.cpp.o
+[ 30%] Building CXX object CMakeFiles/opencv_depth_source.dir/src/opencv_depth_source.cpp.o
+[ 38%] Linking CXX executable cpp_core_smoke
+[ 38%] Built target cpp_core_smoke
+[ 46%] Linking CXX static library libopencv_depth_source.a
+[ 46%] Built target opencv_depth_source
+[ 53%] Building CXX object CMakeFiles/cpp_depth_demo.dir/src/depth_demo.cpp.o
+[ 61%] Building CXX object CMakeFiles/cpp_xyz_probe.dir/tests/xyz_probe.cpp.o
+[ 69%] Linking CXX executable cpp_depth_demo
+[ 76%] Linking CXX executable cpp_xyz_probe
+[ 76%] Built target cpp_depth_demo
+[ 84%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o
+[ 84%] Built target cpp_xyz_probe
+[ 92%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o
+[100%] Linking CXX executable cpp_gtests
+==168==Can't open /proc/167/task for reading.
+==167==LeakSanitizer has encountered a fatal error.
+==167==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1
+==167==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)
+CMake Error at /workspace/scratch/e487502bcbea/_deps/usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake:112 (message):
+  Error running test executable.
+
+    Path: '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp-sanitized/cpp_gtests'
+    Result: 1
+    Output:
+      Running main() from gmock_main.cc
+      Projection.
+        BlackWhitePixelsHaveExpectedDepth
+        RowMajorCoordinatesAreNotTransposed
+        OnePixelWorks
+        InputNotMutated
+        RejectsMissingAndMalformedDepth
+        RejectsInvalidScale
+        RejectsPointBudget
+        RejectsDimensionMultiplicationOverflow
+        SmallestAndLargestFiniteFloatScales
+      Sampling.
+        SkinnyImagesNeverExceedBudget
+        RejectsBadBudgetAndSizes
+        PreservesXAndYAndBudget
+        ExactSampleCoordinatesAndHeights
+        RealLongRowAndColumnStayWithinBudget
+        SizeMaxDimensionsDoNotOverflowStrideSearch
+        RejectsMalformedDepthAndNonfiniteValues
+      MockSource.
+        LoadsExactlyOnceAndConverts
+        PropagatesLoadFailure
+        RejectsCorruptLoadedDimensions
+        RejectsNonfiniteLoadedIntensityAfterOneLoad
+      OpenCvAdapter.
+        OneByTwoBlackAndWhiteBgrMatchesPythonRule
+        KnownBlueBgrPixelNotMistakenForRed
+        DepthCoordinatesMatchInputLayout
+        RejectsUnsupportedTypesAndEmptyMat
+        MissingImageThrows
+        NonContinuousRoiUsesRowStrideAndPreservesInput
+        RejectsVolumeAndAdditionalChannelTypes
+        ActualPngLoadPreservesPixelsAndProjectsCoordinates
+        EmptyAndCorruptFilesReject
+      OpenCvPixels.
+        RedPixelDetectedByHueStartRange
+        OtsuBinarySeparatesKnownLightRectangle
+      
+
+Call Stack (most recent call first):
+  /workspace/scratch/e487502bcbea/_deps/usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake:225 (gtest_discover_tests_impl)
+
+
+gmake[2]: *** [CMakeFiles/cpp_gtests.dir/build.make:123: cpp_gtests] Error 1
+gmake[2]: *** Deleting file 'cpp_gtests'
+gmake[1]: *** [CMakeFiles/Makefile2:226: CMakeFiles/cpp_gtests.dir/all] Error 2
+gmake: *** [Makefile:101: all] Error 2
+
+EXIT_CODE=2

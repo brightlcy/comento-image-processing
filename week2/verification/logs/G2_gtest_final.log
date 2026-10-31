@@ -1,0 +1,87 @@
+$ ./build/cpp/cpp_gtests --gtest_output=xml:/workspace/scratch/e487502bcbea/evidence/gtest_final.xml
+Running main() from gmock_main.cc
+[==========] Running 31 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 9 tests from Projection
+[ RUN      ] Projection.BlackWhitePixelsHaveExpectedDepth
+[       OK ] Projection.BlackWhitePixelsHaveExpectedDepth (0 ms)
+[ RUN      ] Projection.RowMajorCoordinatesAreNotTransposed
+[       OK ] Projection.RowMajorCoordinatesAreNotTransposed (0 ms)
+[ RUN      ] Projection.OnePixelWorks
+[       OK ] Projection.OnePixelWorks (0 ms)
+[ RUN      ] Projection.InputNotMutated
+[       OK ] Projection.InputNotMutated (0 ms)
+[ RUN      ] Projection.RejectsMissingAndMalformedDepth
+[       OK ] Projection.RejectsMissingAndMalformedDepth (0 ms)
+[ RUN      ] Projection.RejectsInvalidScale
+[       OK ] Projection.RejectsInvalidScale (0 ms)
+[ RUN      ] Projection.RejectsPointBudget
+[       OK ] Projection.RejectsPointBudget (0 ms)
+[ RUN      ] Projection.RejectsDimensionMultiplicationOverflow
+[       OK ] Projection.RejectsDimensionMultiplicationOverflow (0 ms)
+[ RUN      ] Projection.SmallestAndLargestFiniteFloatScales
+[       OK ] Projection.SmallestAndLargestFiniteFloatScales (0 ms)
+[----------] 9 tests from Projection (0 ms total)
+
+[----------] 7 tests from Sampling
+[ RUN      ] Sampling.SkinnyImagesNeverExceedBudget
+[       OK ] Sampling.SkinnyImagesNeverExceedBudget (0 ms)
+[ RUN      ] Sampling.RejectsBadBudgetAndSizes
+[       OK ] Sampling.RejectsBadBudgetAndSizes (0 ms)
+[ RUN      ] Sampling.PreservesXAndYAndBudget
+[       OK ] Sampling.PreservesXAndYAndBudget (0 ms)
+[ RUN      ] Sampling.ExactSampleCoordinatesAndHeights
+[       OK ] Sampling.ExactSampleCoordinatesAndHeights (0 ms)
+[ RUN      ] Sampling.RealLongRowAndColumnStayWithinBudget
+[       OK ] Sampling.RealLongRowAndColumnStayWithinBudget (3 ms)
+[ RUN      ] Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch
+[       OK ] Sampling.SizeMaxDimensionsDoNotOverflowStrideSearch (0 ms)
+[ RUN      ] Sampling.RejectsMalformedDepthAndNonfiniteValues
+[       OK ] Sampling.RejectsMalformedDepthAndNonfiniteValues (0 ms)
+[----------] 7 tests from Sampling (3 ms total)
+
+[----------] 4 tests from MockSource
+[ RUN      ] MockSource.LoadsExactlyOnceAndConverts
+[       OK ] MockSource.LoadsExactlyOnceAndConverts (0 ms)
+[ RUN      ] MockSource.PropagatesLoadFailure
+[       OK ] MockSource.PropagatesLoadFailure (0 ms)
+[ RUN      ] MockSource.RejectsCorruptLoadedDimensions
+[       OK ] MockSource.RejectsCorruptLoadedDimensions (0 ms)
+[ RUN      ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad
+[       OK ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad (0 ms)
+[----------] 4 tests from MockSource (0 ms total)
+
+[----------] 9 tests from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule
+[       OK ] OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule (0 ms)
+[ RUN      ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+[       OK ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed (0 ms)
+[ RUN      ] OpenCvAdapter.DepthCoordinatesMatchInputLayout
+[       OK ] OpenCvAdapter.DepthCoordinatesMatchInputLayout (0 ms)
+[ RUN      ] OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat
+[       OK ] OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat (0 ms)
+[ RUN      ] OpenCvAdapter.MissingImageThrows
+[ WARN:0@0.007] global ./modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/tmp/comento-gtest-2036158110966-0/missing.png'): can't open/read file: check file path/integrity
+[       OK ] OpenCvAdapter.MissingImageThrows (2 ms)
+[ RUN      ] OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput
+[       OK ] OpenCvAdapter.NonContinuousRoiUsesRowStrideAndPreservesInput (0 ms)
+[ RUN      ] OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes
+[       OK ] OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes (0 ms)
+[ RUN      ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+[       OK ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates (0 ms)
+[ RUN      ] OpenCvAdapter.EmptyAndCorruptFilesReject
+[       OK ] OpenCvAdapter.EmptyAndCorruptFilesReject (0 ms)
+[----------] 9 tests from OpenCvAdapter (3 ms total)
+
+[----------] 2 tests from OpenCvPixels
+[ RUN      ] OpenCvPixels.RedPixelDetectedByHueStartRange
+[       OK ] OpenCvPixels.RedPixelDetectedByHueStartRange (0 ms)
+[ RUN      ] OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle
+[       OK ] OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle (0 ms)
+[----------] 2 tests from OpenCvPixels (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 31 tests from 5 test suites ran. (7 ms total)
+[  PASSED  ] 31 tests.
+
+EXIT_CODE=0

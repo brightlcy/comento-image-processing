@@ -1,0 +1,4 @@
+$ ./build/cpp/cpp_depth_demo data/originals/sample_02.jpg /workspace/scratch/e487502bcbea/evidence/depth_cpp.png
+points=262144, width=512, height=512, first_z=36.2353
+
+EXIT_CODE=0

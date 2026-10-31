@@ -1,0 +1,31 @@
+{
+  "command": [
+    "env",
+    "DEBIAN_FRONTEND=noninteractive",
+    "apt-get",
+    "-o",
+    "APT::Sandbox::User=root",
+    "-o",
+    "Dir::Cache::archives=/workspace/scratch/e487502bcbea/_apt_cache",
+    "-o",
+    "Acquire::Retries=0",
+    "-o",
+    "Acquire::http::Timeout=20",
+    "-o",
+    "Acquire::https::Timeout=20",
+    "install",
+    "-y",
+    "--no-install-recommends",
+    "g++",
+    "cmake",
+    "ninja-build",
+    "libopencv-dev",
+    "libgtest-dev",
+    "libgmock-dev",
+    "fonts-noto-cjk"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea",
+  "started_utc": "2026-10-31T05:10:45.898146+00:00",
+  "duration_seconds": 0.014,
+  "exit_code": 100
+}

@@ -1,0 +1,9 @@
+{
+  "command": [
+    "./build/cpp/cpp_core_smoke"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:29:44.478670+00:00",
+  "duration_seconds": 0.003,
+  "exit_code": 0
+}

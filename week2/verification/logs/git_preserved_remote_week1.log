@@ -1,0 +1,3 @@
+$ git diff --exit-code origin/feature/image-processing -- image_preprocessing.py test_image_preprocessing.py requirements.txt data preprocessed_samples 1week.ppt
+
+EXIT_CODE=0

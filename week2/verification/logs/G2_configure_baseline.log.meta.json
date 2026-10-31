@@ -1,0 +1,15 @@
+{
+  "command": [
+    "cmake",
+    "-S",
+    "week2/cpp",
+    "-B",
+    "build/cpp",
+    "-DCOMENTO_ENABLE_GOOGLETEST=ON",
+    "-DCOMENTO_REQUIRE_OPENCV_FOR_GTEST=ON"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:13:01.653340+00:00",
+  "duration_seconds": 0.823,
+  "exit_code": 0
+}

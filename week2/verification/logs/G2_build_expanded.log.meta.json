@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cmake",
+    "--build",
+    "build/cpp",
+    "--parallel",
+    "2",
+    "--verbose"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:14:52.395935+00:00",
+  "duration_seconds": 3.018,
+  "exit_code": 0
+}

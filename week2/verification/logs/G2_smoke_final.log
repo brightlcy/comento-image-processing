@@ -1,0 +1,4 @@
+$ ./build/cpp/cpp_core_smoke
+Portable C++ smoke: 16/16 PASS (NOT GoogleTest/gMock)
+
+EXIT_CODE=0

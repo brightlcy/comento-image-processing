@@ -1,0 +1,53 @@
+$ .venv/bin/python week2/tools/check_cpp_mutations.py --output-dir /workspace/scratch/e487502bcbea/evidence/mutations-final
+sample_xy_swap: DETECTED (expected RED)
+bgr_rgb_swap: DETECTED (expected RED)
+volume_guard_removed: DETECTED (expected RED)
+loader_always_throws: DETECTED (expected RED)
+duplicate_mock_load: DETECTED (expected RED)
+nonfinite_guards_removed: DETECTED (expected RED)
+{
+  "status": "PASS",
+  "mutants": 6,
+  "detected": 6,
+  "production_files_modified": false,
+  "details": [
+    {
+      "mutation": "sample_xy_swap",
+      "filter": "Sampling.ExactSampleCoordinatesAndHeights",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "bgr_rgb_swap",
+      "filter": "OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "volume_guard_removed",
+      "filter": "OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "loader_always_throws",
+      "filter": "OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "duplicate_mock_load",
+      "filter": "MockSource.LoadsExactlyOnceAndConverts",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "nonfinite_guards_removed",
+      "filter": "Projection.RejectsMissingAndMalformedDepth",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    }
+  ]
+}
+
+EXIT_CODE=0

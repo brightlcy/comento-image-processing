@@ -1,0 +1,15 @@
+$ .venv/bin/python week2/tools/check_cpp_mutations.py --output-dir /workspace/scratch/e487502bcbea/evidence/mutations
+sample_xy_swap: DETECTED (expected RED)
+bgr_rgb_swap: DETECTED (expected RED)
+volume_guard_removed: DETECTED (expected RED)
+loader_always_throws: DETECTED (expected RED)
+duplicate_mock_load: DETECTED (expected RED)
+nan_guard_removed: NOT DETECTED
+Traceback (most recent call last):
+  File "/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/tools/check_cpp_mutations.py", line 85, in <module>
+    main()
+  File "/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/tools/check_cpp_mutations.py", line 76, in main
+    raise AssertionError(f'Mutation did not fail the expected assertion: {name}')
+AssertionError: Mutation did not fail the expected assertion: nan_guard_removed
+
+EXIT_CODE=1

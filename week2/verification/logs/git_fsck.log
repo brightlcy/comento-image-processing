@@ -1,0 +1,4 @@
+$ git -C /workspace/scratch/e487502bcbea/project/comento-image-processing fsck --full --no-reflogs --strict
+dangling tree d94eae3cdc0b7162794035ef2e09aaa10a8dd266
+
+EXIT_CODE=0

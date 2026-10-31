@@ -1,0 +1,40 @@
+$ ./build/cpp/cpp_gtests --gtest_list_tests
+Running main() from gmock_main.cc
+Projection.
+  BlackWhitePixelsHaveExpectedDepth
+  RowMajorCoordinatesAreNotTransposed
+  OnePixelWorks
+  InputNotMutated
+  RejectsMissingAndMalformedDepth
+  RejectsInvalidScale
+  RejectsPointBudget
+  RejectsDimensionMultiplicationOverflow
+  SmallestAndLargestFiniteFloatScales
+Sampling.
+  SkinnyImagesNeverExceedBudget
+  RejectsBadBudgetAndSizes
+  PreservesXAndYAndBudget
+  ExactSampleCoordinatesAndHeights
+  RealLongRowAndColumnStayWithinBudget
+  SizeMaxDimensionsDoNotOverflowStrideSearch
+  RejectsMalformedDepthAndNonfiniteValues
+MockSource.
+  LoadsExactlyOnceAndConverts
+  PropagatesLoadFailure
+  RejectsCorruptLoadedDimensions
+  RejectsNonfiniteLoadedIntensityAfterOneLoad
+OpenCvAdapter.
+  OneByTwoBlackAndWhiteBgrMatchesPythonRule
+  KnownBlueBgrPixelNotMistakenForRed
+  DepthCoordinatesMatchInputLayout
+  RejectsUnsupportedTypesAndEmptyMat
+  MissingImageThrows
+  NonContinuousRoiUsesRowStrideAndPreservesInput
+  RejectsVolumeAndAdditionalChannelTypes
+  ActualPngLoadPreservesPixelsAndProjectsCoordinates
+  EmptyAndCorruptFilesReject
+OpenCvPixels.
+  RedPixelDetectedByHueStartRange
+  OtsuBinarySeparatesKnownLightRectangle
+
+EXIT_CODE=0

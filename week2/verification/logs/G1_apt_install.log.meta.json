@@ -1,0 +1,6 @@
+{
+  "status": "INTERRUPTED",
+  "tool_session_exit_code": 130,
+  "reason": "system apt archive writes denied; switched to workspace download/extraction",
+  "not_a_code_failure": true
+}
