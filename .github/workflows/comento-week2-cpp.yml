@@ -87,11 +87,11 @@ jobs:
       - name: Run complete Python regression suite
         run: python -m unittest discover -s . -p 'test*.py' -v 2>&1 | tee artifacts/ci-python/unittest.log
       - name: Week 2 coverage
-        run: python -m pytest week2/test_image_to_3d.py -q --cov=week2.image_to_3d --cov-report=term-missing --cov-report=json:artifacts/ci-python/coverage.json 2>&1 | tee artifacts/ci-python/coverage.log
+        run: python -m pytest week2/python/tests/test_image_to_3d.py -q --cov=week2.python.image_to_3d --cov-report=term-missing --cov-report=json:artifacts/ci-python/coverage.json 2>&1 | tee artifacts/ci-python/coverage.log
       - name: Reproduce visualizations in a separate folder
         env:
           MPLBACKEND: Agg
-        run: python -m week2.image_to_3d --input data/originals/sample_02.jpg --output-dir artifacts/ci-python/reproduced 2>&1 | tee artifacts/ci-python/visualizations.log
+        run: python -m week2.python.image_to_3d --input data/originals/sample_02.jpg --output-dir artifacts/ci-python/reproduced 2>&1 | tee artifacts/ci-python/visualizations.log
       - name: Preserve Python logs on success or failure
         if: always()
         uses: actions/upload-artifact@v4
