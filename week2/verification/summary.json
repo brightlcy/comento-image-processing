@@ -1,5 +1,5 @@
 {
-  "overall": "LAYOUT_LOCAL_PASS_CI_PENDING",
+  "overall": "LAYOUT_LOCAL_AND_CI_PASS_REVIEW_PENDING",
   "date_kst": "2026-10-31",
   "google_test": {
     "found": 31,
@@ -44,12 +44,16 @@
     "total": 6,
     "initial_equivalent_mutant_attempt_preserved": true
   },
-  "preserved_files": 28,
+  "preserved_files": 27,
   "ci": {
-    "cpp-google-test": "NOT RUN",
-    "python-regression": "NOT RUN",
-    "run_url": null,
-    "note": "Directory reorganization requires a fresh CI run."
+    "cpp-google-test": "PASS",
+    "python-regression": "PASS",
+    "run_id": 41209580635,
+    "run_url": "https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635",
+    "head_sha": "d805351f9b540b394bd8b5174f3d0cd6946c31b4",
+    "asan_ubsan_ctest_passed": 32,
+    "detect_leaks": true,
+    "receipt": "ci/run-41209580635/receipt.json"
   },
   "macos_pixel_difference": "UNRESOLVED",
   "native_powerpoint": "NOT RUN",
@@ -77,5 +81,8 @@
     "presentation": "week2/presentation/comento_week2.ppt",
     "verification": "week2/verification/",
     "local_summary": "layout/summary.json"
-  }
+  },
+  "preserved_original_files_total": 28,
+  "test_import_path_only_files": 1,
+  "preservation_details": "layout/preserved_files.json"
 }
