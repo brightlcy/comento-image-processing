@@ -47,6 +47,14 @@ python -m unittest discover -v
 
 ## Git 제출
 
-저장소: [brightlcy/comento-week1-image-processing](https://github.com/brightlcy/comento-week1-image-processing)
+저장소: [brightlcy/comento-image-processing](https://github.com/brightlcy/comento-image-processing)
 
-`feature/image-processing`에서 `main`을 대상으로 Pull Request를 제출한다. 멘토의 코드 리뷰와 승인 전에는 병합하지 않는다. 저장소와 PR은 공개되어 있어 링크로 열람할 수 있다.
+1주차 [PR #1](https://github.com/brightlcy/comento-image-processing/pull/1)이 `feature/image-processing` → `main`으로 열려 있다(아직 Merge 전). 이 PR에는 macOS에서 PNG 픽셀 정확 일치 테스트 1개가 실패했다는 검증 기록이 포함돼 있다.
+
+## 2주차
+
+[2주차 README](week2/README.md)에 2D→2.5D 변환 방법, 멘토 피드백 비교와 실제 실행 근거를 정리하였습니다. 2026-10-31 Ubuntu 24.04에서 C++ GoogleTest **31/31**, gMock 호출 검증 **4/4**(31개에 포함), CTest **32/32**, Python 회귀 **67/67**을 통과하였습니다. 기존 Python 코드와 결과 파일은 보존하였습니다.
+
+최종 발표 자료는 [comento_week2.ppt](week2/comento_week2.ppt)입니다. 사용자가 수정한 원본을 그대로 반영했습니다.
+
+브랜치는 `feature/week2-final-execution-20261031`입니다. PR 설명 검토 전이므로 원격 Push와 2주차 PR 생성은 아직 수행하지 않았습니다. **GitHub Actions는 NOT RUN**이며, macOS의 과거 픽셀 일치 실패도 남아 있습니다. 멘토 리뷰와 사용자 승인 전에는 병합하지 않습니다.

@@ -3,5 +3,13 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+build/
 results/
 artifacts/
+
+# Test coverage artifacts
+.coverage
+.pytest_cache/
+
+# Keep reviewed Week 2 result images and execution summary in the PR
+!/week2/results/
