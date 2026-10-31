@@ -1,0 +1,101 @@
+name: Comento Week 2 C++ GoogleTest and Python
+on:
+  push:
+    branches: ["feature/week2-**"]
+  pull_request:
+    paths:
+      - "week2/**"
+      - ".github/workflows/comento-week2-cpp.yml"
+      - "image_preprocessing.py"
+      - "test_image_preprocessing.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  cpp-google-test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OpenCV C++ and GoogleTest/gMock dependencies
+        run: |
+          mkdir -p artifacts/ci-cpp
+          sudo apt-get update 2>&1 | tee artifacts/ci-cpp/apt-update.log
+          sudo apt-get install -y g++ cmake ninja-build libopencv-dev libgtest-dev libgmock-dev 2>&1 | tee artifacts/ci-cpp/apt-install.log
+      - name: Record compiler and dependency versions
+        run: |
+          {
+            g++ --version
+            cmake --version
+            pkg-config --modversion opencv4 gtest gmock
+            dpkg-query -W libopencv-dev libgtest-dev libgmock-dev
+            dpkg-query -L libgtest-dev libgmock-dev
+          } 2>&1 | tee artifacts/ci-cpp/versions.log
+      - name: Configure C++ with required OpenCV tests
+        run: cmake -S week2/cpp -B build/cpp -DCOMENTO_ENABLE_GOOGLETEST=ON -DCOMENTO_REQUIRE_OPENCV_FOR_GTEST=ON 2>&1 | tee artifacts/ci-cpp/configure.log
+      - name: Build
+        run: cmake --build build/cpp --parallel 2 --verbose 2>&1 | tee artifacts/ci-cpp/build.log
+      - name: List and run real GoogleTest tests
+        run: |
+          ./build/cpp/cpp_gtests --gtest_list_tests 2>&1 | tee artifacts/ci-cpp/gtest-list.log
+          ./build/cpp/cpp_gtests --gtest_output=xml:artifacts/ci-cpp/gtest.xml 2>&1 | tee artifacts/ci-cpp/gtest.log
+          ./build/cpp/cpp_gtests --gmock_verbose=info --gtest_filter='MockSource.*' 2>&1 | tee artifacts/ci-cpp/gmock-calls.log
+      - name: Run full CTest regression
+        run: ctest --test-dir build/cpp --output-on-failure --output-junit "$GITHUB_WORKSPACE/artifacts/ci-cpp/ctest.xml" 2>&1 | tee artifacts/ci-cpp/ctest.log
+      - name: Run OpenCV C++ demo on preserved sample
+        run: |
+          ./build/cpp/cpp_depth_demo data/originals/sample_02.jpg artifacts/ci-cpp/depth_cpp.png 2>&1 | tee artifacts/ci-cpp/demo.log
+          test -s artifacts/ci-cpp/depth_cpp.png
+      - name: C++ and Python coordinate comparison
+        run: |
+          python -m pip install -r week2/requirements.txt 2>&1 | tee artifacts/ci-cpp/pip.log
+          python week2/tools/compare_cpp_python.py --binary build/cpp/cpp_xyz_probe --json artifacts/ci-cpp/differential.json 2>&1 | tee artifacts/ci-cpp/differential.log
+      - name: AddressSanitizer and UndefinedBehaviorSanitizer
+        run: |
+          cmake -S week2/cpp -B build/cpp-sanitized -DCOMENTO_ENABLE_GOOGLETEST=ON -DCOMENTO_REQUIRE_OPENCV_FOR_GTEST=ON -DCMAKE_BUILD_TYPE=Debug '-DCMAKE_CXX_FLAGS=-fsanitize=address,undefined -fno-omit-frame-pointer -fno-pie' '-DCMAKE_EXE_LINKER_FLAGS=-fsanitize=address,undefined -no-pie' 2>&1 | tee artifacts/ci-cpp/sanitizer-configure.log
+          cmake --build build/cpp-sanitized --parallel 2 2>&1 | tee artifacts/ci-cpp/sanitizer-build.log
+          ASAN_OPTIONS=detect_leaks=1:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1 ctest --test-dir build/cpp-sanitized --output-on-failure 2>&1 | tee artifacts/ci-cpp/sanitizer-ctest.log
+      - name: Preserve C++ logs on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: week2-cpp-evidence
+          path: |
+            artifacts/ci-cpp/
+            build/cpp/Testing/Temporary/
+            build/cpp-sanitized/Testing/Temporary/
+          if-no-files-found: warn
+  python-regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python dependencies
+        run: |
+          mkdir -p artifacts/ci-python
+          python -m pip install -r week2/requirements.txt 2>&1 | tee artifacts/ci-python/pip.log
+          python -m pip freeze > artifacts/ci-python/versions.txt
+      - name: Run complete Python regression suite
+        run: python -m unittest discover -s . -p 'test*.py' -v 2>&1 | tee artifacts/ci-python/unittest.log
+      - name: Week 2 coverage
+        run: python -m pytest week2/test_image_to_3d.py -q --cov=week2.image_to_3d --cov-report=term-missing --cov-report=json:artifacts/ci-python/coverage.json 2>&1 | tee artifacts/ci-python/coverage.log
+      - name: Reproduce visualizations in a separate folder
+        env:
+          MPLBACKEND: Agg
+        run: python -m week2.image_to_3d --input data/originals/sample_02.jpg --output-dir artifacts/ci-python/reproduced 2>&1 | tee artifacts/ci-python/visualizations.log
+      - name: Preserve Python logs on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: week2-python-evidence
+          path: artifacts/ci-python/
+          if-no-files-found: warn
