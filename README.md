@@ -49,12 +49,14 @@ python -m unittest discover -v
 
 저장소: [brightlcy/comento-image-processing](https://github.com/brightlcy/comento-image-processing)
 
-1주차 [PR #1](https://github.com/brightlcy/comento-image-processing/pull/1)이 `feature/image-processing` → `main`으로 열려 있다(아직 Merge 전). 이 PR에는 macOS에서 PNG 픽셀 정확 일치 테스트 1개가 실패했다는 검증 기록이 포함돼 있다.
+1주차 [PR #1](https://github.com/brightlcy/comento-image-processing/pull/1)은 `main`에 병합되었습니다. 해당 PR의 macOS PNG 픽셀 완전 일치 실패 기록은 그대로 보존했습니다.
 
 ## 2주차
 
 [2주차 README](week2/README.md)에 2D→2.5D 변환 방법, 멘토 피드백 비교와 실제 실행 근거를 정리하였습니다. 2026-10-31 Ubuntu 24.04에서 C++ GoogleTest **31/31**, gMock 호출 검증 **4/4**(31개에 포함), CTest **32/32**, Python 회귀 **67/67**을 통과하였습니다. 기존 Python 코드와 결과 파일은 보존하였습니다.
 
-최종 발표 자료는 [comento_week2.ppt](week2/comento_week2.ppt)입니다. 사용자가 수정한 원본을 그대로 반영했습니다.
+최종 발표 자료는 [comento_week2.ppt](week2/presentation/comento_week2.ppt)입니다. 사용자가 수정한 원본을 그대로 반영했습니다.
 
 2주차 전용 브랜치는 `feature/week2-final-execution-20261031`이며, 사용자가 검토한 자료를 원격에 반영했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)의 `cpp-google-test`와 `python-regression`이 모두 통과했습니다. CI의 ASan·UBSan CTest 32개도 `detect_leaks=1`에서 통과했습니다. macOS의 과거 픽셀 일치 실패는 남아 있습니다. 1주차 PR과 분리해 제출하며, 병합은 별도 승인을 받습니다.
+
+2주차의 코드는 [`week2/python/`](week2/python/)과 [`week2/cpp/`](week2/cpp/), 테스트는 각 언어 폴더의 `tests/`에서 관리합니다. 제출 문서는 [`week2/docs/`](week2/docs/), 발표 자료는 [`week2/presentation/`](week2/presentation/)에 있습니다.
