@@ -1,0 +1,5 @@
+$ .venv/bin/python week2/tools/compare_cpp_python.py --binary build/cpp/cpp_xyz_probe --output week2/verification/layout/differential.json
+usage: compare_cpp_python.py [-h] [--binary BINARY] [--json JSON]
+compare_cpp_python.py: error: unrecognized arguments: --output week2/verification/layout/differential.json
+
+EXIT_CODE=2

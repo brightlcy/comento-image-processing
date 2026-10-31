@@ -1,0 +1,16 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "week2/python/tests/test_image_to_3d.py",
+    "-q",
+    "--cov=week2.python.image_to_3d",
+    "--cov-report=term-missing",
+    "--cov-report=json:week2/verification/layout/coverage.json"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T14:01:35.305283+00:00",
+  "duration_seconds": 4.027,
+  "exit_code": 0
+}

@@ -1,0 +1,11 @@
+$ .venv/bin/python week2/tools/compare_cpp_python.py --binary build/cpp/cpp_xyz_probe --json week2/verification/layout/differential.json
+{
+  "status": "PASS",
+  "seed": 20261031,
+  "comparison": "exact float32 XYZ",
+  "cases": 120,
+  "compared_point_rows": 7660,
+  "google_test_count": 0
+}
+
+EXIT_CODE=0
