@@ -1,0 +1,228 @@
+{
+  "run_id": 41209580635,
+  "run_url": "https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635",
+  "status": "completed",
+  "conclusion": "success",
+  "head_sha": "d805351f9b540b394bd8b5174f3d0cd6946c31b4",
+  "event": "push",
+  "jobs": [
+    {
+      "id": 124561562993,
+      "name": "cpp-google-test",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 41209580635,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install OpenCV C++ and GoogleTest/gMock dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Record compiler and dependency versions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Configure C++ with required OpenCV tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "List and run real GoogleTest tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Run full CTest regression",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run OpenCV C++ demo on preserved sample",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "C++ and Python coordinate comparison",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "AddressSanitizer and UndefinedBehaviorSanitizer",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Preserve C++ logs on success or failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27
+        }
+      ]
+    },
+    {
+      "id": 124561563181,
+      "name": "python-regression",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 41209580635,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install Python dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run complete Python regression suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Week 2 coverage",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Reproduce visualizations in a separate folder",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Preserve Python logs on success or failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    }
+  ],
+  "source_verification": "../../layout/tested_sources.json",
+  "google_test": {
+    "found": 31,
+    "run": 31,
+    "passed": 31,
+    "failed": 0,
+    "skipped": 0,
+    "disabled": 0
+  },
+  "gmock": {
+    "passed": 4,
+    "exact_call_matches": 4,
+    "subset_of_google_test": true
+  },
+  "ctest": {
+    "passed": 32,
+    "total": 32,
+    "independent_smoke": 1
+  },
+  "sanitizers": {
+    "asan_ubsan_passed": 32,
+    "total": 32,
+    "detect_leaks": true
+  },
+  "python": {
+    "unittest": 67,
+    "pytest": 38,
+    "subtests": 39,
+    "coverage_statements": 142,
+    "coverage_missed": 1
+  },
+  "differential": {
+    "cases": 120,
+    "point_rows": 7660,
+    "comparison": "exact float32"
+  }
+}
