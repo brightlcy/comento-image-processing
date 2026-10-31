@@ -1,5 +1,5 @@
 {
-  "overall": "LOCAL_AND_CI_EXECUTION_PASS_REVIEW_PENDING",
+  "overall": "LAYOUT_LOCAL_PASS_CI_PENDING",
   "date_kst": "2026-10-31",
   "google_test": {
     "found": 31,
@@ -46,6 +46,21 @@
   },
   "preserved_files": 28,
   "ci": {
+    "cpp-google-test": "NOT RUN",
+    "python-regression": "NOT RUN",
+    "run_url": null,
+    "note": "Directory reorganization requires a fresh CI run."
+  },
+  "macos_pixel_difference": "UNRESOLVED",
+  "native_powerpoint": "NOT RUN",
+  "submission": {
+    "remote_branch": "feature/week2-final-execution-20261031",
+    "base": "main",
+    "mentor_review": "PENDING",
+    "merge": "NOT PERFORMED",
+    "classroom_submission": "PENDING"
+  },
+  "previous_layout_ci": {
     "cpp-google-test": "PASS",
     "python-regression": "PASS",
     "run_id": 41206106529,
@@ -55,13 +70,12 @@
     "detect_leaks": true,
     "receipt": "ci/run-41206106529/receipt.json"
   },
-  "macos_pixel_difference": "UNRESOLVED",
-  "native_powerpoint": "NOT RUN",
-  "submission": {
-    "remote_branch": "feature/week2-final-execution-20261031",
-    "base": "feature/image-processing",
-    "mentor_review": "PENDING",
-    "merge": "NOT PERFORMED",
-    "classroom_submission": "PENDING"
+  "layout": {
+    "python": "week2/python/",
+    "tests": "week2/python/tests/",
+    "documents": "week2/docs/",
+    "presentation": "week2/presentation/comento_week2.ppt",
+    "verification": "week2/verification/",
+    "local_summary": "layout/summary.json"
   }
 }
