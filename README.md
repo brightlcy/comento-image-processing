@@ -57,6 +57,6 @@ python -m unittest discover -v
 
 최종 발표 자료는 [comento_week2.ppt](week2/presentation/comento_week2.ppt)입니다. 사용자가 수정한 원본을 그대로 반영했습니다.
 
-2주차 전용 브랜치는 `feature/week2-final-execution-20261031`이며, 사용자가 검토한 자료를 원격에 반영했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529)의 `cpp-google-test`와 `python-regression`이 모두 통과했습니다. CI의 ASan·UBSan CTest 32개도 `detect_leaks=1`에서 통과했습니다. macOS의 과거 픽셀 일치 실패는 남아 있습니다. 1주차 PR과 분리해 제출하며, 병합은 별도 승인을 받습니다.
+2주차 전용 브랜치는 `feature/week2-final-execution-20261031`이며, 사용자가 검토한 자료를 원격에 반영했습니다. [GitHub Actions 실행 결과](https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635)의 `cpp-google-test`와 `python-regression`이 모두 통과했습니다. CI의 ASan·UBSan CTest 32개도 `detect_leaks=1`에서 통과했습니다. macOS의 과거 픽셀 일치 실패는 남아 있습니다. 1주차 PR과 분리해 제출하며, 병합은 별도 승인을 받습니다.
 
 2주차의 코드는 [`week2/python/`](week2/python/)과 [`week2/cpp/`](week2/cpp/), 테스트는 각 언어 폴더의 `tests/`에서 관리합니다. 제출 문서는 [`week2/docs/`](week2/docs/), 발표 자료는 [`week2/presentation/`](week2/presentation/)에 있습니다.
