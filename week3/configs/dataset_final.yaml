@@ -1,0 +1,17 @@
+seed: 42
+splits:
+  train:
+    country: India
+    positive: 160
+    other_damage: 40
+    no_annotated_damage: 40
+  val:
+    country: Czech
+    positive: 60
+    other_damage: 15
+    no_annotated_damage: 15
+  test:
+    country: Japan
+    positive: 60
+    other_damage: 15
+    no_annotated_damage: 15
