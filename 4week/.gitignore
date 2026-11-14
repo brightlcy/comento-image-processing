@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+outputs/
+samples/
+runs/
+*.pyc
+*.mp4
+*.csv
+*.pt
+*.onnx
+*.zip
+.env
+.env.*
