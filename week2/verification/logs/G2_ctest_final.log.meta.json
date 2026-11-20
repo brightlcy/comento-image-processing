@@ -1,0 +1,14 @@
+{
+  "command": [
+    "ctest",
+    "--test-dir",
+    "build/cpp",
+    "--output-on-failure",
+    "--output-junit",
+    "/workspace/scratch/e487502bcbea/evidence/ctest_final.xml"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:25:26.836231+00:00",
+  "duration_seconds": 1.56,
+  "exit_code": 0
+}

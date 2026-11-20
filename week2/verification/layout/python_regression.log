@@ -1,0 +1,113 @@
+$ .venv/bin/python -m unittest discover -s . -p 'test*.py' -v
+test_admission_files_match_filter_decisions (test_image_preprocessing.ArtifactTests.test_admission_files_match_filter_decisions) ... ok
+test_output_directory_has_no_unrelated_images (test_image_preprocessing.ArtifactTests.test_output_directory_has_no_unrelated_images) ... ok
+test_source_hashes_and_five_final_arrays (test_image_preprocessing.ArtifactTests.test_source_hashes_and_five_final_arrays) ... ok
+test_cli_missing_input_exits_nonzero (test_image_preprocessing.InputTests.test_cli_missing_input_exits_nonzero) ... ok
+test_corrupt_file (test_image_preprocessing.InputTests.test_corrupt_file) ... ok
+test_empty_file (test_image_preprocessing.InputTests.test_empty_file) ... ok
+test_invalid_arrays (test_image_preprocessing.InputTests.test_invalid_arrays) ... ok
+test_missing_file (test_image_preprocessing.InputTests.test_missing_file) ... ok
+test_valid_file_loads_as_bgr (test_image_preprocessing.InputTests.test_valid_file_loads_as_bgr) ... ok
+test_area_below_equal_above_threshold (test_image_preprocessing.OutlierTests.test_area_below_equal_above_threshold) ... ok
+test_brightness_below_equal_above_threshold (test_image_preprocessing.OutlierTests.test_brightness_below_equal_above_threshold) ... ok
+test_invalid_mask_is_rejected (test_image_preprocessing.OutlierTests.test_invalid_mask_is_rejected) ... ok
+test_invalid_thresholds_are_rejected (test_image_preprocessing.OutlierTests.test_invalid_thresholds_are_rejected) ... ok
+test_known_normal_dark_small (test_image_preprocessing.OutlierTests.test_known_normal_dark_small) ... ok
+test_largest_component_not_total_or_bounding_box (test_image_preprocessing.OutlierTests.test_largest_component_not_total_or_bounding_box) ... ok
+test_no_red_region_is_zero (test_image_preprocessing.OutlierTests.test_no_red_region_is_zero) ... ok
+test_pixel_statistics_known_bgr (test_image_preprocessing.PixelTests.test_pixel_statistics_known_bgr) ... ok
+test_red_and_blue_are_not_swapped (test_image_preprocessing.PixelTests.test_red_and_blue_are_not_swapped) ... ok
+test_red_hue_boundaries (test_image_preprocessing.PixelTests.test_red_hue_boundaries) ... ok
+test_saturation_and_value_boundaries (test_image_preprocessing.PixelTests.test_saturation_and_value_boundaries) ... ok
+test_threshold_is_not_a_red_mask (test_image_preprocessing.PixelTests.test_threshold_is_not_a_red_mask) ... ok
+test_threshold_is_strictly_greater_than_127 (test_image_preprocessing.PixelTests.test_threshold_is_strictly_greater_than_127) ... ok
+test_blur_spreads_impulse_and_reduces_peak (test_image_preprocessing.PreprocessingTests.test_blur_spreads_impulse_and_reduces_peak) ... ok
+test_color_change_preserves_hue_changes_sv (test_image_preprocessing.PreprocessingTests.test_color_change_preserves_hue_changes_sv) ... ok
+test_dimensions_dtype_and_channels (test_image_preprocessing.PreprocessingTests.test_dimensions_dtype_and_channels) ... ok
+test_flip_reverses_columns (test_image_preprocessing.PreprocessingTests.test_flip_reverses_columns) ... ok
+test_normalization_numeric_contract (test_image_preprocessing.PreprocessingTests.test_normalization_numeric_contract) ... ok
+test_pipeline_is_deterministic (test_image_preprocessing.PreprocessingTests.test_pipeline_is_deterministic) ... ok
+test_rotation_moves_known_marker_counterclockwise (test_image_preprocessing.PreprocessingTests.test_rotation_moves_known_marker_counterclockwise) ... ok
+test_bgr_to_gray_luminance (week2.python.tests.test_image_to_3d.DepthTests.test_bgr_to_gray_luminance) ... ok
+test_black_white_normalized_depth (week2.python.tests.test_image_to_3d.DepthTests.test_black_white_normalized_depth) ... ok
+test_input_immutable (week2.python.tests.test_image_to_3d.DepthTests.test_input_immutable) ... ok
+test_none_and_empty_are_rejected (week2.python.tests.test_image_to_3d.DepthTests.test_none_and_empty_are_rejected) ... ok
+test_wrong_dtype_dimension_channels_rejected (week2.python.tests.test_image_to_3d.DepthTests.test_wrong_dtype_dimension_channels_rejected) ... ok
+test_candidate_pipeline_output (week2.python.tests.test_image_to_3d.FeedbackTests.test_candidate_pipeline_output) ... ok
+test_compare_feedback_reports_both_polarities_and_timing (week2.python.tests.test_image_to_3d.FeedbackTests.test_compare_feedback_reports_both_polarities_and_timing) ... ok
+test_make_visualization_invalid_sampling_limit (week2.python.tests.test_image_to_3d.FeedbackTests.test_make_visualization_invalid_sampling_limit) ... ok
+test_noisy_otsu_output_binary_and_bounded (week2.python.tests.test_image_to_3d.FeedbackTests.test_noisy_otsu_output_binary_and_bounded) ... ok
+test_otsu_bright_no_red_object_exact_area (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_bright_no_red_object_exact_area) ... ok
+test_otsu_dark_object_reverse_polarity (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_dark_object_reverse_polarity) ... ok
+test_otsu_invalid_mask_rejected (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_invalid_mask_rejected) ... ok
+test_otsu_same_luminance_cannot_separate (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_same_luminance_cannot_separate) ... ok
+test_otsu_uniform_is_ambiguous_not_object_found (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_uniform_is_ambiguous_not_object_found) ... ok
+test_rotation_border_and_zero_degrees (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_border_and_zero_degrees) ... ok
+test_rotation_invalid_mode (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_invalid_mode) ... ok
+test_rotation_modes_distinguishable (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_modes_distinguishable) ... ok
+test_actual_cli_writes_valid_json_and_corresponding_images (week2.python.tests.test_image_to_3d.HardeningTests.test_actual_cli_writes_valid_json_and_corresponding_images) ... ok
+test_actual_plot_respects_limit_for_extreme_aspect_ratio (week2.python.tests.test_image_to_3d.HardeningTests.test_actual_plot_respects_limit_for_extreme_aspect_ratio) ... ok
+test_cli_bad_input_uses_diagnostic_error (week2.python.tests.test_image_to_3d.HardeningTests.test_cli_bad_input_uses_diagnostic_error) ... [ WARN:0@2.155] global loadsave.cpp:268 findDecoder imread_('/tmp/tmpu7ka9k_x/does_not_exist.png'): can't open/read file: check file path/integrity
+usage: -m [-h] [--input INPUT] [--output-dir OUTPUT_DIR]
+-m: error: Cannot read /tmp/tmpu7ka9k_x/does_not_exist.png
+ok
+test_colormap_is_jet_not_three_copies_of_gray (week2.python.tests.test_image_to_3d.HardeningTests.test_colormap_is_jet_not_three_copies_of_gray) ... ok
+test_image_write_error_is_not_silent (week2.python.tests.test_image_to_3d.HardeningTests.test_image_write_error_is_not_silent) ... ok
+test_invalid_sampler_dimensions_and_budget (week2.python.tests.test_image_to_3d.HardeningTests.test_invalid_sampler_dimensions_and_budget) ... ok
+test_otsu_diagonal_pixels_use_eight_connectivity (week2.python.tests.test_image_to_3d.HardeningTests.test_otsu_diagonal_pixels_use_eight_connectivity) ... ok
+test_otsu_largest_component_not_total_bright_area (week2.python.tests.test_image_to_3d.HardeningTests.test_otsu_largest_component_not_total_bright_area) ... ok
+test_plot_point_budget_must_be_strict_integer (week2.python.tests.test_image_to_3d.HardeningTests.test_plot_point_budget_must_be_strict_integer) ... ok
+test_points_reject_boolean_budget (week2.python.tests.test_image_to_3d.HardeningTests.test_points_reject_boolean_budget) ... ok
+test_rotation_rejects_non_numeric_angle_without_leaking_type_error (week2.python.tests.test_image_to_3d.HardeningTests.test_rotation_rejects_non_numeric_angle_without_leaking_type_error) ... ok
+test_sampling_budget_across_extreme_aspect_ratios (week2.python.tests.test_image_to_3d.HardeningTests.test_sampling_budget_across_extreme_aspect_ratios) ... ok
+test_z_scale_cannot_silently_underflow (week2.python.tests.test_image_to_3d.HardeningTests.test_z_scale_cannot_silently_underflow) ... ok
+test_color_map_shape_and_input_immutable (week2.python.tests.test_image_to_3d.PointTests.test_color_map_shape_and_input_immutable) ... ok
+test_depth_invalid_inputs (week2.python.tests.test_image_to_3d.PointTests.test_depth_invalid_inputs) ... ok
+test_memory_budget_rejects_excessive_point_count (week2.python.tests.test_image_to_3d.PointTests.test_memory_budget_rejects_excessive_point_count) ... ok
+test_one_pixel (week2.python.tests.test_image_to_3d.PointTests.test_one_pixel) ... ok
+test_scale_invalid (week2.python.tests.test_image_to_3d.PointTests.test_scale_invalid) ... ok
+test_xy_z_exact_known_coordinates (week2.python.tests.test_image_to_3d.PointTests.test_xy_z_exact_known_coordinates) ... ok
+test_z_scale_float32_overflow_is_rejected (week2.python.tests.test_image_to_3d.PointTests.test_z_scale_float32_overflow_is_rejected) ... ok
+test_saved_images_are_readable (week2.python.tests.test_image_to_3d.VisualTests.test_saved_images_are_readable) ... ok
+
+----------------------------------------------------------------------
+Ran 67 tests in 2.326s
+
+OK
+{
+  "input": "/tmp/tmpode02ao9/sample.png",
+  "image_shape": [
+    16,
+    24,
+    3
+  ],
+  "depth_type": "normalized grayscale intensity; not physical depth",
+  "point_count": 384,
+  "visualizations": {
+    "original": "original.png",
+    "depth_map": "depth_map.png",
+    "point_cloud": "point_cloud.png"
+  },
+  "mentor_comparisons": {
+    "rotation": {
+      "baseline_border": "BORDER_REFLECT_101",
+      "candidate_border": "BORDER_REPLICATE",
+      "mean_absolute_pixel_delta": 0.0,
+      "constant_zero_corner_count": 26
+    },
+    "otsu": {
+      "bright_largest_region_ratio": 0.25,
+      "dark_largest_region_ratio": 0.75,
+      "selected_foreground_polarity": "UNDETERMINED (no ground truth)"
+    },
+    "preprocess_order": {
+      "old_median_ms": 0.8295470001939975,
+      "candidate_median_ms": 0.8131320000757114,
+      "mean_absolute_normalized_delta": 0.0009478009887970984,
+      "candidate_adopted": false,
+      "reason": "Keep Week1 pipeline unchanged; timing and output both differ; pilot only"
+    }
+  }
+}
+
+EXIT_CODE=0

@@ -1,0 +1,53 @@
+$ ctest --test-dir build/cpp --output-on-failure
+Internal ctest changing into directory: /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp
+Test project /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp
+      Start  1: Projection.BlackWhitePixelsHaveExpectedDepth
+ 1/22 Test  #1: Projection.BlackWhitePixelsHaveExpectedDepth ..............   Passed    0.05 sec
+      Start  2: Projection.RowMajorCoordinatesAreNotTransposed
+ 2/22 Test  #2: Projection.RowMajorCoordinatesAreNotTransposed ............   Passed    0.05 sec
+      Start  3: Projection.OnePixelWorks
+ 3/22 Test  #3: Projection.OnePixelWorks ..................................   Passed    0.05 sec
+      Start  4: Projection.InputNotMutated
+ 4/22 Test  #4: Projection.InputNotMutated ................................   Passed    0.04 sec
+      Start  5: Projection.RejectsMissingAndMalformedDepth
+ 5/22 Test  #5: Projection.RejectsMissingAndMalformedDepth ................   Passed    0.05 sec
+      Start  6: Projection.RejectsInvalidScale
+ 6/22 Test  #6: Projection.RejectsInvalidScale ............................   Passed    0.04 sec
+      Start  7: Projection.RejectsPointBudget
+ 7/22 Test  #7: Projection.RejectsPointBudget .............................   Passed    0.05 sec
+      Start  8: Projection.RejectsDimensionMultiplicationOverflow
+ 8/22 Test  #8: Projection.RejectsDimensionMultiplicationOverflow .........   Passed    0.05 sec
+      Start  9: Sampling.SkinnyImagesNeverExceedBudget
+ 9/22 Test  #9: Sampling.SkinnyImagesNeverExceedBudget ....................   Passed    0.05 sec
+      Start 10: Sampling.RejectsBadBudgetAndSizes
+10/22 Test #10: Sampling.RejectsBadBudgetAndSizes .........................   Passed    0.04 sec
+      Start 11: Sampling.PreservesXAndYAndBudget
+11/22 Test #11: Sampling.PreservesXAndYAndBudget ..........................   Passed    0.05 sec
+      Start 12: MockSource.LoadsExactlyOnceAndConverts
+12/22 Test #12: MockSource.LoadsExactlyOnceAndConverts ....................   Passed    0.04 sec
+      Start 13: MockSource.PropagatesLoadFailure
+13/22 Test #13: MockSource.PropagatesLoadFailure ..........................   Passed    0.05 sec
+      Start 14: MockSource.RejectsCorruptLoadedDimensions
+14/22 Test #14: MockSource.RejectsCorruptLoadedDimensions .................   Passed    0.05 sec
+      Start 15: OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule
+15/22 Test #15: OpenCvAdapter.OneByTwoBlackAndWhiteBgrMatchesPythonRule ...   Passed    0.05 sec
+      Start 16: OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+16/22 Test #16: OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed ..........   Passed    0.05 sec
+      Start 17: OpenCvAdapter.DepthCoordinatesMatchInputLayout
+17/22 Test #17: OpenCvAdapter.DepthCoordinatesMatchInputLayout ............   Passed    0.05 sec
+      Start 18: OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat
+18/22 Test #18: OpenCvAdapter.RejectsUnsupportedTypesAndEmptyMat ..........   Passed    0.04 sec
+      Start 19: OpenCvAdapter.MissingImageThrows
+19/22 Test #19: OpenCvAdapter.MissingImageThrows ..........................   Passed    0.05 sec
+      Start 20: OpenCvPixels.RedPixelDetectedByHueStartRange
+20/22 Test #20: OpenCvPixels.RedPixelDetectedByHueStartRange ..............   Passed    0.04 sec
+      Start 21: OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle
+21/22 Test #21: OpenCvPixels.OtsuBinarySeparatesKnownLightRectangle .......   Passed    0.05 sec
+      Start 22: cpp_core_smoke
+22/22 Test #22: cpp_core_smoke ............................................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 22
+
+Total Test time (real) =   1.00 sec
+
+EXIT_CODE=0

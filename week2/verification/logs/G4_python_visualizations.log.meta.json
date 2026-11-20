@@ -1,0 +1,17 @@
+{
+  "command": [
+    "env",
+    "MPLBACKEND=Agg",
+    ".venv/bin/python",
+    "-m",
+    "week2.image_to_3d",
+    "--input",
+    "data/originals/sample_02.jpg",
+    "--output-dir",
+    "artifacts/final-gate/reproduced"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:17:50.960373+00:00",
+  "duration_seconds": 1.158,
+  "exit_code": 0
+}

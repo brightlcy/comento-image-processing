@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "preserved_images": 10,
+  "cpp_demo_shape": [
+    512,
+    512,
+    3
+  ],
+  "reproduction_comparison": [
+    {
+      "name": "depth_map.png",
+      "old_shape": [
+        512,
+        512,
+        3
+      ],
+      "new_shape": [
+        512,
+        512,
+        3
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "original.png",
+      "old_shape": [
+        512,
+        512,
+        3
+      ],
+      "new_shape": [
+        512,
+        512,
+        3
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "otsu_bright.png",
+      "old_shape": [
+        512,
+        512
+      ],
+      "new_shape": [
+        512,
+        512
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "otsu_dark.png",
+      "old_shape": [
+        512,
+        512
+      ],
+      "new_shape": [
+        512,
+        512
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "point_cloud.png",
+      "old_shape": [
+        689,
+        672,
+        4
+      ],
+      "new_shape": [
+        682,
+        701,
+        4
+      ],
+      "same_encoded_bytes": false
+    },
+    {
+      "name": "preprocess_candidate.png",
+      "old_shape": [
+        224,
+        224
+      ],
+      "new_shape": [
+        224,
+        224
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "preprocess_week1.png",
+      "old_shape": [
+        224,
+        224
+      ],
+      "new_shape": [
+        224,
+        224
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "rotation_constant.png",
+      "old_shape": [
+        512,
+        512,
+        3
+      ],
+      "new_shape": [
+        512,
+        512,
+        3
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "rotation_reflect101.png",
+      "old_shape": [
+        512,
+        512,
+        3
+      ],
+      "new_shape": [
+        512,
+        512,
+        3
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    },
+    {
+      "name": "rotation_replicate.png",
+      "old_shape": [
+        512,
+        512,
+        3
+      ],
+      "new_shape": [
+        512,
+        512,
+        3
+      ],
+      "same_encoded_bytes": true,
+      "same_pixels": true,
+      "max_pixel_delta": 0
+    }
+  ],
+  "note": "point-cloud raster appearance can vary with matplotlib/font versions; original results are preserved"
+}

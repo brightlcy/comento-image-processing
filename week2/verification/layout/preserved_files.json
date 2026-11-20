@@ -1,0 +1,39 @@
+{
+  "byte_identical_files": 27,
+  "original_files": 28,
+  "test_import_and_mock_path_only": [
+    "week2/python/tests/test_image_to_3d.py"
+  ],
+  "checks": {
+    "image_preprocessing.py": true,
+    "test_image_preprocessing.py": true,
+    "requirements.txt": true,
+    "data/source_manifest.json": true,
+    "week2/python/image_to_3d.py": true,
+    "week2/python/tests/test_image_to_3d.py": false,
+    "week1_report.pptx": true,
+    "data/originals/sample_01.jpg": true,
+    "data/originals/sample_02.jpg": true,
+    "data/originals/sample_03.jpg": true,
+    "data/originals/sample_04.jpg": true,
+    "data/originals/sample_05.jpg": true,
+    "preprocessed_samples/sample_01.png": true,
+    "preprocessed_samples/sample_02.png": true,
+    "preprocessed_samples/sample_03.png": true,
+    "preprocessed_samples/sample_04.png": true,
+    "preprocessed_samples/sample_05.png": true,
+    "week2/results/depth_map.png": true,
+    "week2/results/original.png": true,
+    "week2/results/otsu_bright.png": true,
+    "week2/results/otsu_dark.png": true,
+    "week2/results/point_cloud.png": true,
+    "week2/results/preprocess_candidate.png": true,
+    "week2/results/preprocess_week1.png": true,
+    "week2/results/rotation_constant.png": true,
+    "week2/results/rotation_reflect101.png": true,
+    "week2/results/rotation_replicate.png": true,
+    "week2/results/run_summary.json": true
+  },
+  "algorithm_sha256": "716955c10fc813d637b47371bf8608f93789341c59e36f17959c17c31e98cbef",
+  "ppt_sha256": "80a0fbb73475a57e380266b301b8c2db6569d257a1f39ab4aff9ae78975924d5"
+}

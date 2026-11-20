@@ -1,0 +1,1314 @@
+{
+  "status": "PASS",
+  "seed": 20261031,
+  "comparison": "exact float32 XYZ",
+  "cases": 120,
+  "compared_point_rows": 7660,
+  "google_test_count": 0,
+  "details": [
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        1,
+        101
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 7,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        101,
+        1
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 51,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        3,
+        5
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 60,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 60,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 60,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        17,
+        29
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 60,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        11,
+        7
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 77,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1.0,
+      "budget": 0,
+      "points": 416,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1.0,
+      "budget": 100,
+      "points": 55,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 10.0,
+      "budget": 0,
+      "points": 416,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 10.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 10.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 10.0,
+      "budget": 100,
+      "points": 55,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 40.0,
+      "budget": 0,
+      "points": 416,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 40.0,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 40.0,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 40.0,
+      "budget": 100,
+      "points": 55,
+      "status": "PASS"
+    },
+    {
+      "mode": "project",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1e-30,
+      "budget": 0,
+      "points": 416,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1e-30,
+      "budget": 1,
+      "points": 1,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1e-30,
+      "budget": 7,
+      "points": 6,
+      "status": "PASS"
+    },
+    {
+      "mode": "sample",
+      "shape": [
+        32,
+        13
+      ],
+      "scale": 1e-30,
+      "budget": 100,
+      "points": 55,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        3,
+        5
+      ],
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        3,
+        5
+      ],
+      "points": 15,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        17,
+        29
+      ],
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        17,
+        29
+      ],
+      "points": 493,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        1,
+        101
+      ],
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        1,
+        101
+      ],
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        101,
+        1
+      ],
+      "points": 101,
+      "status": "PASS"
+    },
+    {
+      "mode": "png_load",
+      "shape": [
+        101,
+        1
+      ],
+      "points": 101,
+      "status": "PASS"
+    }
+  ]
+}

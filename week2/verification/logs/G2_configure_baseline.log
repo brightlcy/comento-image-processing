@@ -1,0 +1,12 @@
+$ cmake -S week2/cpp -B build/cpp -DCOMENTO_ENABLE_GOOGLETEST=ON -DCOMENTO_REQUIRE_OPENCV_FOR_GTEST=ON
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp
+
+EXIT_CODE=0

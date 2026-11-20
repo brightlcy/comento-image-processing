@@ -1,0 +1,123 @@
+$ env DEBIAN_FRONTEND=noninteractive apt-get -o APT::Sandbox::User=root -o Acquire::Retries=0 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends g++ cmake ninja-build libopencv-dev libgtest-dev libgmock-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+g++ is already the newest version (4:13.2.0-7ubuntu1).
+g++ set to manually installed.
+The following additional packages will be installed:
+  cmake-data gdal-data gdal-plugins googletest ibverbs-providers iso-codes
+  libaec0 libamd-comgr2 libamdhip64-5 libarmadillo12 libarpack2t64
+  libavcodec-dev libavformat-dev libavutil-dev libblosc1 libcfitsio10t64
+  libcharls2 libdc1394-dev libdeflate-dev libdw1t64 libevent-core-2.1-7t64
+  libevent-pthreads-2.1-7t64 libexif-dev libexif12 libfabric1 libfreexl1
+  libfyba0t64 libgd3 libgdal34t64 libgdcm-dev libgdcm3.0t64 libgeos-c1t64
+  libgeos3.12.1t64 libgeotiff5 libgl2ps1.4 libgphoto2-6t64 libgphoto2-dev
+  libgphoto2-port12t64 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
+  libhdf4-0-alt libhdf5-103-1t64 libhdf5-hl-100t64 libhsa-runtime64-1
+  libhsakmt1 libhwloc-plugins libhwloc15 libibverbs1 libimath-3-1-29t64
+  libimath-dev libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  libjsoncpp25 libkmlbase1t64 libkmldom1t64 libkmlengine1t64 liblerc-dev
+  libllvm17t64 liblzma-dev liblzma5 libminizip1t64 libmunge2 libmysqlclient21
+  libnetcdf19t64 libnl-route-3-200 libodbc2 libodbcinst2 libogdi4.1
+  libopencv-calib3d-dev libopencv-calib3d406t64 libopencv-contrib-dev
+  libopencv-contrib406t64 libopencv-core-dev libopencv-core406t64
+  libopencv-dnn-dev libopencv-dnn406t64 libopencv-features2d-dev
+  libopencv-features2d406t64 libopencv-flann-dev libopencv-flann406t64
+  libopencv-highgui-dev libopencv-highgui406t64 libopencv-imgcodecs-dev
+  libopencv-imgcodecs406t64 libopencv-imgproc-dev libopencv-imgproc406t64
+  libopencv-ml-dev libopencv-ml406t64 libopencv-objdetect-dev
+  libopencv-objdetect406t64 libopencv-photo-dev libopencv-photo406t64
+  libopencv-shape-dev libopencv-shape406t64 libopencv-stitching-dev
+  libopencv-stitching406t64 libopencv-superres-dev libopencv-superres406t64
+  libopencv-video-dev libopencv-video406t64 libopencv-videoio-dev
+  libopencv-videoio406t64 libopencv-videostab-dev libopencv-videostab406t64
+  libopencv-viz-dev libopencv-viz406t64 libopenexr-3-1-30 libopenexr-dev
+  libopenmpi3t64 liborc-0.4-0t64 libpkgconf3 libpmix2t64 libpng-dev libpq5
+  libproj25 libprotobuf32t64 libpsm-infinipath1 libpsm2-2 libqhull-r8.0
+  libqt5opengl5t64 libqt5test5t64 libraw1394-dev librdmacm1t64 librhash0
+  librttopo1 libsharpyuv-dev libsocket++1 libspatialite8t64 libsuperlu6
+  libswresample-dev libswscale-dev libsz2 libtbb-dev libtbb12 libtbbbind-2-5
+  libtbbmalloc2 libtcl8.6 libtiff-dev libtiffxx6 libtk8.6 libucx0
+  liburiparser1 libuv1t64 libvtk9.1t64 libwebp-dev libwebpdecoder3
+  libxerces-c3.2t64 libxft2 libxnvctrl0 libzstd-dev mysql-common pkg-config
+  pkgconf pkgconf-bin proj-data unixodbc-common xz-utils
+Suggested packages:
+  cmake-doc cmake-format elpa-cmake-mode isoquery libgd-tools geotiff-bin
+  gdal-bin libgeotiff-epsg gphoto2 libvisual-0.4-plugins gstreamer1.0-tools
+  libhdf4-doc libhdf4-alt-dev hdf4-tools libhwloc-contrib-plugins liblzma-doc
+  odbc-postgresql tdsodbc ogdi-bin opencv-doc proj-bin libraw1394-doc
+  libtbb-doc tcl8.6 tk8.6 mpi-default-bin vtk9-doc vtk9-examples
+Recommended packages:
+  libexif-doc proj-bin libgphoto2-l10n gstreamer1.0-plugins-base opencv-data
+  libopencv-java libpng-tools libraw1394-tools
+The following NEW packages will be installed:
+  cmake cmake-data gdal-data gdal-plugins googletest ibverbs-providers
+  iso-codes libaec0 libamd-comgr2 libamdhip64-5 libarmadillo12 libarpack2t64
+  libavcodec-dev libavformat-dev libavutil-dev libblosc1 libcfitsio10t64
+  libcharls2 libdc1394-dev libdeflate-dev libdw1t64 libevent-core-2.1-7t64
+  libevent-pthreads-2.1-7t64 libexif-dev libexif12 libfabric1 libfreexl1
+  libfyba0t64 libgd3 libgdal34t64 libgdcm-dev libgdcm3.0t64 libgeos-c1t64
+  libgeos3.12.1t64 libgeotiff5 libgl2ps1.4 libgmock-dev libgphoto2-6t64
+  libgphoto2-dev libgphoto2-port12t64 libgstreamer-plugins-base1.0-0
+  libgstreamer1.0-0 libgtest-dev libhdf4-0-alt libhdf5-103-1t64
+  libhdf5-hl-100t64 libhsa-runtime64-1 libhsakmt1 libhwloc-plugins libhwloc15
+  libibverbs1 libimath-3-1-29t64 libimath-dev libjbig-dev libjpeg-dev
+  libjpeg-turbo8-dev libjpeg8-dev libjsoncpp25 libkmlbase1t64 libkmldom1t64
+  libkmlengine1t64 liblerc-dev libllvm17t64 liblzma-dev libminizip1t64
+  libmunge2 libmysqlclient21 libnetcdf19t64 libnl-route-3-200 libodbc2
+  libodbcinst2 libogdi4.1 libopencv-calib3d-dev libopencv-calib3d406t64
+  libopencv-contrib-dev libopencv-contrib406t64 libopencv-core-dev
+  libopencv-core406t64 libopencv-dev libopencv-dnn-dev libopencv-dnn406t64
+  libopencv-features2d-dev libopencv-features2d406t64 libopencv-flann-dev
+  libopencv-flann406t64 libopencv-highgui-dev libopencv-highgui406t64
+  libopencv-imgcodecs-dev libopencv-imgcodecs406t64 libopencv-imgproc-dev
+  libopencv-imgproc406t64 libopencv-ml-dev libopencv-ml406t64
+  libopencv-objdetect-dev libopencv-objdetect406t64 libopencv-photo-dev
+  libopencv-photo406t64 libopencv-shape-dev libopencv-shape406t64
+  libopencv-stitching-dev libopencv-stitching406t64 libopencv-superres-dev
+  libopencv-superres406t64 libopencv-video-dev libopencv-video406t64
+  libopencv-videoio-dev libopencv-videoio406t64 libopencv-videostab-dev
+  libopencv-videostab406t64 libopencv-viz-dev libopencv-viz406t64
+  libopenexr-3-1-30 libopenexr-dev libopenmpi3t64 liborc-0.4-0t64 libpkgconf3
+  libpmix2t64 libpng-dev libpq5 libproj25 libprotobuf32t64 libpsm-infinipath1
+  libpsm2-2 libqhull-r8.0 libqt5opengl5t64 libqt5test5t64 libraw1394-dev
+  librdmacm1t64 librhash0 librttopo1 libsharpyuv-dev libsocket++1
+  libspatialite8t64 libsuperlu6 libswresample-dev libswscale-dev libsz2
+  libtbb-dev libtbb12 libtbbbind-2-5 libtbbmalloc2 libtcl8.6 libtiff-dev
+  libtiffxx6 libtk8.6 libucx0 liburiparser1 libuv1t64 libvtk9.1t64 libwebp-dev
+  libwebpdecoder3 libxerces-c3.2t64 libxft2 libxnvctrl0 libzstd-dev
+  mysql-common ninja-build pkg-config pkgconf pkgconf-bin proj-data
+  unixodbc-common
+The following packages will be upgraded:
+  liblzma5 xz-utils
+2 upgraded, 162 newly installed, 0 to remove and 86 not upgraded.
+Need to get 172 MB of archives.
+After this operation, 733 MB of additional disk space will be used.
+Ign:1 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 liblzma5 amd64 5.6.1+really5.4.5-1ubuntu0.3
+Err:2 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 iso-codes all 4.16.0-1
+  Could not open file /var/cache/apt/archives/partial/iso-codes_4.16.0-1_all.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:3 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libnl-route-3-200 amd64 3.7.0-0.3build1.1
+  Could not open file /var/cache/apt/archives/partial/libnl-route-3-200_3.7.0-0.3build1.1_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:4 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libibverbs1 amd64 50.0-2ubuntu0.2
+  Could not open file /var/cache/apt/archives/partial/libibverbs1_50.0-2ubuntu0.2_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:5 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 ibverbs-providers amd64 50.0-2ubuntu0.2
+  Could not open file /var/cache/apt/archives/partial/ibverbs-providers_50.0-2ubuntu0.2_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:6 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libuv1t64 amd64 1.48.0-1.1build1
+  Could not open file /var/cache/apt/archives/partial/libuv1t64_1.48.0-1.1build1_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Ign:7 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 xz-utils amd64 5.6.1+really5.4.5-1ubuntu0.3
+Err:8 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1
+  Could not open file /var/cache/apt/archives/partial/libjsoncpp25_1.9.5-6build1_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:9 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 librhash0 amd64 1.4.3-3build1
+  Could not open file /var/cache/apt/archives/partial/librhash0_1.4.3-3build1_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:10 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 cmake-data all 3.28.3-1build7
+  Could not open file /var/cache/apt/archives/partial/cmake-data_3.28.3-1build7_all.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:11 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 cmake amd64 3.28.3-1build7
+  Could not open file /var/cache/apt/archives/partial/cmake_3.28.3-1build7_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:12 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 gdal-data all 3.8.4+dfsg-3ubuntu3
+  Could not open file /var/cache/apt/archives/partial/gdal-data_3.8.4+dfsg-3ubuntu3_all.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:13 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 gdal-plugins amd64 3.8.4+dfsg-3ubuntu3
+  Could not open file /var/cache/apt/archives/partial/gdal-plugins_3.8.4+dfsg-3ubuntu3_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:14 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 googletest all 1.14.0-1
+  Could not open file /var/cache/apt/archives/partial/googletest_1.14.0-1_all.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]
+Err:15 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libaec0 amd64 1.1.2-1build1
+  Could not open file /var/cache/apt/archives/partial/libaec0_1.1.2-1build1_amd64.deb - open (13: Permission denied) [IP: 127.0.0.1 43517]

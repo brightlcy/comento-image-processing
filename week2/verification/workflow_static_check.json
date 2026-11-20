@@ -1,0 +1,71 @@
+{
+  "status": "PASS_STATIC_ONLY",
+  "actions_status": "NOT RUN",
+  "steps": [
+    {
+      "job": "cpp-google-test",
+      "step": "Install OpenCV C++ and GoogleTest/gMock dependencies",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "Record compiler and dependency versions",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "Configure C++ with required OpenCV tests",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "Build",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "List and run real GoogleTest tests",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "Run full CTest regression",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "Run OpenCV C++ demo on preserved sample",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "C++ and Python coordinate comparison",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "cpp-google-test",
+      "step": "AddressSanitizer and UndefinedBehaviorSanitizer",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "python-regression",
+      "step": "Install Python dependencies",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "python-regression",
+      "step": "Run complete Python regression suite",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "python-regression",
+      "step": "Week 2 coverage",
+      "bash_syntax_exit": 0
+    },
+    {
+      "job": "python-regression",
+      "step": "Reproduce visualizations in a separate folder",
+      "bash_syntax_exit": 0
+    }
+  ]
+}

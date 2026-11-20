@@ -1,0 +1,14 @@
+$ .venv/bin/python -m pytest week2/python/tests/test_image_to_3d.py -q --cov=week2.python.image_to_3d --cov-report=term-missing --cov-report=json:week2/verification/layout/coverage.json
+......................................                                                                    [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+week2/python/image_to_3d.py     142      1    99%   218
+-----------------------------------------------------------
+TOTAL                           142      1    99%
+Coverage JSON written to file week2/verification/layout/coverage.json
+38 passed, 39 subtests passed in 3.43s
+
+EXIT_CODE=0

@@ -1,0 +1,6 @@
+$ git fetch origin
+From https://github.com/brightlcy/comento-image-processing
+ * [new branch]      feature/image-processing -> origin/feature/image-processing
+ * [new branch]      main       -> origin/main
+
+EXIT_CODE=0

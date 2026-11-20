@@ -1,0 +1,22 @@
+$ /tmp/comento-mutants-_ctnz_n0/loader_always_throws/build/cpp_gtests --gtest_filter=OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+unknown file: Failure
+C++ exception with description "injected loader failure" thrown in the test body.
+
+[  FAILED  ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates (2 ms)
+[----------] 1 test from OpenCvAdapter (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates
+
+ 1 FAILED TEST
+
+EXIT_CODE=1

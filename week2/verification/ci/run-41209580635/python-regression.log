@@ -1,0 +1,441 @@
+﻿2026-10-31T14:19:21.3842952Z Current runner version: '2.338.2'
+2026-10-31T14:19:21.3858782Z ##[group]Runner Image Provisioner
+2026-10-31T14:19:21.3859287Z Hosted Compute Agent
+2026-10-31T14:19:21.3859738Z Version: 20261021.618
+2026-10-31T14:19:21.3860282Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-31T14:19:21.3860876Z Build Date: 2026-10-21T00:45:21Z
+2026-10-31T14:19:21.3861277Z Worker ID: {b6367370-6018-4a72-b739-89cf19f3206d}
+2026-10-31T14:19:21.3861683Z Region: centralus
+2026-10-31T14:19:21.3862075Z Cloud: Azure
+2026-10-31T14:19:21.3862449Z ##[endgroup]
+2026-10-31T14:19:21.3863205Z ##[group]Operating System
+2026-10-31T14:19:21.3863577Z Ubuntu
+2026-10-31T14:19:21.3863895Z 24.04.5
+2026-10-31T14:19:21.3864294Z LTS
+2026-10-31T14:19:21.3864664Z ##[endgroup]
+2026-10-31T14:19:21.3865015Z ##[group]Runner Image
+2026-10-31T14:19:21.3865387Z Image: ubuntu-24.04
+2026-10-31T14:19:21.3865732Z Version: 20261025.353.1
+2026-10-31T14:19:21.3866540Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-31T14:19:21.3867699Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-31T14:19:21.3868263Z ##[endgroup]
+2026-10-31T14:19:21.3868938Z ##[group]GITHUB_TOKEN Permissions
+2026-10-31T14:19:21.3870111Z Contents: read
+2026-10-31T14:19:21.3870459Z Metadata: read
+2026-10-31T14:19:21.3870998Z ##[endgroup]
+2026-10-31T14:19:21.3872242Z Secret source: Actions
+2026-10-31T14:19:21.3872872Z Cache mode: write
+2026-10-31T14:19:21.3873278Z Prepare workflow directory
+2026-10-31T14:19:21.4107488Z Prepare all required actions
+2026-10-31T14:19:21.4137205Z Getting action download info
+2026-10-31T14:19:21.6703827Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-31T14:19:21.7858391Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-31T14:19:21.9153950Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-31T14:19:22.0947517Z Complete job name: python-regression
+2026-10-31T14:19:22.1456200Z ##[group]Run actions/checkout@v4
+2026-10-31T14:19:22.1456646Z with:
+2026-10-31T14:19:22.1456911Z   repository: brightlcy/comento-image-processing
+2026-10-31T14:19:22.1459162Z   token: ***
+2026-10-31T14:19:22.1459389Z   ssh-strict: true
+2026-10-31T14:19:22.1459621Z   ssh-user: git
+2026-10-31T14:19:22.1459861Z   persist-credentials: true
+2026-10-31T14:19:22.1460127Z   clean: true
+2026-10-31T14:19:22.1460370Z   sparse-checkout-cone-mode: true
+2026-10-31T14:19:22.1460778Z   fetch-depth: 1
+2026-10-31T14:19:22.1461010Z   fetch-tags: false
+2026-10-31T14:19:22.1461249Z   show-progress: true
+2026-10-31T14:19:22.1461489Z   lfs: false
+2026-10-31T14:19:22.1461713Z   submodules: false
+2026-10-31T14:19:22.1461955Z   set-safe-directory: true
+2026-10-31T14:19:22.1462227Z   allow-unsafe-pr-checkout: false
+2026-10-31T14:19:22.1462580Z ##[endgroup]
+2026-10-31T14:19:22.3273650Z Syncing repository: brightlcy/comento-image-processing
+2026-10-31T14:19:22.3275007Z ##[group]Getting Git version info
+2026-10-31T14:19:22.3275530Z Working directory is '/home/runner/work/comento-image-processing/comento-image-processing'
+2026-10-31T14:19:22.3276194Z [command]/usr/bin/git version
+2026-10-31T14:19:22.3328570Z git version 2.56.0
+2026-10-31T14:19:22.3347359Z ##[endgroup]
+2026-10-31T14:19:22.3355906Z Temporarily overriding HOME='/home/runner/work/_temp/be5167d7-3efb-4cad-a272-3c8ac0ee5f54' before making global git config changes
+2026-10-31T14:19:22.3357227Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-31T14:19:22.3359252Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/comento-image-processing/comento-image-processing
+2026-10-31T14:19:22.3409227Z Deleting the contents of '/home/runner/work/comento-image-processing/comento-image-processing'
+2026-10-31T14:19:22.3413659Z ##[group]Initializing the repository
+2026-10-31T14:19:22.3417064Z [command]/usr/bin/git init /home/runner/work/comento-image-processing/comento-image-processing
+2026-10-31T14:19:22.3491063Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-31T14:19:22.3491961Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-31T14:19:22.3492509Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-31T14:19:22.3492896Z hint: call:
+2026-10-31T14:19:22.3493401Z hint:
+2026-10-31T14:19:22.3493689Z hint: 	git config --global init.defaultBranch <name>
+2026-10-31T14:19:22.3494023Z hint:
+2026-10-31T14:19:22.3494328Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-31T14:19:22.3494812Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-31T14:19:22.3495196Z hint:
+2026-10-31T14:19:22.3495416Z hint: 	git branch -m <name>
+2026-10-31T14:19:22.3495664Z hint:
+2026-10-31T14:19:22.3495995Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-31T14:19:22.3504256Z Initialized empty Git repository in /home/runner/work/comento-image-processing/comento-image-processing/.git/
+2026-10-31T14:19:22.3512945Z [command]/usr/bin/git remote add origin https://github.com/brightlcy/comento-image-processing
+2026-10-31T14:19:22.3551558Z ##[endgroup]
+2026-10-31T14:19:22.3552358Z ##[group]Disabling automatic garbage collection
+2026-10-31T14:19:22.3554575Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-31T14:19:22.3583422Z ##[endgroup]
+2026-10-31T14:19:22.3584074Z ##[group]Setting up auth
+2026-10-31T14:19:22.3593846Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-31T14:19:22.3630469Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-31T14:19:22.3928629Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-31T14:19:22.3965576Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-31T14:19:22.4154440Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-31T14:19:22.4194804Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-31T14:19:22.4398647Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-31T14:19:22.4442242Z ##[endgroup]
+2026-10-31T14:19:22.4442907Z ##[group]Fetching the repository
+2026-10-31T14:19:22.4461899Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d805351f9b540b394bd8b5174f3d0cd6946c31b4:refs/remotes/origin/feature/week2-final-execution-20261031
+2026-10-31T14:19:23.2672846Z From https://github.com/brightlcy/comento-image-processing
+2026-10-31T14:19:23.2675277Z  * [new ref]         d805351f9b540b394bd8b5174f3d0cd6946c31b4 -> origin/feature/week2-final-execution-20261031
+2026-10-31T14:19:23.2679276Z ##[endgroup]
+2026-10-31T14:19:23.2680640Z ##[group]Determining the checkout info
+2026-10-31T14:19:23.2682611Z ##[endgroup]
+2026-10-31T14:19:23.2683434Z [command]/usr/bin/git sparse-checkout disable
+2026-10-31T14:19:23.2731299Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-31T14:19:23.2765532Z ##[group]Checking out the ref
+2026-10-31T14:19:23.2768977Z [command]/usr/bin/git checkout --progress --force -B feature/week2-final-execution-20261031 refs/remotes/origin/feature/week2-final-execution-20261031
+2026-10-31T14:19:23.3192561Z Switched to a new branch 'feature/week2-final-execution-20261031'
+2026-10-31T14:19:23.3196393Z branch 'feature/week2-final-execution-20261031' set up to track 'origin/feature/week2-final-execution-20261031'.
+2026-10-31T14:19:23.3203145Z ##[endgroup]
+2026-10-31T14:19:23.3241855Z [command]/usr/bin/git log -1 --format=%H
+2026-10-31T14:19:23.3270991Z d805351f9b540b394bd8b5174f3d0cd6946c31b4
+2026-10-31T14:19:23.3533743Z ##[group]Run actions/setup-python@v5
+2026-10-31T14:19:23.3534473Z with:
+2026-10-31T14:19:23.3534989Z   python-version: 3.12
+2026-10-31T14:19:23.3535593Z   check-latest: false
+2026-10-31T14:19:23.3541657Z   token: ***
+2026-10-31T14:19:23.3542208Z   update-environment: true
+2026-10-31T14:19:23.3542854Z   allow-prereleases: false
+2026-10-31T14:19:23.3543481Z   freethreaded: false
+2026-10-31T14:19:23.3544042Z ##[endgroup]
+2026-10-31T14:19:23.4422457Z ##[group]Installed versions
+2026-10-31T14:19:23.4708146Z (node:2770) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-31T14:19:23.4710506Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-31T14:19:23.4712177Z Successfully set up CPython (3.12.15)
+2026-10-31T14:19:23.4713822Z ##[endgroup]
+2026-10-31T14:19:23.4892240Z ##[group]Run mkdir -p artifacts/ci-python
+2026-10-31T14:19:23.4893394Z [36;1mmkdir -p artifacts/ci-python[0m
+2026-10-31T14:19:23.4894565Z [36;1mpython -m pip install -r week2/requirements.txt 2>&1 | tee artifacts/ci-python/pip.log[0m
+2026-10-31T14:19:23.4896018Z [36;1mpython -m pip freeze > artifacts/ci-python/versions.txt[0m
+2026-10-31T14:19:23.5009617Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-31T14:19:23.5010380Z env:
+2026-10-31T14:19:23.5011170Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:23.5012108Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-31T14:19:23.5013057Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:23.5013914Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:23.5014772Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:23.5015682Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-31T14:19:23.5016427Z ##[endgroup]
+2026-10-31T14:19:26.2373085Z Collecting numpy==2.2.6 (from -r /home/runner/work/comento-image-processing/comento-image-processing/requirements.txt (line 1))
+2026-10-31T14:19:26.3055331Z   Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+2026-10-31T14:19:26.3681903Z Collecting opencv-python-headless==4.11.0.86 (from -r /home/runner/work/comento-image-processing/comento-image-processing/requirements.txt (line 2))
+2026-10-31T14:19:26.3800367Z   Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+2026-10-31T14:19:26.4611074Z Collecting matplotlib<4,>=3.8 (from -r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.4736130Z   Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+2026-10-31T14:19:26.5121670Z Collecting pytest<10,>=8 (from -r week2/requirements.txt (line 3))
+2026-10-31T14:19:26.5245957Z   Downloading pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+2026-10-31T14:19:26.5474151Z Collecting pytest-cov<8,>=5 (from -r week2/requirements.txt (line 4))
+2026-10-31T14:19:26.5598903Z   Downloading pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+2026-10-31T14:19:26.6084079Z Collecting contourpy>=1.0.1 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.6209285Z   Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+2026-10-31T14:19:26.6411696Z Collecting cycler>=0.10 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.6538021Z   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2026-10-31T14:19:26.7414430Z Collecting fonttools>=4.28.2 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.7542301Z   Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+2026-10-31T14:19:26.8097991Z Collecting kiwisolver>=1.3.1 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.8221779Z   Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+2026-10-31T14:19:26.8446462Z Collecting packaging>=20.0 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.8569305Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-31T14:19:26.9727574Z Collecting pillow>=9 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:26.9854981Z   Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+2026-10-31T14:19:27.0120356Z Collecting pyparsing>=3 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:27.0243187Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+2026-10-31T14:19:27.0451958Z Collecting python-dateutil>=2.7 (from matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:27.0576669Z   Downloading python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+2026-10-31T14:19:27.0777887Z Collecting iniconfig>=2 (from pytest<10,>=8->-r week2/requirements.txt (line 3))
+2026-10-31T14:19:27.0901584Z   Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+2026-10-31T14:19:27.1109693Z Collecting pluggy<2,>=1.6 (from pytest<10,>=8->-r week2/requirements.txt (line 3))
+2026-10-31T14:19:27.1235363Z   Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+2026-10-31T14:19:27.1462640Z Collecting pygments>=2.15 (from pytest<10,>=8->-r week2/requirements.txt (line 3))
+2026-10-31T14:19:27.1586333Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+2026-10-31T14:19:27.3817262Z Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov<8,>=5->-r week2/requirements.txt (line 4))
+2026-10-31T14:19:27.3945829Z   Downloading coverage-7.17.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.1 kB)
+2026-10-31T14:19:27.4209162Z Collecting six>=1.6 (from python-dateutil>=2.7->matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:27.4333309Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2026-10-31T14:19:27.4550984Z Collecting tzdata (from python-dateutil>=2.7->matplotlib<4,>=3.8->-r week2/requirements.txt (line 2))
+2026-10-31T14:19:27.4674763Z   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+2026-10-31T14:19:27.4828611Z Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.5 MB)
+2026-10-31T14:19:27.6509101Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 100.7 MB/s  0:00:00
+2026-10-31T14:19:27.6662204Z Downloading opencv_python_headless-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (50.0 MB)
+2026-10-31T14:19:28.0762672Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.0/50.0 MB 121.8 MB/s  0:00:00
+2026-10-31T14:19:28.0891022Z Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+2026-10-31T14:19:28.1629924Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 132.9 MB/s  0:00:00
+2026-10-31T14:19:28.1759460Z Downloading pytest-9.2.0-py3-none-any.whl (411 kB)
+2026-10-31T14:19:28.1907535Z Downloading pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+2026-10-31T14:19:28.2065563Z Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+2026-10-31T14:19:28.2213713Z Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+2026-10-31T14:19:28.2361778Z Downloading coverage-7.17.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (261 kB)
+2026-10-31T14:19:28.2502168Z Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2026-10-31T14:19:28.2642488Z Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+2026-10-31T14:19:28.3019852Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 144.6 MB/s  0:00:00
+2026-10-31T14:19:28.3144516Z Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+2026-10-31T14:19:28.3317570Z Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+2026-10-31T14:19:28.3367516Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 363.2 MB/s  0:00:00
+2026-10-31T14:19:28.3487678Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-31T14:19:28.3626996Z Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+2026-10-31T14:19:28.4162863Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 131.9 MB/s  0:00:00
+2026-10-31T14:19:28.4286986Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+2026-10-31T14:19:28.4353674Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 215.5 MB/s  0:00:00
+2026-10-31T14:19:28.4479401Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+2026-10-31T14:19:28.4618767Z Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+2026-10-31T14:19:28.4757677Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+2026-10-31T14:19:28.4897325Z Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+2026-10-31T14:19:28.7541914Z Installing collected packages: tzdata, six, pyparsing, pygments, pluggy, pillow, packaging, numpy, kiwisolver, iniconfig, fonttools, cycler, coverage, python-dateutil, pytest, opencv-python-headless, contourpy, pytest-cov, matplotlib
+2026-10-31T14:19:32.9743883Z 
+2026-10-31T14:19:32.9757919Z Successfully installed contourpy-1.4.0 coverage-7.17.0 cycler-0.12.1 fonttools-4.68.0 iniconfig-2.3.1 kiwisolver-1.5.1 matplotlib-3.11.2 numpy-2.2.6 opencv-python-headless-4.11.0.86 packaging-26.3 pillow-13.0.0 pluggy-1.7.0 pygments-2.21.0 pyparsing-3.3.3 pytest-9.2.0 pytest-cov-7.1.0 python-dateutil-3.0.0 six-1.17.0 tzdata-2026.6
+2026-10-31T14:19:33.2070620Z ##[group]Run python -m unittest discover -s . -p 'test*.py' -v 2>&1 | tee artifacts/ci-python/unittest.log
+2026-10-31T14:19:33.2071324Z [36;1mpython -m unittest discover -s . -p 'test*.py' -v 2>&1 | tee artifacts/ci-python/unittest.log[0m
+2026-10-31T14:19:33.2088657Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-31T14:19:33.2088862Z env:
+2026-10-31T14:19:33.2089014Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:33.2089251Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-31T14:19:33.2089482Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:33.2089693Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:33.2089903Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:33.2090115Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-31T14:19:33.2090296Z ##[endgroup]
+2026-10-31T14:19:33.5795085Z test_admission_files_match_filter_decisions (test_image_preprocessing.ArtifactTests.test_admission_files_match_filter_decisions) ... ok
+2026-10-31T14:19:33.5849761Z test_output_directory_has_no_unrelated_images (test_image_preprocessing.ArtifactTests.test_output_directory_has_no_unrelated_images) ... ok
+2026-10-31T14:19:33.6393719Z test_source_hashes_and_five_final_arrays (test_image_preprocessing.ArtifactTests.test_source_hashes_and_five_final_arrays) ... ok
+2026-10-31T14:19:33.7257005Z test_cli_missing_input_exits_nonzero (test_image_preprocessing.InputTests.test_cli_missing_input_exits_nonzero) ... ok
+2026-10-31T14:19:33.7261339Z test_corrupt_file (test_image_preprocessing.InputTests.test_corrupt_file) ... ok
+2026-10-31T14:19:33.7263907Z test_empty_file (test_image_preprocessing.InputTests.test_empty_file) ... ok
+2026-10-31T14:19:33.7265479Z test_invalid_arrays (test_image_preprocessing.InputTests.test_invalid_arrays) ... ok
+2026-10-31T14:19:33.7267149Z test_missing_file (test_image_preprocessing.InputTests.test_missing_file) ... ok
+2026-10-31T14:19:33.7271269Z test_valid_file_loads_as_bgr (test_image_preprocessing.InputTests.test_valid_file_loads_as_bgr) ... ok
+2026-10-31T14:19:33.7276070Z test_area_below_equal_above_threshold (test_image_preprocessing.OutlierTests.test_area_below_equal_above_threshold) ... ok
+2026-10-31T14:19:33.7277456Z test_brightness_below_equal_above_threshold (test_image_preprocessing.OutlierTests.test_brightness_below_equal_above_threshold) ... ok
+2026-10-31T14:19:33.7278525Z test_invalid_mask_is_rejected (test_image_preprocessing.OutlierTests.test_invalid_mask_is_rejected) ... ok
+2026-10-31T14:19:33.7279332Z test_invalid_thresholds_are_rejected (test_image_preprocessing.OutlierTests.test_invalid_thresholds_are_rejected) ... ok
+2026-10-31T14:19:33.7282471Z test_known_normal_dark_small (test_image_preprocessing.OutlierTests.test_known_normal_dark_small) ... ok
+2026-10-31T14:19:33.7283216Z test_largest_component_not_total_or_bounding_box (test_image_preprocessing.OutlierTests.test_largest_component_not_total_or_bounding_box) ... ok
+2026-10-31T14:19:33.7283950Z test_no_red_region_is_zero (test_image_preprocessing.OutlierTests.test_no_red_region_is_zero) ... ok
+2026-10-31T14:19:33.7284564Z test_pixel_statistics_known_bgr (test_image_preprocessing.PixelTests.test_pixel_statistics_known_bgr) ... ok
+2026-10-31T14:19:33.7285200Z test_red_and_blue_are_not_swapped (test_image_preprocessing.PixelTests.test_red_and_blue_are_not_swapped) ... ok
+2026-10-31T14:19:33.7286569Z test_red_hue_boundaries (test_image_preprocessing.PixelTests.test_red_hue_boundaries) ... ok
+2026-10-31T14:19:33.7287204Z test_saturation_and_value_boundaries (test_image_preprocessing.PixelTests.test_saturation_and_value_boundaries) ... ok
+2026-10-31T14:19:33.7287872Z test_threshold_is_not_a_red_mask (test_image_preprocessing.PixelTests.test_threshold_is_not_a_red_mask) ... ok
+2026-10-31T14:19:33.7288673Z test_threshold_is_strictly_greater_than_127 (test_image_preprocessing.PixelTests.test_threshold_is_strictly_greater_than_127) ... ok
+2026-10-31T14:19:33.7314578Z test_blur_spreads_impulse_and_reduces_peak (test_image_preprocessing.PreprocessingTests.test_blur_spreads_impulse_and_reduces_peak) ... ok
+2026-10-31T14:19:33.7332099Z test_color_change_preserves_hue_changes_sv (test_image_preprocessing.PreprocessingTests.test_color_change_preserves_hue_changes_sv) ... ok
+2026-10-31T14:19:33.7340309Z test_dimensions_dtype_and_channels (test_image_preprocessing.PreprocessingTests.test_dimensions_dtype_and_channels) ... ok
+2026-10-31T14:19:33.7360462Z test_flip_reverses_columns (test_image_preprocessing.PreprocessingTests.test_flip_reverses_columns) ... ok
+2026-10-31T14:19:33.7388207Z test_normalization_numeric_contract (test_image_preprocessing.PreprocessingTests.test_normalization_numeric_contract) ... ok
+2026-10-31T14:19:33.7425464Z test_pipeline_is_deterministic (test_image_preprocessing.PreprocessingTests.test_pipeline_is_deterministic) ... ok
+2026-10-31T14:19:33.7451410Z test_rotation_moves_known_marker_counterclockwise (test_image_preprocessing.PreprocessingTests.test_rotation_moves_known_marker_counterclockwise) ... ok
+2026-10-31T14:19:33.7454427Z test_bgr_to_gray_luminance (week2.python.tests.test_image_to_3d.DepthTests.test_bgr_to_gray_luminance) ... ok
+2026-10-31T14:19:33.7455141Z test_black_white_normalized_depth (week2.python.tests.test_image_to_3d.DepthTests.test_black_white_normalized_depth) ... ok
+2026-10-31T14:19:33.7455853Z test_input_immutable (week2.python.tests.test_image_to_3d.DepthTests.test_input_immutable) ... ok
+2026-10-31T14:19:33.7456436Z test_none_and_empty_are_rejected (week2.python.tests.test_image_to_3d.DepthTests.test_none_and_empty_are_rejected) ... ok
+2026-10-31T14:19:33.7457471Z test_wrong_dtype_dimension_channels_rejected (week2.python.tests.test_image_to_3d.DepthTests.test_wrong_dtype_dimension_channels_rejected) ... ok
+2026-10-31T14:19:33.7468288Z test_candidate_pipeline_output (week2.python.tests.test_image_to_3d.FeedbackTests.test_candidate_pipeline_output) ... ok
+2026-10-31T14:19:33.7741145Z test_compare_feedback_reports_both_polarities_and_timing (week2.python.tests.test_image_to_3d.FeedbackTests.test_compare_feedback_reports_both_polarities_and_timing) ... ok
+2026-10-31T14:19:33.7742417Z test_make_visualization_invalid_sampling_limit (week2.python.tests.test_image_to_3d.FeedbackTests.test_make_visualization_invalid_sampling_limit) ... ok
+2026-10-31T14:19:33.7872849Z test_noisy_otsu_output_binary_and_bounded (week2.python.tests.test_image_to_3d.FeedbackTests.test_noisy_otsu_output_binary_and_bounded) ... ok
+2026-10-31T14:19:33.7874364Z test_otsu_bright_no_red_object_exact_area (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_bright_no_red_object_exact_area) ... ok
+2026-10-31T14:19:33.7875599Z test_otsu_dark_object_reverse_polarity (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_dark_object_reverse_polarity) ... ok
+2026-10-31T14:19:33.7876380Z test_otsu_invalid_mask_rejected (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_invalid_mask_rejected) ... ok
+2026-10-31T14:19:33.7878908Z test_otsu_same_luminance_cannot_separate (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_same_luminance_cannot_separate) ... ok
+2026-10-31T14:19:33.7879863Z test_otsu_uniform_is_ambiguous_not_object_found (week2.python.tests.test_image_to_3d.FeedbackTests.test_otsu_uniform_is_ambiguous_not_object_found) ... ok
+2026-10-31T14:19:33.7880926Z test_rotation_border_and_zero_degrees (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_border_and_zero_degrees) ... ok
+2026-10-31T14:19:33.7881703Z test_rotation_invalid_mode (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_invalid_mode) ... ok
+2026-10-31T14:19:33.7882405Z test_rotation_modes_distinguishable (week2.python.tests.test_image_to_3d.FeedbackTests.test_rotation_modes_distinguishable) ... ok
+2026-10-31T14:19:35.3664954Z test_actual_cli_writes_valid_json_and_corresponding_images (week2.python.tests.test_image_to_3d.HardeningTests.test_actual_cli_writes_valid_json_and_corresponding_images) ... ok
+2026-10-31T14:19:35.4522186Z test_actual_plot_respects_limit_for_extreme_aspect_ratio (week2.python.tests.test_image_to_3d.HardeningTests.test_actual_plot_respects_limit_for_extreme_aspect_ratio) ... ok
+2026-10-31T14:19:35.4526608Z test_cli_bad_input_uses_diagnostic_error (week2.python.tests.test_image_to_3d.HardeningTests.test_cli_bad_input_uses_diagnostic_error) ... [ WARN:0@2.018] global loadsave.cpp:268 findDecoder imread_('/tmp/tmp_rwfvnnp/does_not_exist.png'): can't open/read file: check file path/integrity
+2026-10-31T14:19:35.4535616Z usage: -m [-h] [--input INPUT] [--output-dir OUTPUT_DIR]
+2026-10-31T14:19:35.4536001Z -m: error: Cannot read /tmp/tmp_rwfvnnp/does_not_exist.png
+2026-10-31T14:19:35.4536290Z ok
+2026-10-31T14:19:35.4536788Z test_colormap_is_jet_not_three_copies_of_gray (week2.python.tests.test_image_to_3d.HardeningTests.test_colormap_is_jet_not_three_copies_of_gray) ... ok
+2026-10-31T14:19:35.4541356Z test_image_write_error_is_not_silent (week2.python.tests.test_image_to_3d.HardeningTests.test_image_write_error_is_not_silent) ... ok
+2026-10-31T14:19:35.4542225Z test_invalid_sampler_dimensions_and_budget (week2.python.tests.test_image_to_3d.HardeningTests.test_invalid_sampler_dimensions_and_budget) ... ok
+2026-10-31T14:19:35.4543563Z test_otsu_diagonal_pixels_use_eight_connectivity (week2.python.tests.test_image_to_3d.HardeningTests.test_otsu_diagonal_pixels_use_eight_connectivity) ... ok
+2026-10-31T14:19:35.4544525Z test_otsu_largest_component_not_total_bright_area (week2.python.tests.test_image_to_3d.HardeningTests.test_otsu_largest_component_not_total_bright_area) ... ok
+2026-10-31T14:19:35.4546652Z test_plot_point_budget_must_be_strict_integer (week2.python.tests.test_image_to_3d.HardeningTests.test_plot_point_budget_must_be_strict_integer) ... ok
+2026-10-31T14:19:35.4547498Z test_points_reject_boolean_budget (week2.python.tests.test_image_to_3d.HardeningTests.test_points_reject_boolean_budget) ... ok
+2026-10-31T14:19:35.4548448Z test_rotation_rejects_non_numeric_angle_without_leaking_type_error (week2.python.tests.test_image_to_3d.HardeningTests.test_rotation_rejects_non_numeric_angle_without_leaking_type_error) ... ok
+2026-10-31T14:19:35.4549482Z test_sampling_budget_across_extreme_aspect_ratios (week2.python.tests.test_image_to_3d.HardeningTests.test_sampling_budget_across_extreme_aspect_ratios) ... ok
+2026-10-31T14:19:35.4550345Z test_z_scale_cannot_silently_underflow (week2.python.tests.test_image_to_3d.HardeningTests.test_z_scale_cannot_silently_underflow) ... ok
+2026-10-31T14:19:35.4552531Z test_color_map_shape_and_input_immutable (week2.python.tests.test_image_to_3d.PointTests.test_color_map_shape_and_input_immutable) ... ok
+2026-10-31T14:19:35.4557834Z test_depth_invalid_inputs (week2.python.tests.test_image_to_3d.PointTests.test_depth_invalid_inputs) ... ok
+2026-10-31T14:19:35.4558901Z test_memory_budget_rejects_excessive_point_count (week2.python.tests.test_image_to_3d.PointTests.test_memory_budget_rejects_excessive_point_count) ... ok
+2026-10-31T14:19:35.4559700Z test_one_pixel (week2.python.tests.test_image_to_3d.PointTests.test_one_pixel) ... ok
+2026-10-31T14:19:35.4560934Z test_scale_invalid (week2.python.tests.test_image_to_3d.PointTests.test_scale_invalid) ... ok
+2026-10-31T14:19:35.4563277Z test_xy_z_exact_known_coordinates (week2.python.tests.test_image_to_3d.PointTests.test_xy_z_exact_known_coordinates) ... ok
+2026-10-31T14:19:35.4564083Z test_z_scale_float32_overflow_is_rejected (week2.python.tests.test_image_to_3d.PointTests.test_z_scale_float32_overflow_is_rejected) ... ok
+2026-10-31T14:19:35.5482703Z test_saved_images_are_readable (week2.python.tests.test_image_to_3d.VisualTests.test_saved_images_are_readable) ... ok
+2026-10-31T14:19:35.5483112Z 
+2026-10-31T14:19:35.5483265Z ----------------------------------------------------------------------
+2026-10-31T14:19:35.5483577Z Ran 67 tests in 2.084s
+2026-10-31T14:19:35.5483699Z 
+2026-10-31T14:19:35.5483774Z OK
+2026-10-31T14:19:35.5483937Z {
+2026-10-31T14:19:35.5484124Z   "input": "/tmp/tmpcdxlf5up/sample.png",
+2026-10-31T14:19:35.5484361Z   "image_shape": [
+2026-10-31T14:19:35.5484719Z     16,
+2026-10-31T14:19:35.5484872Z     24,
+2026-10-31T14:19:35.5485021Z     3
+2026-10-31T14:19:35.5485165Z   ],
+2026-10-31T14:19:35.5485405Z   "depth_type": "normalized grayscale intensity; not physical depth",
+2026-10-31T14:19:35.5485638Z   "point_count": 384,
+2026-10-31T14:19:35.5485764Z   "visualizations": {
+2026-10-31T14:19:35.5485900Z     "original": "original.png",
+2026-10-31T14:19:35.5486045Z     "depth_map": "depth_map.png",
+2026-10-31T14:19:35.5486190Z     "point_cloud": "point_cloud.png"
+2026-10-31T14:19:35.5486326Z   },
+2026-10-31T14:19:35.5486432Z   "mentor_comparisons": {
+2026-10-31T14:19:35.5486559Z     "rotation": {
+2026-10-31T14:19:35.5486691Z       "baseline_border": "BORDER_REFLECT_101",
+2026-10-31T14:19:35.5486859Z       "candidate_border": "BORDER_REPLICATE",
+2026-10-31T14:19:35.5487020Z       "mean_absolute_pixel_delta": 0.0,
+2026-10-31T14:19:35.5487175Z       "constant_zero_corner_count": 26
+2026-10-31T14:19:35.5487312Z     },
+2026-10-31T14:19:35.5487415Z     "otsu": {
+2026-10-31T14:19:35.5487537Z       "bright_largest_region_ratio": 0.25,
+2026-10-31T14:19:35.5487690Z       "dark_largest_region_ratio": 0.75,
+2026-10-31T14:19:35.5487877Z       "selected_foreground_polarity": "UNDETERMINED (no ground truth)"
+2026-10-31T14:19:35.5488062Z     },
+2026-10-31T14:19:35.5488170Z     "preprocess_order": {
+2026-10-31T14:19:35.5488306Z       "old_median_ms": 0.5982699999549368,
+2026-10-31T14:19:35.5488459Z       "candidate_median_ms": 0.5633380000062971,
+2026-10-31T14:19:35.5488645Z       "mean_absolute_normalized_delta": 0.0009478009887970984,
+2026-10-31T14:19:35.5488822Z       "candidate_adopted": false,
+2026-10-31T14:19:35.5489042Z       "reason": "Keep Week1 pipeline unchanged; timing and output both differ; pilot only"
+2026-10-31T14:19:35.5489263Z     }
+2026-10-31T14:19:35.5489362Z   }
+2026-10-31T14:19:35.5489456Z }
+2026-10-31T14:19:35.6116747Z ##[group]Run python -m pytest week2/python/tests/test_image_to_3d.py -q --cov=week2.python.image_to_3d --cov-report=term-missing --cov-report=json:artifacts/ci-python/coverage.json 2>&1 | tee artifacts/ci-python/coverage.log
+2026-10-31T14:19:35.6117595Z [36;1mpython -m pytest week2/python/tests/test_image_to_3d.py -q --cov=week2.python.image_to_3d --cov-report=term-missing --cov-report=json:artifacts/ci-python/coverage.json 2>&1 | tee artifacts/ci-python/coverage.log[0m
+2026-10-31T14:19:35.6135226Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-31T14:19:35.6135415Z env:
+2026-10-31T14:19:35.6135595Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:35.6135891Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-31T14:19:35.6136132Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:35.6136349Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:35.6136591Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:35.6136813Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-31T14:19:35.6136999Z ##[endgroup]
+2026-10-31T14:19:37.4087532Z ......................................                                                                    [100%]
+2026-10-31T14:19:37.4087841Z ================================ tests coverage ================================
+2026-10-31T14:19:37.4088086Z _______________ coverage: platform linux, python 3.12.15-final-0 _______________
+2026-10-31T14:19:37.4088272Z 
+2026-10-31T14:19:37.4088357Z Name                          Stmts   Miss  Cover   Missing
+2026-10-31T14:19:37.4088553Z -----------------------------------------------------------
+2026-10-31T14:19:37.4088752Z week2/python/image_to_3d.py     142      1    99%   218
+2026-10-31T14:19:37.4088947Z -----------------------------------------------------------
+2026-10-31T14:19:37.4089123Z TOTAL                           142      1    99%
+2026-10-31T14:19:37.4089335Z Coverage JSON written to file artifacts/ci-python/coverage.json
+2026-10-31T14:19:37.4089537Z 38 passed, 39 subtests passed in 1.32s
+2026-10-31T14:19:37.4732355Z ##[group]Run python -m week2.python.image_to_3d --input data/originals/sample_02.jpg --output-dir artifacts/ci-python/reproduced 2>&1 | tee artifacts/ci-python/visualizations.log
+2026-10-31T14:19:37.4732988Z [36;1mpython -m week2.python.image_to_3d --input data/originals/sample_02.jpg --output-dir artifacts/ci-python/reproduced 2>&1 | tee artifacts/ci-python/visualizations.log[0m
+2026-10-31T14:19:37.4749342Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-31T14:19:37.4749517Z env:
+2026-10-31T14:19:37.4749664Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:37.4749894Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-31T14:19:37.4750114Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:37.4750317Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:37.4750517Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:37.4750877Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-31T14:19:37.4751048Z   MPLBACKEND: Agg
+2026-10-31T14:19:37.4751163Z ##[endgroup]
+2026-10-31T14:19:37.9967515Z {
+2026-10-31T14:19:37.9967861Z   "input": "data/originals/sample_02.jpg",
+2026-10-31T14:19:37.9968152Z   "image_shape": [
+2026-10-31T14:19:37.9968329Z     512,
+2026-10-31T14:19:37.9968517Z     512,
+2026-10-31T14:19:37.9968666Z     3
+2026-10-31T14:19:37.9968818Z   ],
+2026-10-31T14:19:37.9969068Z   "depth_type": "normalized grayscale intensity; not physical depth",
+2026-10-31T14:19:37.9969402Z   "point_count": 262144,
+2026-10-31T14:19:37.9969601Z   "visualizations": {
+2026-10-31T14:19:37.9969814Z     "original": "original.png",
+2026-10-31T14:19:37.9970042Z     "depth_map": "depth_map.png",
+2026-10-31T14:19:37.9970280Z     "point_cloud": "point_cloud.png"
+2026-10-31T14:19:37.9970500Z   },
+2026-10-31T14:19:37.9970798Z   "mentor_comparisons": {
+2026-10-31T14:19:37.9970994Z     "rotation": {
+2026-10-31T14:19:37.9971208Z       "baseline_border": "BORDER_REFLECT_101",
+2026-10-31T14:19:37.9971472Z       "candidate_border": "BORDER_REPLICATE",
+2026-10-31T14:19:37.9971736Z       "mean_absolute_pixel_delta": 2.1943982442220054,
+2026-10-31T14:19:37.9972003Z       "constant_zero_corner_count": 26040
+2026-10-31T14:19:37.9972232Z     },
+2026-10-31T14:19:37.9972394Z     "otsu": {
+2026-10-31T14:19:37.9972845Z       "bright_largest_region_ratio": 0.2910575866699219,
+2026-10-31T14:19:37.9973134Z       "dark_largest_region_ratio": 0.4684715270996094,
+2026-10-31T14:19:37.9973455Z       "selected_foreground_polarity": "UNDETERMINED (no ground truth)"
+2026-10-31T14:19:37.9973750Z     },
+2026-10-31T14:19:37.9973912Z     "preprocess_order": {
+2026-10-31T14:19:37.9974112Z       "old_median_ms": 1.4132069999845953,
+2026-10-31T14:19:37.9974354Z       "candidate_median_ms": 1.2670060000345984,
+2026-10-31T14:19:37.9974647Z       "mean_absolute_normalized_delta": 0.00953639205545187,
+2026-10-31T14:19:37.9974931Z       "candidate_adopted": false,
+2026-10-31T14:19:37.9975291Z       "reason": "Keep Week1 pipeline unchanged; timing and output both differ; pilot only"
+2026-10-31T14:19:37.9975645Z     }
+2026-10-31T14:19:37.9975793Z   }
+2026-10-31T14:19:37.9975949Z }
+2026-10-31T14:19:38.0542238Z ##[group]Run actions/upload-artifact@v4
+2026-10-31T14:19:38.0542403Z with:
+2026-10-31T14:19:38.0542523Z   name: week2-python-evidence
+2026-10-31T14:19:38.0542672Z   path: artifacts/ci-python/
+2026-10-31T14:19:38.0542810Z   if-no-files-found: warn
+2026-10-31T14:19:38.0542940Z   compression-level: 6
+2026-10-31T14:19:38.0543063Z   overwrite: false
+2026-10-31T14:19:38.0543184Z   include-hidden-files: false
+2026-10-31T14:19:38.0543312Z env:
+2026-10-31T14:19:38.0543454Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:38.0543686Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-31T14:19:38.0543920Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:38.0544125Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:38.0544328Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-31T14:19:38.0544536Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-31T14:19:38.0544736Z ##[endgroup]
+2026-10-31T14:19:38.1652066Z (node:2849) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-31T14:19:38.1652487Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-31T14:19:38.1711218Z With the provided path, there will be 17 files uploaded
+2026-10-31T14:19:38.1715200Z Artifact name is valid!
+2026-10-31T14:19:38.1715420Z Root directory input is valid!
+2026-10-31T14:19:38.4470813Z Beginning upload of artifact content to blob storage
+2026-10-31T14:19:38.5303520Z (node:2849) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-31T14:19:38.9033907Z Uploaded bytes 2560865
+2026-10-31T14:19:38.9410285Z Finished uploading artifact content to blob storage!
+2026-10-31T14:19:38.9410990Z SHA256 digest of uploaded artifact zip is fedd984f878af705eedfdde7b5038930545edf7d8f85ad11b8f4ace9ba2639e2
+2026-10-31T14:19:38.9412643Z Finalizing artifact upload
+2026-10-31T14:19:39.3860142Z Artifact week2-python-evidence.zip successfully finalized. Artifact ID 13045572814
+2026-10-31T14:19:39.3861047Z Artifact week2-python-evidence has been successfully uploaded! Final size is 2560865 bytes. Artifact ID is 13045572814
+2026-10-31T14:19:39.3865466Z Artifact download URL: https://github.com/brightlcy/comento-image-processing/actions/runs/41209580635/artifacts/13045572814
+2026-10-31T14:19:39.4021811Z Post job cleanup.
+2026-10-31T14:19:39.4778044Z (node:2861) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-31T14:19:39.4778648Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-31T14:19:39.4902886Z Post job cleanup.
+2026-10-31T14:19:39.5477953Z [command]/usr/bin/git version
+2026-10-31T14:19:39.5512773Z git version 2.56.0
+2026-10-31T14:19:39.5538033Z Temporarily overriding HOME='/home/runner/work/_temp/103d01f0-1f4f-4006-b828-18656944f2d1' before making global git config changes
+2026-10-31T14:19:39.5538872Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-31T14:19:39.5541668Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/comento-image-processing/comento-image-processing
+2026-10-31T14:19:39.5575217Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-31T14:19:39.5606131Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-31T14:19:39.5808952Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-31T14:19:39.5834773Z http.https://github.com/.extraheader
+2026-10-31T14:19:39.5843549Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-31T14:19:39.5877884Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-31T14:19:39.6103091Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-31T14:19:39.6151276Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-31T14:19:39.6492180Z Cleaning up orphan processes
+2026-10-31T14:19:39.6724984Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

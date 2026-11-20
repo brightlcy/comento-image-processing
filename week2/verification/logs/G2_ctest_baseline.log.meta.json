@@ -1,0 +1,12 @@
+{
+  "command": [
+    "ctest",
+    "--test-dir",
+    "build/cpp",
+    "--output-on-failure"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:13:33.847801+00:00",
+  "duration_seconds": 1.019,
+  "exit_code": 0
+}

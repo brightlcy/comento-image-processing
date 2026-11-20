@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "week2/tools/check_cpp_mutations.py",
+    "--output-dir",
+    "/workspace/scratch/e487502bcbea/evidence/mutations-final"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:18:32.211517+00:00",
+  "duration_seconds": 33.956,
+  "exit_code": 0
+}

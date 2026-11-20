@@ -1,0 +1,32 @@
+$ /tmp/comento-mutants-_ctnz_n0/bgr_rgb_swap/build/cpp_gtests --gtest_filter=OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+Running main() from gmock_main.cc
+Note: Google Test filter = OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OpenCvAdapter
+[ RUN      ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+/tmp/comento-mutants-_ctnz_n0/bgr_rgb_swap/cpp/tests/test_opencv_adapter.cpp:44: Failure
+The difference between depth.intensity[0] and gray.at<uint8_t>(0,0)/255.0f is 0.18431373685598373, which exceeds 1.0f/255.0f, where
+depth.intensity[0] evaluates to 0.29803922772407532,
+gray.at<uint8_t>(0,0)/255.0f evaluates to 0.11372549086809158, and
+1.0f/255.0f evaluates to 0.0039215688593685627.
+
+/tmp/comento-mutants-_ctnz_n0/bgr_rgb_swap/cpp/tests/test_opencv_adapter.cpp:45: Failure
+Expected equality of these values:
+  depth.intensity[0]
+    Which is: 0.29803923
+  29.f/255.f
+    Which is: 0.11372549
+
+[  FAILED  ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed (0 ms)
+[----------] 1 test from OpenCvAdapter (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed
+
+ 1 FAILED TEST
+
+EXIT_CODE=1

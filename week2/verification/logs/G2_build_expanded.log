@@ -1,0 +1,76 @@
+$ cmake --build build/cpp --parallel 2 --verbose
+Change Dir: '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+
+Run Build Command(s): /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j2
+/workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -S/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp -B/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp --check-build-system CMakeFiles/Makefile.cmake 0
+/workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_progress_start /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/depth_projection.dir/build.make CMakeFiles/depth_projection.dir/depend
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+cd /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp && /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/depth_projection.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/depth_projection.dir/src/depth_projection.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/depth_projection.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target depth_projection
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/depth_projection.dir/build.make CMakeFiles/depth_projection.dir/build
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Nothing to be done for 'CMakeFiles/depth_projection.dir/build'.
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+[ 18%] Built target depth_projection
+/usr/bin/gmake  -f CMakeFiles/cpp_core_smoke.dir/build.make CMakeFiles/cpp_core_smoke.dir/depend
+/usr/bin/gmake  -f CMakeFiles/opencv_depth_source.dir/build.make CMakeFiles/opencv_depth_source.dir/depend
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+cd /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp && /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_core_smoke.dir/DependInfo.cmake "--color="
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+cd /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp && /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/opencv_depth_source.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/cpp_core_smoke.dir/tests/core_smoke.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_core_smoke.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target cpp_core_smoke
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/cpp_core_smoke.dir/build.make CMakeFiles/cpp_core_smoke.dir/build
+Dependencies file "CMakeFiles/opencv_depth_source.dir/src/opencv_depth_source.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/opencv_depth_source.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target opencv_depth_source
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Nothing to be done for 'CMakeFiles/cpp_core_smoke.dir/build'.
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/opencv_depth_source.dir/build.make CMakeFiles/opencv_depth_source.dir/build
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Nothing to be done for 'CMakeFiles/opencv_depth_source.dir/build'.
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+[ 36%] Built target cpp_core_smoke
+[ 54%] Built target opencv_depth_source
+/usr/bin/gmake  -f CMakeFiles/cpp_depth_demo.dir/build.make CMakeFiles/cpp_depth_demo.dir/depend
+/usr/bin/gmake  -f CMakeFiles/cpp_gtests.dir/build.make CMakeFiles/cpp_gtests.dir/depend
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+cd /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp && /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_depth_demo.dir/DependInfo.cmake "--color="
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+cd /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp && /workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_depends "Unix Makefiles" /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_gtests.dir/DependInfo.cmake "--color="
+Dependencies file "CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_gtests.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_gtests.dir/compiler_depend.internal".
+Dependencies file "CMakeFiles/cpp_depth_demo.dir/src/depth_demo.cpp.o.d" is newer than depends file "/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles/cpp_depth_demo.dir/compiler_depend.internal".
+Consolidate compiler generated dependencies of target cpp_depth_demo
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/cpp_depth_demo.dir/build.make CMakeFiles/cpp_depth_demo.dir/build
+Consolidate compiler generated dependencies of target cpp_gtests
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/usr/bin/gmake  -f CMakeFiles/cpp_gtests.dir/build.make CMakeFiles/cpp_gtests.dir/build
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Nothing to be done for 'CMakeFiles/cpp_depth_demo.dir/build'.
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+gmake[2]: Entering directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+[ 72%] Built target cpp_depth_demo
+[ 81%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o
+/usr/bin/c++  -I/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/include -isystem /workspace/scratch/e487502bcbea/_deps/usr/include -isystem /workspace/scratch/e487502bcbea/_deps/usr/include/opencv4 -std=c++17 -DGTEST_HAS_PTHREAD=1 -MD -MT CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o -MF CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o.d -o CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o -c /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp
+[ 90%] Building CXX object CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o
+/usr/bin/c++  -I/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/include -isystem /workspace/scratch/e487502bcbea/_deps/usr/include -isystem /workspace/scratch/e487502bcbea/_deps/usr/include/opencv4 -std=c++17 -DGTEST_HAS_PTHREAD=1 -MD -MT CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o -MF CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o.d -o CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o -c /workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_opencv_adapter.cpp
+[100%] Linking CXX executable cpp_gtests
+/workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_link_script CMakeFiles/cpp_gtests.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cpp_gtests.dir/tests/test_depth_projection.cpp.o CMakeFiles/cpp_gtests.dir/tests/test_opencv_adapter.cpp.o -o cpp_gtests  -Wl,-rpath,/workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu libdepth_projection.a /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libgtest_main.a /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libgmock.a libopencv_depth_source.a /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libgtest.a libdepth_projection.a /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.6.0 /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0 /workspace/scratch/e487502bcbea/_deps/usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0 
+/workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -D TEST_TARGET=cpp_gtests -D TEST_EXECUTABLE=/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/cpp_gtests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=cpp_gtests_TESTS -D CTEST_FILE=/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/cpp_gtests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /workspace/scratch/e487502bcbea/_deps/usr/share/cmake-3.28/Modules/GoogleTestAddTests.cmake
+gmake[2]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+[100%] Built target cpp_gtests
+gmake[1]: Leaving directory '/workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp'
+/workspace/scratch/e487502bcbea/_deps/usr/bin/cmake -E cmake_progress_start /workspace/scratch/e487502bcbea/project/comento-image-processing/build/cpp/CMakeFiles 0
+
+
+EXIT_CODE=0

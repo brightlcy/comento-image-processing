@@ -1,0 +1,21 @@
+$ env GMOCK_VERBOSE=info ./build/cpp/cpp_gtests '--gtest_filter=MockSource.*'
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = MockSource.*
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from MockSource
+[ RUN      ] MockSource.LoadsExactlyOnceAndConverts
+[       OK ] MockSource.LoadsExactlyOnceAndConverts (0 ms)
+[ RUN      ] MockSource.PropagatesLoadFailure
+[       OK ] MockSource.PropagatesLoadFailure (0 ms)
+[ RUN      ] MockSource.RejectsCorruptLoadedDimensions
+[       OK ] MockSource.RejectsCorruptLoadedDimensions (0 ms)
+[ RUN      ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad
+[       OK ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad (0 ms)
+[----------] 4 tests from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+
+EXIT_CODE=0

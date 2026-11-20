@@ -1,0 +1,30 @@
+{
+  "ppt/media/image.png": {
+    "sha256": "6ed1f7b898b4ee5d844cf1b060b15619f6761072fdddce099fccddce8a300e08",
+    "result_file": "week2/results/original.png"
+  },
+  "ppt/media/image2.png": {
+    "sha256": "9e4174c34a6c20e238d716890d03d0ee8481709061e49eda7929ba728f456604",
+    "result_file": "week2/results/depth_map.png"
+  },
+  "ppt/media/image3.png": {
+    "sha256": "895d7861b9260bbb5bd47ec497927bda5a9224eb7e6b700221138f50e631182a",
+    "result_file": "week2/results/point_cloud.png"
+  },
+  "ppt/media/image4.png": {
+    "sha256": "c876ece1fb1885c16ab8e4d6e0dfdc655cf6715f02754d1bbe05160ad419da9c",
+    "result_file": "week2/results/rotation_reflect101.png"
+  },
+  "ppt/media/image5.png": {
+    "sha256": "14c55b118396f23071e896e3020b3d6d70fbb1c1a1c98b90a2f07ba4873f4195",
+    "result_file": "week2/results/rotation_replicate.png"
+  },
+  "ppt/media/image6.png": {
+    "sha256": "5a5dac50c449cb6b62529651cb63cfcdfb959a6ce272b8d22e5d390ea4c631bc",
+    "result_file": "week2/results/otsu_bright.png"
+  },
+  "ppt/media/image7.png": {
+    "sha256": "29651fa0bece555b0b8f48f3eb0667f11459aaf6405d5c18743b959c6c66c826",
+    "result_file": "week2/results/otsu_dark.png"
+  }
+}

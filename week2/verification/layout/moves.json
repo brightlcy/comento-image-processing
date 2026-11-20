@@ -1,0 +1,27 @@
+{
+  "before_layout_commit": "0537db14dedef5b153b08d5b5324d99936247da6",
+  "moves": {
+    "week2/image_to_3d.py": "week2/python/image_to_3d.py",
+    "week2/test_image_to_3d.py": "week2/python/tests/test_image_to_3d.py",
+    "week2/comento_week2.ppt": "week2/presentation/comento_week2.ppt",
+    "week2/PR_DESCRIPTION.md": "week2/docs/PR_DESCRIPTION.md",
+    "week2/verification/EXECUTION_STATUS.md": "week2/docs/EXECUTION_STATUS.md",
+    "week2/verification/PUSH_PLAN.md": "week2/docs/PUSH_PLAN.md",
+    "week2/verification/REQUIREMENTS_CHECK.md": "week2/docs/REQUIREMENTS_CHECK.md",
+    "week2/verification/CODE_REVIEW.md": "week2/docs/CODE_REVIEW.md",
+    "week2/verification/SKILL_USAGE.md": "week2/docs/SKILL_USAGE.md",
+    "week2/verification/WRITING_REVIEW.md": "week2/docs/WRITING_REVIEW.md"
+  },
+  "moved_bytes_preserved": {
+    "week2/image_to_3d.py": true,
+    "week2/test_image_to_3d.py": true,
+    "week2/comento_week2.ppt": true,
+    "week2/PR_DESCRIPTION.md": true,
+    "week2/verification/EXECUTION_STATUS.md": true,
+    "week2/verification/PUSH_PLAN.md": true,
+    "week2/verification/REQUIREMENTS_CHECK.md": true,
+    "week2/verification/CODE_REVIEW.md": true,
+    "week2/verification/SKILL_USAGE.md": true,
+    "week2/verification/WRITING_REVIEW.md": true
+  }
+}

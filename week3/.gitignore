@@ -1,0 +1,7 @@
+# Local datasets, weights and generated outputs
+datasets/
+weights/
+runs/
+outputs/
+*.pt
+*.onnx

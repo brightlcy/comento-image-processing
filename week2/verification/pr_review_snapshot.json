@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-31T06:07:42.023Z",
+  "pr": {
+    "url": "https://github.com/brightlcy/comento-image-processing/pull/1",
+    "state": "open",
+    "merged": false,
+    "head_ref": "feature/image-processing",
+    "head_sha": "ea19e846bad43211246eb854349bbcbc80292b95",
+    "base_ref": "main",
+    "base_sha": "5e5f651be12ae47057d0454caa53f2e27012ee50"
+  },
+  "reviews": [],
+  "comments": [],
+  "inline_comments": [],
+  "mentor_read_status": "UNKNOWN_NO_RECORDED_REVIEW_OR_COMMENT",
+  "remote_write_performed": false,
+  "approval_status": "AWAITING_PR_DESCRIPTION_REVIEW"
+}

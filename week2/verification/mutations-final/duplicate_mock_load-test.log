@@ -1,0 +1,29 @@
+$ /tmp/comento-mutants-_ctnz_n0/duplicate_mock_load/build/cpp_gtests --gtest_filter=MockSource.LoadsExactlyOnceAndConverts
+Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.LoadsExactlyOnceAndConverts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MockSource
+[ RUN      ] MockSource.LoadsExactlyOnceAndConverts
+/tmp/comento-mutants-_ctnz_n0/duplicate_mock_load/cpp/tests/test_depth_projection.cpp:133: Failure
+Mock function called more times than expected - returning default value.
+    Function call: load(@0x7ffcf0cc3410 "fixture.png")
+          Returns: 40-byte object <00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00 00-00>
+         Expected: to be called once
+           Actual: called twice - over-saturated and active
+
+unknown file: Failure
+C++ exception with description "Invalid depth shape or point budget exceeded" thrown in the test body.
+
+[  FAILED  ] MockSource.LoadsExactlyOnceAndConverts (0 ms)
+[----------] 1 test from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] MockSource.LoadsExactlyOnceAndConverts
+
+ 1 FAILED TEST
+
+EXIT_CODE=1

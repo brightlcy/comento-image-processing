@@ -1,0 +1,19 @@
+{
+  "tested_code_commit": "4b4ee7a92d56e347f9615918336953a552c078c5",
+  "files": {
+    ".github/workflows/comento-week2-cpp.yml": "b7d2e8e10b3a692bc357563f670b64a232493289163af6a3fbebcacbc58bbbda",
+    "week2/cpp/CMakeLists.txt": "2874c1353f700eb0709ca14b41a565fedd0d46fb3b4a873289f351f0d62ada43",
+    "week2/cpp/include/depth_projection.hpp": "0f9f41700dd523522b59c9b5710941d732c65e5c3837c9584bc0cc166fda9977",
+    "week2/cpp/include/opencv_depth_source.hpp": "4c815276a216d27b091d7b28a0d96b9475992ac471529e1314097b2176d2b715",
+    "week2/cpp/src/depth_demo.cpp": "3a41900d97a5f09f0567a567380bc265470a180f1da2149e94852282cab14182",
+    "week2/cpp/src/depth_projection.cpp": "0d259b797d211fb73212a544e5572a242b82f685464b3b17c76f28217151a31c",
+    "week2/cpp/src/opencv_depth_source.cpp": "66df4d96ef9d1ff47d28c70eddc539c0d1e651764f0f390c537218e30fdd633d",
+    "week2/cpp/tests/core_smoke.cpp": "64392ae0045dd3d6120acf386aa25be3698ff2abb3fe342f66741a5c34959595",
+    "week2/cpp/tests/test_depth_projection.cpp": "f50eb9c9c239650adc5bbe4f4aa6457d2364908e46048ff88a652daf07d9b239",
+    "week2/cpp/tests/test_opencv_adapter.cpp": "582e7aee6bd9f362354b60463fef664587707b5fed3c05cf7da4bbaa308c67db",
+    "week2/cpp/tests/xyz_probe.cpp": "624542d824706aae35204bc54b866fac8a577e84c2e3b00f5370e2478f0014a2",
+    "week2/tools/check_cpp_mutations.py": "6a0a2f2c461d9eadb5968475e3f83e79db942a0b165b7349acd9e2cdaa1d8939",
+    "week2/tools/compare_cpp_python.py": "9658ccb4792f83f7071fbb8eea2989de758c6c21ef4fdd7b79f93cbe6a1ff198"
+  },
+  "note": "Final docs/evidence commit follows this tested code commit; no production algorithm changed."
+}

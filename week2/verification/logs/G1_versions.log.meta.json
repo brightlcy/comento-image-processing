@@ -1,0 +1,11 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "g++ --version; cmake --version; pkg-config --modversion opencv4; pkg-config --modversion gtest gmock; find \"$COMENTO_DEPS/lib/x86_64-linux-gnu\" -maxdepth 3 \\( -name \"*GTest*\" -o -name \"*gtest*\" -o -name \"*gmock*\" -o -name \"OpenCVConfig.cmake\" \\); ldd build/cpp/cpp_gtests"
+  ],
+  "cwd": "/workspace/scratch/e487502bcbea/project/comento-image-processing",
+  "started_utc": "2026-10-31T05:13:35.180700+00:00",
+  "duration_seconds": 0.045,
+  "exit_code": 0
+}

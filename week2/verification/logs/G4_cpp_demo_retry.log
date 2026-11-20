@@ -1,0 +1,1 @@
+$ ./build/cpp/cpp_depth_demo data/originals/sample_02.jpg /workspace/scratch/e487502bcbea/evidence/depth_cpp.png

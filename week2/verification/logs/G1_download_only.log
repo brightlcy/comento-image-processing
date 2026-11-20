@@ -1,0 +1,176 @@
+$ env DEBIAN_FRONTEND=noninteractive apt-get -o APT::Sandbox::User=root -o Debug::NoLocking=1 -o Dir::Cache::archives=/workspace/scratch/e487502bcbea/_apt_cache -o Acquire::Retries=0 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 --download-only install -y --no-install-recommends g++ cmake ninja-build libopencv-dev libgtest-dev libgmock-dev fonts-noto-cjk
+Reading package lists...
+Building dependency tree...
+Reading state information...
+g++ is already the newest version (4:13.2.0-7ubuntu1).
+The following additional packages will be installed:
+  cmake-data gdal-data gdal-plugins googletest ibverbs-providers iso-codes
+  libaec0 libamd-comgr2 libamdhip64-5 libarmadillo12 libarpack2t64
+  libavcodec-dev libavformat-dev libavutil-dev libblosc1 libcfitsio10t64
+  libcharls2 libdc1394-dev libdeflate-dev libdw1t64 libevent-core-2.1-7t64
+  libevent-pthreads-2.1-7t64 libexif-dev libexif12 libfabric1 libfreexl1
+  libfyba0t64 libgd3 libgdal34t64 libgdcm-dev libgdcm3.0t64 libgeos-c1t64
+  libgeos3.12.1t64 libgeotiff5 libgl2ps1.4 libgphoto2-6t64 libgphoto2-dev
+  libgphoto2-port12t64 libgstreamer-plugins-base1.0-0 libgstreamer1.0-0
+  libhdf4-0-alt libhdf5-103-1t64 libhdf5-hl-100t64 libhsa-runtime64-1
+  libhsakmt1 libhwloc-plugins libhwloc15 libibverbs1 libimath-3-1-29t64
+  libimath-dev libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  libjsoncpp25 libkmlbase1t64 libkmldom1t64 libkmlengine1t64 liblerc-dev
+  libllvm17t64 liblzma-dev liblzma5 libminizip1t64 libmunge2 libmysqlclient21
+  libnetcdf19t64 libnl-route-3-200 libodbc2 libodbcinst2 libogdi4.1
+  libopencv-calib3d-dev libopencv-calib3d406t64 libopencv-contrib-dev
+  libopencv-contrib406t64 libopencv-core-dev libopencv-core406t64
+  libopencv-dnn-dev libopencv-dnn406t64 libopencv-features2d-dev
+  libopencv-features2d406t64 libopencv-flann-dev libopencv-flann406t64
+  libopencv-highgui-dev libopencv-highgui406t64 libopencv-imgcodecs-dev
+  libopencv-imgcodecs406t64 libopencv-imgproc-dev libopencv-imgproc406t64
+  libopencv-ml-dev libopencv-ml406t64 libopencv-objdetect-dev
+  libopencv-objdetect406t64 libopencv-photo-dev libopencv-photo406t64
+  libopencv-shape-dev libopencv-shape406t64 libopencv-stitching-dev
+  libopencv-stitching406t64 libopencv-superres-dev libopencv-superres406t64
+  libopencv-video-dev libopencv-video406t64 libopencv-videoio-dev
+  libopencv-videoio406t64 libopencv-videostab-dev libopencv-videostab406t64
+  libopencv-viz-dev libopencv-viz406t64 libopenexr-3-1-30 libopenexr-dev
+  libopenmpi3t64 liborc-0.4-0t64 libpkgconf3 libpmix2t64 libpng-dev libpq5
+  libproj25 libprotobuf32t64 libpsm-infinipath1 libpsm2-2 libqhull-r8.0
+  libqt5opengl5t64 libqt5test5t64 libraw1394-dev librdmacm1t64 librhash0
+  librttopo1 libsharpyuv-dev libsocket++1 libspatialite8t64 libsuperlu6
+  libswresample-dev libswscale-dev libsz2 libtbb-dev libtbb12 libtbbbind-2-5
+  libtbbmalloc2 libtcl8.6 libtiff-dev libtiffxx6 libtk8.6 libucx0
+  liburiparser1 libuv1t64 libvtk9.1t64 libwebp-dev libwebpdecoder3
+  libxerces-c3.2t64 libxft2 libxnvctrl0 libzstd-dev mysql-common pkg-config
+  pkgconf pkgconf-bin proj-data unixodbc-common xz-utils
+Suggested packages:
+  cmake-doc cmake-format elpa-cmake-mode fonts-noto-cjk-extra isoquery
+  libgd-tools geotiff-bin gdal-bin libgeotiff-epsg gphoto2
+  libvisual-0.4-plugins gstreamer1.0-tools libhdf4-doc libhdf4-alt-dev
+  hdf4-tools libhwloc-contrib-plugins liblzma-doc odbc-postgresql tdsodbc
+  ogdi-bin opencv-doc proj-bin libraw1394-doc libtbb-doc tcl8.6 tk8.6
+  mpi-default-bin vtk9-doc vtk9-examples
+Recommended packages:
+  libexif-doc proj-bin libgphoto2-l10n gstreamer1.0-plugins-base opencv-data
+  libopencv-java libpng-tools libraw1394-tools
+The following NEW packages will be installed:
+  cmake cmake-data fonts-noto-cjk gdal-data gdal-plugins googletest
+  ibverbs-providers iso-codes libaec0 libamd-comgr2 libamdhip64-5
+  libarmadillo12 libarpack2t64 libavcodec-dev libavformat-dev libavutil-dev
+  libblosc1 libcfitsio10t64 libcharls2 libdc1394-dev libdeflate-dev libdw1t64
+  libevent-core-2.1-7t64 libevent-pthreads-2.1-7t64 libexif-dev libexif12
+  libfabric1 libfreexl1 libfyba0t64 libgd3 libgdal34t64 libgdcm-dev
+  libgdcm3.0t64 libgeos-c1t64 libgeos3.12.1t64 libgeotiff5 libgl2ps1.4
+  libgmock-dev libgphoto2-6t64 libgphoto2-dev libgphoto2-port12t64
+  libgstreamer-plugins-base1.0-0 libgstreamer1.0-0 libgtest-dev libhdf4-0-alt
+  libhdf5-103-1t64 libhdf5-hl-100t64 libhsa-runtime64-1 libhsakmt1
+  libhwloc-plugins libhwloc15 libibverbs1 libimath-3-1-29t64 libimath-dev
+  libjbig-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev libjsoncpp25
+  libkmlbase1t64 libkmldom1t64 libkmlengine1t64 liblerc-dev libllvm17t64
+  liblzma-dev libminizip1t64 libmunge2 libmysqlclient21 libnetcdf19t64
+  libnl-route-3-200 libodbc2 libodbcinst2 libogdi4.1 libopencv-calib3d-dev
+  libopencv-calib3d406t64 libopencv-contrib-dev libopencv-contrib406t64
+  libopencv-core-dev libopencv-core406t64 libopencv-dev libopencv-dnn-dev
+  libopencv-dnn406t64 libopencv-features2d-dev libopencv-features2d406t64
+  libopencv-flann-dev libopencv-flann406t64 libopencv-highgui-dev
+  libopencv-highgui406t64 libopencv-imgcodecs-dev libopencv-imgcodecs406t64
+  libopencv-imgproc-dev libopencv-imgproc406t64 libopencv-ml-dev
+  libopencv-ml406t64 libopencv-objdetect-dev libopencv-objdetect406t64
+  libopencv-photo-dev libopencv-photo406t64 libopencv-shape-dev
+  libopencv-shape406t64 libopencv-stitching-dev libopencv-stitching406t64
+  libopencv-superres-dev libopencv-superres406t64 libopencv-video-dev
+  libopencv-video406t64 libopencv-videoio-dev libopencv-videoio406t64
+  libopencv-videostab-dev libopencv-videostab406t64 libopencv-viz-dev
+  libopencv-viz406t64 libopenexr-3-1-30 libopenexr-dev libopenmpi3t64
+  liborc-0.4-0t64 libpkgconf3 libpmix2t64 libpng-dev libpq5 libproj25
+  libprotobuf32t64 libpsm-infinipath1 libpsm2-2 libqhull-r8.0 libqt5opengl5t64
+  libqt5test5t64 libraw1394-dev librdmacm1t64 librhash0 librttopo1
+  libsharpyuv-dev libsocket++1 libspatialite8t64 libsuperlu6 libswresample-dev
+  libswscale-dev libsz2 libtbb-dev libtbb12 libtbbbind-2-5 libtbbmalloc2
+  libtcl8.6 libtiff-dev libtiffxx6 libtk8.6 libucx0 liburiparser1 libuv1t64
+  libvtk9.1t64 libwebp-dev libwebpdecoder3 libxerces-c3.2t64 libxft2
+  libxnvctrl0 libzstd-dev mysql-common ninja-build pkg-config pkgconf
+  pkgconf-bin proj-data unixodbc-common
+The following packages will be upgraded:
+  liblzma5 xz-utils
+2 upgraded, 163 newly installed, 0 to remove and 86 not upgraded.
+Need to get 233 MB of archives.
+After this operation, 826 MB of additional disk space will be used.
+Get:1 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 liblzma5 amd64 5.6.1+really5.4.5-1ubuntu0.3 [127 kB]
+Get:2 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 iso-codes all 4.16.0-1 [3492 kB]
+Get:3 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libnl-route-3-200 amd64 3.7.0-0.3build1.1 [189 kB]
+Get:4 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libibverbs1 amd64 50.0-2ubuntu0.2 [68.0 kB]
+Get:5 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 ibverbs-providers amd64 50.0-2ubuntu0.2 [381 kB]
+Get:6 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libuv1t64 amd64 1.48.0-1.1build1 [97.3 kB]
+Get:7 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 xz-utils amd64 5.6.1+really5.4.5-1ubuntu0.3 [267 kB]
+Get:8 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1 [82.8 kB]
+Get:9 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 librhash0 amd64 1.4.3-3build1 [129 kB]
+Get:10 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 cmake-data all 3.28.3-1build7 [2155 kB]
+Get:11 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 cmake amd64 3.28.3-1build7 [11.2 MB]
+Get:12 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 fonts-noto-cjk all 1:20230817+repack1-3 [61.2 MB]
+Get:13 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 gdal-data all 3.8.4+dfsg-3ubuntu3 [261 kB]
+Get:14 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 gdal-plugins amd64 3.8.4+dfsg-3ubuntu3 [24.8 kB]
+Get:15 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 googletest all 1.14.0-1 [521 kB]
+Get:16 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libaec0 amd64 1.1.2-1build1 [22.9 kB]
+Get:17 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libllvm17t64 amd64 1:17.0.6-9ubuntu1 [26.2 MB]
+Get:18 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libamd-comgr2 amd64 6.0+git20231212.4510c28+dfsg-3build2 [14.4 MB]
+Get:19 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libhsakmt1 amd64 5.7.0-1build1 [62.9 kB]
+Get:20 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libhsa-runtime64-1 amd64 5.7.1-2build1 [491 kB]
+Get:21 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libamdhip64-5 amd64 5.7.1-3 [9621 kB]
+Get:22 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libarpack2t64 amd64 3.9.1-1.1build2 [106 kB]
+Get:23 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libsuperlu6 amd64 6.0.1+dfsg1-1build1 [180 kB]
+Get:24 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libarmadillo12 amd64 1:12.6.7+dfsg-1build2 [106 kB]
+Get:25 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libavutil-dev amd64 7:6.1.1-3ubuntu5 [547 kB]
+Get:26 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libswresample-dev amd64 7:6.1.1-3ubuntu5 [79.7 kB]
+Get:27 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libavcodec-dev amd64 7:6.1.1-3ubuntu5 [6504 kB]
+Get:28 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libavformat-dev amd64 7:6.1.1-3ubuntu5 [1398 kB]
+Get:29 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libblosc1 amd64 1.21.5+ds-1build1 [36.2 kB]
+Get:30 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libcfitsio10t64 amd64 4.3.1-1.1build2 [528 kB]
+Get:31 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libcharls2 amd64 2.4.2-2build2 [90.4 kB]
+Get:32 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libraw1394-dev amd64 2.1.2-2build3 [38.3 kB]
+Get:33 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libdc1394-dev amd64 2.2.6-4build1 [119 kB]
+Get:34 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libdeflate-dev amd64 1.19-1build1.1 [50.9 kB]
+Get:35 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libdw1t64 amd64 0.190-1.1ubuntu0.1 [261 kB]
+Get:36 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libevent-core-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [91.3 kB]
+Get:37 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libevent-pthreads-2.1-7t64 amd64 2.1.12-stable-9ubuntu2 [7982 B]
+Get:38 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libexif12 amd64 0.6.24-1ubuntu0.24.04.1 [88.3 kB]
+Get:39 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libexif-dev amd64 0.6.24-1ubuntu0.24.04.1 [110 kB]
+Get:40 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libpsm-infinipath1 amd64 3.3+20.604758e7-6.3build1 [178 kB]
+Get:41 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libpsm2-2 amd64 11.2.185-2build1 [194 kB]
+Get:42 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 librdmacm1t64 amd64 50.0-2ubuntu0.2 [70.7 kB]
+Get:43 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libfabric1 amd64 1.17.0-3build2 [657 kB]
+Get:44 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libfyba0t64 amd64 4.1.1-11build1 [119 kB]
+Get:45 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 libgd3 amd64 2.3.3-9ubuntu5 [128 kB]
+Get:46 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/universe amd64 libminizip1t64 amd64 1:1.3.dfsg-3.1ubuntu2.1 [22.2 kB]
+Get:47 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libfreexl1 amd64 2.0.0-1build2 [41.7 kB]
+Get:48 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgeos3.12.1t64 amd64 3.12.1-3build1 [849 kB]
+Get:49 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgeos-c1t64 amd64 3.12.1-3build1 [94.5 kB]
+Get:50 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 proj-data all 9.4.0-1build2 [7885 kB]
+Get:51 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libproj25 amd64 9.4.0-1build2 [1396 kB]
+Get:52 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgeotiff5 amd64 1.7.1-5build1 [62.9 kB]
+Get:53 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libhdf4-0-alt amd64 4.2.16-4build1 [282 kB]
+Get:54 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libsz2 amd64 1.1.2-1build1 [5476 B]
+Get:55 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libhdf5-103-1t64 amd64 1.10.10+repack-3.1ubuntu4 [1270 kB]
+Get:56 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 liburiparser1 amd64 0.9.7+dfsg-2build1 [35.8 kB]
+Get:57 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libkmlbase1t64 amd64 1.3.0-12build1 [49.9 kB]
+Get:58 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libkmldom1t64 amd64 1.3.0-12build1 [156 kB]
+Get:59 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libkmlengine1t64 amd64 1.3.0-12build1 [71.4 kB]
+Get:60 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/main amd64 mysql-common all 5.8+1.1.0build1 [6746 B]
+Get:61 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libmysqlclient21 amd64 8.0.46-0ubuntu0.24.04.3 [1255 kB]
+Get:62 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libhdf5-hl-100t64 amd64 1.10.10+repack-3.1ubuntu4 [56.0 kB]
+Get:63 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libnetcdf19t64 amd64 1:4.9.2-5ubuntu4 [473 kB]
+Get:64 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libodbc2 amd64 2.3.12-1ubuntu0.24.04.1 [158 kB]
+Get:65 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 unixodbc-common all 2.3.12-1ubuntu0.24.04.1 [8806 B]
+Get:66 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libodbcinst2 amd64 2.3.12-1ubuntu0.24.04.1 [30.7 kB]
+Get:67 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libogdi4.1 amd64 4.1.1+ds-3build1 [226 kB]
+Get:68 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libpq5 amd64 16.15-0ubuntu0.24.04.1 [151 kB]
+Get:69 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libqhull-r8.0 amd64 2020.2-6build1 [193 kB]
+Get:70 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 librttopo1 amd64 1.1.0-3build2 [191 kB]
+Get:71 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libspatialite8t64 amd64 5.1.0-3build1 [1919 kB]
+Get:72 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libxerces-c3.2t64 amd64 3.2.4+debian-1.2ubuntu2 [919 kB]
+Get:73 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgdal34t64 amd64 3.8.4+dfsg-3ubuntu3 [8346 kB]
+Get:74 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libsocket++1 amd64 1.12.13+git20131030.5d039ba-1build1 [83.1 kB]
+Get:75 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgdcm3.0t64 amd64 3.0.22-2.1ubuntu1 [2160 kB]
+Get:76 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgdcm-dev amd64 3.0.22-2.1ubuntu1 [268 kB]
+Get:77 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgl2ps1.4 amd64 1.4.2+dfsg1-2build1 [41.9 kB]
+Get:78 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgtest-dev amd64 1.14.0-1 [268 kB]
+Get:79 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble/universe amd64 libgmock-dev amd64 1.14.0-1 [135 kB]
+Get:80 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libgphoto2-port12t64 amd64 2.5.31-2.1ubuntu1.1 [59.2 kB]
+Get:81 https://snapshot.ubuntu.com/ubuntu/20260828T000000Z noble-updates/main amd64 libgphoto2-6t64 amd64 2.5.31-2.1ubuntu1.1 [735 kB]

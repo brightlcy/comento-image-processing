@@ -1,0 +1,5 @@
+$ env DEBIAN_FRONTEND=noninteractive apt-get -o APT::Sandbox::User=root -o Dir::Cache::archives=/workspace/scratch/e487502bcbea/_apt_cache -o Acquire::Retries=0 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 install -y --no-install-recommends g++ cmake ninja-build libopencv-dev libgtest-dev libgmock-dev
+E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 0
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+
+EXIT_CODE=100

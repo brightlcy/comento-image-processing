@@ -1,0 +1,6 @@
+{
+  "file": "build/cpp/cpp_depth_demo",
+  "before": "0o644",
+  "after": "0o744",
+  "change": "restore owner execute permission on generated ELF"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "mutants": 6,
+  "detected": 6,
+  "production_files_modified": false,
+  "details": [
+    {
+      "mutation": "sample_xy_swap",
+      "filter": "Sampling.ExactSampleCoordinatesAndHeights",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "bgr_rgb_swap",
+      "filter": "OpenCvAdapter.KnownBlueBgrPixelNotMistakenForRed",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "volume_guard_removed",
+      "filter": "OpenCvAdapter.RejectsVolumeAndAdditionalChannelTypes",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "loader_always_throws",
+      "filter": "OpenCvAdapter.ActualPngLoadPreservesPixelsAndProjectsCoordinates",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "duplicate_mock_load",
+      "filter": "MockSource.LoadsExactlyOnceAndConverts",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    },
+    {
+      "mutation": "nonfinite_guards_removed",
+      "filter": "Projection.RejectsMissingAndMalformedDepth",
+      "test_exit_code": 1,
+      "detected_by_assertion": true
+    }
+  ]
+}

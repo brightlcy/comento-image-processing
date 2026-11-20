@@ -1,0 +1,52 @@
+$ ./build/cpp/cpp_gtests --gmock_verbose=info '--gtest_filter=MockSource.*'
+Running main() from gmock_main.cc
+Note: Google Test filter = MockSource.*
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from MockSource
+[ RUN      ] MockSource.LoadsExactlyOnceAndConverts
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:135: EXPECT_CALL(src, load("fixture.png")) invoked
+Stack trace:
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:135: Mock function call matches EXPECT_CALL(src, load("fixture.png"))...
+    Function call: load(@0x7fffb0df8890 "fixture.png")
+          Returns: 40-byte object <01-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 30-9C 9D-2E 8B-55 00-00 34-9C 9D-2E 8B-55 00-00 34-9C 9D-2E 8B-55 00-00>
+Stack trace:
+[       OK ] MockSource.LoadsExactlyOnceAndConverts (0 ms)
+[ RUN      ] MockSource.PropagatesLoadFailure
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:141: EXPECT_CALL(src, load("missing.png")) invoked
+Stack trace:
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:141: Mock function call matches EXPECT_CALL(src, load("missing.png"))...
+    Function call: load(@0x7fffb0df88a0 "missing.png")
+Stack trace:
+[       OK ] MockSource.PropagatesLoadFailure (0 ms)
+[ RUN      ] MockSource.RejectsCorruptLoadedDimensions
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:146: EXPECT_CALL(src, load("corrupt.png")) invoked
+Stack trace:
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:146: Mock function call matches EXPECT_CALL(src, load("corrupt.png"))...
+    Function call: load(@0x7fffb0df8890 "corrupt.png")
+          Returns: 40-byte object <02-00 00-00 00-00 00-00 02-00 00-00 00-00 00-00 50-9C 9D-2E 8B-55 00-00 54-9C 9D-2E 8B-55 00-00 54-9C 9D-2E 8B-55 00-00>
+Stack trace:
+[       OK ] MockSource.RejectsCorruptLoadedDimensions (0 ms)
+[ RUN      ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:151: EXPECT_CALL(src, load("nan.png")) invoked
+Stack trace:
+
+/workspace/scratch/e487502bcbea/project/comento-image-processing/week2/cpp/tests/test_depth_projection.cpp:151: Mock function call matches EXPECT_CALL(src, load("nan.png"))...
+    Function call: load(@0x7fffb0df8890 "nan.png")
+          Returns: 40-byte object <01-00 00-00 00-00 00-00 01-00 00-00 00-00 00-00 B0-9C 9D-2E 8B-55 00-00 B4-9C 9D-2E 8B-55 00-00 B4-9C 9D-2E 8B-55 00-00>
+Stack trace:
+[       OK ] MockSource.RejectsNonfiniteLoadedIntensityAfterOneLoad (0 ms)
+[----------] 4 tests from MockSource (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+
+EXIT_CODE=0

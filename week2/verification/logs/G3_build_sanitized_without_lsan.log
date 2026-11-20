@@ -1,0 +1,10 @@
+$ env ASAN_OPTIONS=detect_leaks=0:halt_on_error=1 UBSAN_OPTIONS=halt_on_error=1:print_stacktrace=1 cmake --build build/cpp-sanitized --parallel 2
+[ 15%] Built target depth_projection
+[ 30%] Built target opencv_depth_source
+[ 46%] Built target cpp_core_smoke
+[ 61%] Built target cpp_depth_demo
+[ 76%] Built target cpp_xyz_probe
+[ 84%] Linking CXX executable cpp_gtests
+[100%] Built target cpp_gtests
+
+EXIT_CODE=0

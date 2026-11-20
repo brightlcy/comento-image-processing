@@ -1,0 +1,303 @@
+{
+  "run_id": 41206106529,
+  "run_url": "https://github.com/brightlcy/comento-image-processing/actions/runs/41206106529",
+  "status": "completed",
+  "conclusion": "success",
+  "head_sha": "77ea2cf2ed5e312434049be9cd6f8e2fe22d53b5",
+  "event": "push",
+  "created_at": "2026-10-31T13:33:32Z",
+  "updated_at": "2026-10-31T13:34:54Z",
+  "jobs": [
+    {
+      "id": 124551387577,
+      "name": "python-regression",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 41206106529,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install Python dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run complete Python regression suite",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Week 2 coverage",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Reproduce visualizations in a separate folder",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Preserve Python logs on success or failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17
+        }
+      ]
+    },
+    {
+      "id": 124551387852,
+      "name": "cpp-google-test",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 41206106529,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install OpenCV C++ and GoogleTest/gMock dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Record compiler and dependency versions",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Configure C++ with required OpenCV tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "List and run real GoogleTest tests",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Run full CTest regression",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run OpenCV C++ demo on preserved sample",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "C++ and Python coordinate comparison",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "AddressSanitizer and UndefinedBehaviorSanitizer",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Preserve C++ logs on success or failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13044512992,
+      "name": "week2-python-evidence",
+      "size_in_bytes": 2560827,
+      "url": "https://api.github.com/repos/brightlcy/comento-image-processing/actions/artifacts/13044512992",
+      "archive_download_url": "https://api.github.com/repos/brightlcy/comento-image-processing/actions/artifacts/13044512992/zip",
+      "expired": false,
+      "created_at": "2026-10-31T13:33:52Z",
+      "expires_at": "2027-01-29T13:33:32Z",
+      "updated_at": "2026-10-31T13:33:52Z",
+      "digest": "sha256:86911d3b5feb07cf5e4889578b50c4697270f7df24c8145e83756297bee138cc",
+      "workflow_run": {
+        "id": 41206106529,
+        "repository_id": 1432006614,
+        "head_repository_id": 1432006614,
+        "head_branch": "feature/week2-final-execution-20261031",
+        "head_sha": "77ea2cf2ed5e312434049be9cd6f8e2fe22d53b5"
+      }
+    },
+    {
+      "id": 13044344132,
+      "name": "week2-cpp-evidence",
+      "size_in_bytes": 401377,
+      "url": "https://api.github.com/repos/brightlcy/comento-image-processing/actions/artifacts/13044344132",
+      "archive_download_url": "https://api.github.com/repos/brightlcy/comento-image-processing/actions/artifacts/13044344132/zip",
+      "expired": false,
+      "created_at": "2026-10-31T13:34:51Z",
+      "expires_at": "2027-01-29T13:33:32Z",
+      "updated_at": "2026-10-31T13:34:51Z",
+      "digest": "sha256:ef45c8b7ea05ab3d34d51b1ae472e3862eda04fbf8f0508d05332839471ccbf6",
+      "workflow_run": {
+        "id": 41206106529,
+        "repository_id": 1432006614,
+        "head_repository_id": 1432006614,
+        "head_branch": "feature/week2-final-execution-20261031",
+        "head_sha": "77ea2cf2ed5e312434049be9cd6f8e2fe22d53b5"
+      }
+    }
+  ],
+  "cpp": {
+    "google_test": {
+      "found": 31,
+      "run": 31,
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0,
+      "disabled": 0
+    },
+    "gmock": {
+      "passed": 4,
+      "exact_call_matches": 4,
+      "subset_of_gtest": true
+    },
+    "ctest": {
+      "passed": 32,
+      "total": 32,
+      "smoke_executables": 1
+    },
+    "sanitizers": {
+      "asan_ubsan_ctest_passed": 32,
+      "total": 32,
+      "detect_leaks": true
+    }
+  },
+  "python": {
+    "unittest_passed": 67,
+    "pytest_passed": 38,
+    "subtests_passed": 39,
+    "covered_lines": 141,
+    "statements": 142
+  },
+  "differential": {
+    "cases": 120,
+    "point_rows": 7660,
+    "comparison": "exact float32"
+  },
+  "evidence_paths": [
+    "cpp-google-test.log",
+    "python-regression.log"
+  ],
+  "xml_verification": {
+    "gtest_root": {
+      "tests": "31",
+      "failures": "0",
+      "disabled": "0",
+      "errors": "0",
+      "time": "0.032",
+      "timestamp": "2026-10-31T13:34:21.859",
+      "name": "AllTests"
+    },
+    "testcase_count": 31,
+    "skipped_nodes": 0,
+    "ctest_root": {
+      "name": "(empty)",
+      "tests": "32",
+      "failures": "0",
+      "disabled": "0",
+      "skipped": "0",
+      "hostname": "",
+      "time": "1",
+      "timestamp": "2026-10-31T13:34:21"
+    }
+  },
+  "annotations": {
+    "warnings": 2,
+    "cause": "Node.js 20 actions run under Node.js 24 compatibility mode; all jobs passed"
+  },
+  "python_artifact_download": "BLOCKED_BY_BROWSER_POLICY; job log preserved; artifact is available on Actions"
+}
